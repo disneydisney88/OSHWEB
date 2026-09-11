@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>香港職業安全資訊網 | HK OSH Info Portal</title>
+<meta name="description" content="整合香港勞工處職安資訊、法例、工作守則、PPE、MSDS、AI/4S安全智慧科技、中港海外職安新聞、工傷新聞、防火安全及註冊安全主任資訊,自動更新並列明資訊來源。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">🦺</div>
+      <div>
+        <h1>香港職業安全資訊網</h1>
+        <p class="tagline">HK Occupational Safety &amp; Health Information Portal · 非官方資訊整合平台</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div class="update-info">
+        <span id="last-updated">資料載入中…</span>
+      </div>
+      <button id="btn-refresh" class="btn-refresh" title="即時重新抓取官方來源">⟳ 立即更新</button>
+    </div>
+  </div>
+  <nav class="main-nav" aria-label="主選單">
+    <div class="wrap nav-wrap">
+      <a href="#home" class="nav-link">🏠 主頁</a>
+      <a href="#law" class="nav-link">⚖️ 法例法規</a>
+      <a href="#cop" class="nav-link">📘 工作守則 COP</a>
+      <a href="#ppe" class="nav-link">🧤 PPE</a>
+      <a href="#msds" class="nav-link">🧪 化學品 MSDS</a>
+      <a href="#tech" class="nav-link">🤖 AI／4S 科技</a>
+      <a href="#news" class="nav-link">📰 最新資訊</a>
+      <a href="#accident" class="nav-link">🚑 工傷新聞</a>
+      <a href="#fire" class="nav-link">🔥 防火安全</a>
+      <a href="#so" class="nav-link">👷 安全主任</a>
+      <a href="#youtube" class="nav-link">▶️ YouTube</a>
+      <a href="#member" class="nav-link">👤 會員專區</a>
+      <a href="#sources" class="nav-link">📚 資訊來源</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+<!-- ================= 主頁 ================= -->
+<section id="home" class="tab-section">
+  <div class="hero">
+    <h2>一站式香港職業安全資訊平台</h2>
+    <p>整合<b>勞工處職業安全及健康</b>官方資訊、法例與工作守則、個人防護裝備(PPE)、化學品安全資料(MSDS/SDS)、AI／4S 安全智慧科技、香港・內地・海外職安及工傷新聞、防火安全，以及註冊安全主任資訊與最新統計數目。</p>
+    <p class="hero-note">所有新聞及統計均<b>自動更新</b>，並逐項<b>列明資訊來源</b>與連結，方便查證。</p>
+  </div>
+
+  <div class="grid-4 quick-cards">
+    <a class="card" href="#law"><div class="card-ico">⚖️</div><h3>法例法規</h3><p>第509章職安條例、第59章工廠及工業經營條例等</p></a>
+    <a class="card" href="#cop"><div class="card-ico">📘</div><h3>工作守則 COP</h3><p>勞工處處長發出之工作守則官方清單</p></a>
+    <a class="card" href="#ppe"><div class="card-ico">🧤</div><h3>PPE 防護裝備</h3><p>各部位防護裝備、國際標準及選用要點</p></a>
+    <a class="card" href="#msds"><div class="card-ico">🧪</div><h3>MSDS／SDS</h3><p>化學品安全資料表16段結構、GHS符號、資料庫</p></a>
+    <a class="card" href="#tech"><div class="card-ico">🤖</div><h3>AI／4S 科技</h3><p>安全智慧工地系統(4S)、AI監察、IoT、機械人</p></a>
+    <a class="card" href="#news"><div class="card-ico">📰</div><h3>最新資訊</h3><p>香港・內地・國際 OSH 資訊，自動更新</p></a>
+    <a class="card" href="#fire"><div class="card-ico">🔥</div><h3>防火安全</h3><p>消防處資訊、消防法例、滅火裝備及應變</p></a>
+    <a class="card" href="#so"><div class="card-ico">👷</div><h3>安全主任</h3><p>註冊要求、職責、人數統計(自動更新)</p></a>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">
+      <h3>📌 最新動態</h3>
+      <a class="more-link" href="#news">查看全部 →</a>
+    </div>
+    <div id="home-news" class="news-list"><p class="muted">載入中…</p></div>
+  </div>
+
+  <div class="grid-3">
+    <div class="panel stat-box">
+      <h3>👷 註冊安全主任數目</h3>
+      <div id="home-rso-latest" class="stat-value muted">載入中…</div>
+      <p class="src-line">來源：勞工處開放數據（自動更新）｜<a href="#so">詳情及歷年數據</a></p>
+    </div>
+    <div class="panel">
+      <h3>🚑 最新工傷／意外報道</h3>
+      <div id="home-accident" class="news-list compact"><p class="muted">載入中…</p></div>
+      <p class="src-line">來源：政府新聞公報、政府新聞網、香港電台（自動更新，關鍵字分類）｜<a href="#accident">全部 →</a></p>
+    </div>
+    <div class="panel">
+      <h3>🛠️ 快速官方連結</h3>
+      <ul class="link-list">
+        <li><a href="https://www.labour.gov.hk/tc/legislat/contentB3.htm" target="_blank" rel="noopener">勞工處：職安法例一覽</a></li>
+        <li><a href="https://www.labour.gov.hk/tc/public/content2_8b.htm" target="_blank" rel="noopener">勞工處：工作守則清單</a></li>
+        <li><a href="https://www.labour.gov.hk/tc/news/press.htm" target="_blank" rel="noopener">勞工處：新聞公報</a></li>
+        <li><a href="https://www.labour.gov.hk/tc/faq/oshq8_whole.html" target="_blank" rel="noopener">勞工處：安全主任註冊</a></li>
+        <li><a href="https://www.oshc.org.hk" target="_blank" rel="noopener">職業安全健康局 OSHC</a></li>
+        <li><a href="https://www.elegislation.gov.hk" target="_blank" rel="noopener">電子版香港法例</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 法例法規 ================= -->
+<section id="law" class="tab-section" hidden>
+  <h2 class="sec-title">⚖️ 香港職業安全法例法規</h2>
+  <p class="sec-intro">香港職安法例主要有兩大骨幹：<b>第509章《職業安全及健康條例》</b>（適用於幾乎所有工作場所）及<b>第59章《工廠及工業經營條例》</b>（適用於工業經營），其下設有多項附屬規例。以下為常用法例總覽；<b>完整及最新文本請以官方為準</b>。</p>
+
+  <div class="panel">
+    <h3>主體條例</h3>
+    <table class="tbl">
+      <thead><tr><th>法例</th><th>重點</th><th>官方連結（來源）</th></tr></thead>
+      <tbody>
+        <tr><td><b>第509章《職業安全及健康條例》</b></td>
+            <td>適用於幾乎所有工作場所。僱主須在合理切實可行範圍內確保僱員工作安全與健康（第6條）；處所佔用人須確保在處所受僱人士安全（第7條）；僱員須照顧自己及他人並與僱主合作（第8條）。</td>
+            <td><a href="https://www.labour.gov.hk/tc/legislat/content4.htm" target="_blank" rel="noopener">勞工處介紹</a>｜<a href="https://www.elegislation.gov.hk/hk/cap509" target="_blank" rel="noopener">條文</a></td></tr>
+        <tr><td><b>第59章《工廠及工業經營條例》</b></td>
+            <td>工業經營（工廠、建築地盤、貨櫃處理等）東主的一般安全責任（第6A條）及僱員責任（第6B條），並授權訂立各行業安全規例。</td>
+            <td><a href="https://www.labour.gov.hk/tc/legislat/content3.htm" target="_blank" rel="noopener">勞工處介紹</a>｜<a href="https://www.elegislation.gov.hk/hk/cap59" target="_blank" rel="noopener">條文</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h3>常用附屬規例</h3>
+    <table class="tbl">
+      <thead><tr><th>規例</th><th>適用範圍／重點</th><th>官方連結（來源）</th></tr></thead>
+      <tbody>
+        <tr><td>第59I章《建築地盤(安全)規例》</td><td>建築地盤安全：棚架、洞口圍封、機械、用電、個人防護等</td><td><a href="https://www.labour.gov.hk/tc/legislat/contentB3.htm" target="_blank" rel="noopener">勞工處法例一覽</a></td></tr>
+        <tr><td>第59U章《工廠及工業經營(安全管理)規例》</td><td>要求指定企業（如大型承建商）建立14項元素的安全管理制度，包括安全委員會、視察、審核等</td><td><a href="https://www.labour.gov.hk/tc/legislat/contentB3.htm" target="_blank" rel="noopener">勞工處法例一覽</a></td></tr>
+        <tr><td>第59Z章《工廠及工業經營(安全主任及安全督導員)規例》</td><td>規定須僱用註冊安全主任／安全督導員的工業經營類別，以及註冊資格</td><td><a href="https://www.elegislation.gov.hk/hk/cap59Z" target="_blank" rel="noopener">條文</a>｜<a href="https://www.labour.gov.hk/tc/faq/oshq8_whole.html" target="_blank" rel="noopener">勞工處註冊指南</a></td></tr>
+        <tr><td>第509A章《職業安全及健康(顯示屏幕設備)規例》</td><td>辦公室等工作間使用顯示屏幕設備的工作環境及評估要求</td><td><a href="https://www.labour.gov.hk/tc/legislat/contentB3.htm" target="_blank" rel="noopener">勞工處法例一覽</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel highlight">
+    <h3>📢 重要修例：《2023年職業安全及健康（修訂）條例》</h3>
+    <p>2023年4月28日生效，大幅提高職安違例事項的最高罰則（可公訴罪行最高罰款1,000萬元及監禁2年），並賦權法庭命令違者進行改善。詳情及官方文件：</p>
+    <p class="src-line">來源：勞工處 —— <a href="https://www.labour.gov.hk/tc/news/Amendment_Ordinance.htm" target="_blank" rel="noopener">www.labour.gov.hk/tc/news/Amendment_Ordinance.htm</a></p>
+  </div>
+
+  <div class="panel">
+    <h3>其他相關法例</h3>
+    <ul class="plain-list">
+      <li>第282章《僱員補償條例》— 工傷補償責任（勞工處僱員補償科）：<a href="https://www.labour.gov.hk/tc/legislat/content1.htm" target="_blank" rel="noopener">勞工處介紹</a></li>
+      <li>第295章《危險品條例》— 危險品儲存、領牌（消防處執行）</li>
+      <li>第572章《消防安全(建築物)條例》、第502章《消防安全(商業處所)條例》— 見本網「防火安全」</li>
+      <li>全部法例官方文本：<a href="https://www.elegislation.gov.hk" target="_blank" rel="noopener">電子版香港法例（e-Legislation）</a></li>
+    </ul>
+    <p class="src-line">⚖️ 本節資訊來源：香港特別行政區政府勞工處及電子版香港法例。法律條文如有修訂，一律以官方最新公佈為準。</p>
+  </div>
+</section>
+
+<!-- ================= 工作守則 COP ================= -->
+<section id="cop" class="tab-section" hidden>
+  <h2 class="sec-title">📘 工作守則（Codes of Practice, COP）</h2>
+  <div class="panel">
+    <h3>什麼是工作守則？</h3>
+    <p>工作守則由<b>勞工處處長</b>根據職安法例發出，就安全工作方法提供<b>實務指引</b>。在香港，不遵守工作守則<b>本身並非違法</b>，但在法律程序中可被接納為證據，用以證明或否定是否違反有關安全法例——因此行業普遍視為必須遵從的標準。</p>
+    <p class="src-line">來源：勞工處工作守則官方清單 —— <a href="https://www.labour.gov.hk/tc/public/content2_8b.htm" target="_blank" rel="noopener">www.labour.gov.hk/tc/public/content2_8b.htm</a></p>
+  </div>
+
+  <div class="panel">
+    <h3>常用工作守則例子</h3>
+    <table class="tbl">
+      <thead><tr><th>工作守則</th><th>主題</th></tr></thead>
+      <tbody>
+        <tr><td>安全管理工作守則</td><td>第59U章安全管理制度的建立、推行及審核（14項元素）</td></tr>
+        <tr><td>密閉空間工作的安全與健康</td><td>評估、許可證制度、氣體監測、監視人（<a href="https://www.labour.gov.hk/tc/public/pdf/os/B/spacec.pdf" target="_blank" rel="noopener">官方PDF</a>）</td></tr>
+        <tr><td>金屬棚架工作安全守則</td><td>金屬棚架的搭建、改動及拆卸（<a href="https://www.labour.gov.hk/tc/public/pdf/os/B/MS.pdf" target="_blank" rel="noopener">官方PDF</a>）</td></tr>
+        <tr><td>氣體焊接及火焰切割工作的安全與健康</td><td>焊接切割防火防爆、氣樽處理</td></tr>
+        <tr><td>手工電弧焊接工作的安全與健康</td><td>電焊安全、觸電防護、眼部保護</td></tr>
+        <tr><td>工業潛水的工作安全與健康</td><td>潛水作業計劃、潛水主任及潛水員要求</td></tr>
+        <tr><td>惡劣天氣及「極端情況」下工作守則</td><td>8號及以上颱風信號、黑色暴雨警告下的工作安排</td></tr>
+      </tbody>
+    </table>
+    <p class="src-line">📖 完整守則清單及免費下載（官方）：勞工處「乙部：工作守則」 <a href="https://www.labour.gov.hk/tc/public/content2_8b.htm" target="_blank" rel="noopener">www.labour.gov.hk/tc/public/content2_8b.htm</a>；亦可於職業安全及健康部各辦事處免費索取。</p>
+  </div>
+
+  <div class="panel">
+    <h3>相關刊物</h3>
+    <p>勞工處亦出版大量<b>指引及小冊子</b>（非守則，屬建議性質），涵蓋防中暑、人體工效、化學品安全等，另設季度《職業安全及健康訓練課程手冊》。瀏覽官方出版物總覽：<a href="https://www.labour.gov.hk/tc/public/content2_8b.htm" target="_blank" rel="noopener">勞工處出版物</a>｜職安局刊物：<a href="https://www.oshc.org.hk" target="_blank" rel="noopener">OSHC</a></p>
+  </div>
+</section>
+
+<!-- ================= PPE ================= -->
+<section id="ppe" class="tab-section" hidden>
+  <h2 class="sec-title">🧤 個人防護裝備（PPE）</h2>
+  <div class="panel">
+    <h3>PPE 是最後一道防線</h3>
+    <p>按安全管理的優先次序，PPE 是在<b>消除、替代、工程控制、行政控制</b>之後的最後手段，而非首要方法。僱主須先進行<b>風險評估</b>，免費提供合適PPE，並確保僱員正確使用（第509章及第59章下的一般責任）。</p>
+  </div>
+
+  <div class="panel">
+    <h3>各部位防護裝備與常見國際標準</h3>
+    <table class="tbl">
+      <thead><tr><th>部位</th><th>裝備</th><th>常見標準（來源：標準機構）</th><th>選用／檢查要點</th></tr></thead>
+      <tbody>
+        <tr><td>頭部</td><td>安全帽</td><td>EN 397／ANSI Z89.1／GB 2811</td><td>檢查外殼裂紋及內襯；一般按製造商建議定期更換（即使無明顯損壞）</td></tr>
+        <tr><td>眼睛</td><td>護目鏡／面罩</td><td>EN 166／ANSI Z87.1</td><td>按風險選防衝擊、防化學飛濺、防焊接弧光型號</td></tr>
+        <tr><td>聽覺</td><td>耳塞／耳罩</td><td>EN 352</td><td>工作場所噪音達法例行動水平（約85–90 dB(A)，以現行法例為準）即須採取措施；計算降噪值(NRR/SNR)是否足夠</td></tr>
+        <tr><td>呼吸</td><td>防塵口罩／呼吸器</td><td>EN 149（FFP1/2/3）／NIOSH N95</td><td>貼合測試；防有機氣體須用活性碳濾罐；不可用於氧氣不足的密閉空間（須用氣瓶式）</td></tr>
+        <tr><td>手部</td><td>安全手套</td><td>EN 388（機械風險）／EN 374（化學品）</td><td>化學品手套須查滲透時間表；轉動機械旁嚴禁戴手套</td></tr>
+        <tr><td>腳部</td><td>安全鞋</td><td>EN ISO 20345（SB/S1/S3等）</td><td>鋼頭＋防穿刺底(S3)；防滑底適合濕滑環境</td></tr>
+        <tr><td>防墮</td><td>全身安全帶＋減震吸震帶＋防墮器</td><td>EN 361／EN 355／EN 360</td><td>「100%掛靠」雙鉤交替；懸吊創傷急救計劃；使用前逐件檢查</td></tr>
+        <tr><td>反光</td><td>反光衣</td><td>EN ISO 20471</td><td>夜間/車輛繁忙地盤必須</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h3>PPE 管理六步曲</h3>
+    <ol class="plain-list">
+      <li><b>識別危害</b> — 風險評估確定所需防護類型</li>
+      <li><b>選型</b> — 按標準選擇合規產品，注意CE/認證標記</li>
+      <li><b>試用</b> — 確保尺碼合身、佩戴舒適，員工參與選擇</li>
+      <li><b>培訓</b> — 正确佩戴、調整、拆卸方法</li>
+      <li><b>檢查保養</b> — 使用前檢查、定期更換、清潔儲存</li>
+      <li><b>紀錄監察</b> — 發放紀錄、監督使用、持續改善</li>
+    </ol>
+    <p class="src-line">📚 官方參考：勞工處職安出版物（<a href="https://www.labour.gov.hk/tc/public/content2_8b.htm" target="_blank" rel="noopener">labour.gov.hk</a>）及職安局 OSHC PPE 指引（<a href="https://www.oshc.org.hk" target="_blank" rel="noopener">oshc.org.hk</a>）。標準以各標準機構最新版本為準。</p>
+  </div>
+</section>
+
+<!-- ================= MSDS ================= -->
+<section id="msds" class="tab-section" hidden>
+  <h2 class="sec-title">🧪 化學品安全資料表（MSDS／SDS）</h2>
+  <div class="panel">
+    <h3>什麼是 MSDS／SDS？</h3>
+    <p>MSDS（Material Safety Data Sheet）現國際通用名稱為 <b>SDS（Safety Data Sheet）</b>，是化學品供應商／製造商編製的標準安全文件，載明化學品的危害、處理、儲存及應急資料。香港跟隨<b>聯合國 GHS（全球化學品統一分類和標籤制度）</b>的16段格式；僱主按第509章一般責任須向僱員提供化學品危害資料、培訓及合適防護。</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h3>SDS 標準16段結構</h3>
+      <ol class="plain-list small">
+        <li>化學品及企業標識</li><li>危險性概述</li><li>成分／組成資料</li>
+        <li>急救措施</li><li>消防措施</li><li>意外洩漏應急措施</li>
+        <li>操作處置與儲存</li><li>接觸控制／個人防護</li><li>理化特性</li>
+        <li>穩定性和反應性</li><li>毒理學資料</li><li>生態學資料</li>
+        <li>廢棄處置</li><li>運輸資料</li><li>法規資料</li><li>其他資料（含編製日期）</li>
+      </ol>
+      <p class="src-line">格式依據：聯合國GHS／ISO 11014。香港參考資料：勞工處職安出版物及職安局化學品安全刊物（oshc.org.hk）。</p>
+    </div>
+    <div class="panel">
+      <h3>GHS 象形符號（9個）</h3>
+      <div class="ghs-grid">
+        <span class="ghs">💥 爆炸物</span><span class="ghs">🔥 易燃物</span><span class="ghs">🟢 氧化物</span>
+        <span class="ghs">🫧 高壓氣體</span><span class="ghs">🧯 腐蝕性</span><span class="ghs">☠️ 急性毒性</span>
+        <span class="ghs">⚠️ 刺激／有害</span><span class="ghs">🫀 健康危害</span><span class="ghs">🌿 環境危害</span>
+      </div>
+      <h3 style="margin-top:1rem">使用 SDS 的要點</h3>
+      <ul class="plain-list small">
+        <li>每種化學品進場前<b>先索取SDS</b>（供應商法定／合同責任）</li>
+        <li>重點看第2段（危害）、第4段（急救）、第7段（儲存）、第8段（PPE）</li>
+        <li>核對第16段<b>編製／修訂日期</b>，過期版本要求更新</li>
+        <li>存檔讓員工可隨時查閱；配合化學品標籤與清單使用</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>免費 SDS／化學品資料查詢渠道</h3>
+    <ul class="link-list">
+      <li><b>向供應商／製造商索取</b> — 最權威、法律上對口的來源</li>
+      <li><a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubChem（美國國家醫學圖書館）</a> — 化學品性質及安全資料</li>
+      <li><a href="https://www.oshc.org.hk" target="_blank" rel="noopener">職業安全健康局</a> — 化學品安全刊物及GHS教材</li>
+      <li><a href="https://www.cfs.gov.hk" target="_blank" rel="noopener">食物環境衞生署食物安全中心</a>（如涉食品業化學品）／<a href="https://www.fsd.gov.hk" target="_blank" rel="noopener">消防處</a>（危險品儲存發牌）</li>
+    </ul>
+    <p class="src-line">⚠️ 網上資料庫僅供參考，涉及具體產品時一律以該產品供應商發出的SDS為準。</p>
+  </div>
+</section>
+
+<!-- ================= AI / 4S 科技 ================= -->
+<section id="tech" class="tab-section" hidden>
+  <h2 class="sec-title">🤖 AI／4S 安全智慧科技</h2>
+  <div class="panel highlight">
+    <h3>4S = Site Safety Smart System（安全智慧工地系統）</h3>
+    <p>香港特區政府<b>發展局</b>近年於工務工程積極推動「安全智慧工地系統」（俗稱4S），規定超過指定造價門檻的工務工程合約採用相關科技；建造業議會亦提供支援及培訓。系統核心包括：</p>
+    <div class="grid-4">
+      <div class="mini-card"><h4>📍 智能定位</h4><p>智能安全帽／UWB定位標籤，實時掌握工人位置，進入危險區自動警報</p></div>
+      <div class="mini-card"><h4>📹 AI 影像監察</h4><p>攝影機＋AI識別未戴安全帽、進入吊運範圍、臨邊無圍封等高危行為</p></div>
+      <div class="mini-card"><h4>🖥️ 中央監控平台</h4><p>工地實況儀表板、警報紀錄、數據分析，管理層即時督導</p></div>
+      <div class="mini-card"><h4>🌐 環境感測</h4><p>氣體、噪音、微氣候（中暑風險）等感測器聯動警報</p></div>
+    </div>
+    <p class="src-line">來源：發展局 <a href="https://www.devb.gov.hk" target="_blank" rel="noopener">www.devb.gov.hk</a>｜建造業議會 <a href="https://www.cic.hk" target="_blank" rel="noopener">www.cic.hk</a>（官方政策文件及最新門檻以該兩機構公佈為準）</p>
+  </div>
+
+  <div class="panel">
+    <h3>AI 於職業安全的應用</h3>
+    <table class="tbl">
+      <thead><tr><th>技術</th><th>應用場景</th></tr></thead>
+      <tbody>
+        <tr><td>電腦視覺（AI影像識別）</td><td>PPE穿戴偵測、危險區域入侵偵測、不安全行為（如攀爬無繫穩）自動警示</td></tr>
+        <tr><td>物聯網 IoT 感測</td><td>密閉空間氣體監測、噪音／微氣候監測、機械振動監察</td></tr>
+        <tr><td>可穿戴裝置</td><td>智能安全帽、心率/體溫監測（防中暑）、跌倒偵測</td></tr>
+        <tr><td>無人機（UAV）</td><td>高空／密閉空間巡查代替人手、棚架及外牆檢查</td></tr>
+        <tr><td>BIM＋數碼分身</td><td>施工階段安全模擬、危險工序預演、臨邊洞口規劃</td></tr>
+        <tr><td>VR／AR 培訓</td><td>沉浸式高空工作、密閉空間、火警應變訓練</td></tr>
+        <tr><td>機械人／自動化</td><td>以機械人取代高危工序（如噴漿、拆卸、地底管道檢測）</td></tr>
+        <tr><td>AI 聊天助手</td><td>即時查詢法例守則、風險評估草擬、安全文件輔助編製</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h3>推行提示</h3>
+    <ul class="plain-list">
+      <li>科技是<b>輔助</b>：仍須以風險評估和安全管理制度為本</li>
+      <li>注意個人資料私隱（影像／定位數據），參考<a href="https://www.pcpd.org.hk" target="_blank" rel="noopener">私隱專員公署</a>指引</li>
+      <li>可靠應用循序：先單點試行（如吊運區監察）→ 驗證成效 → 全面推廣</li>
+    </ul>
+    <p class="src-line">📚 延伸：職安局 OSHC 及建造業議會 CIC 定期舉辦安全科技展覽與課程。</p>
+  </div>
+</section>
+
+<!-- ================= 最新資訊 ================= -->
+<section id="news" class="tab-section" hidden>
+  <h2 class="sec-title">📰 最新 OSH 資訊（自動更新）</h2>
+  <p class="sec-intro">以下資訊由本站腳本<b>自動抓取官方來源</b>（政府新聞公報、政府新聞網、香港電台、中國應急管理部、美國OSHA、英國HSE），<b>每條均標明來源</b>。點擊標題前往原文。</p>
+  <div class="sub-tabs" role="tablist">
+    <button class="sub-tab active" data-news-region="HK">🇭🇰 香港</button>
+    <button class="sub-tab" data-news-region="CN">🇨🇳 中國內地</button>
+    <button class="sub-tab" data-news-region="INTL">🌍 國際</button>
+  </div>
+  <div id="news-list" class="news-list"><p class="muted">載入中…</p></div>
+</section>
+
+<!-- ================= 工傷新聞 ================= -->
+<section id="accident" class="tab-section" hidden>
+  <h2 class="sec-title">🚑 工傷／工作意外新聞（自動更新）</h2>
+  <div class="panel notice">
+    <p><b>分類說明（資訊來源）：</b>以下為從官方新聞來源（政府新聞公報、政府新聞網、香港電台）自動以<b>關鍵字</b>（工傷、工業意外、致命、墮斃、觸電、倒塌等）篩選的報道，<b>並非官方工傷統計</b>。官方數據請參閱勞工處職業安全及健康部年報及統計：<a href="https://www.labour.gov.hk" target="_blank" rel="noopener">www.labour.gov.hk</a>。</p>
+  </div>
+  <div id="accident-list" class="news-list"><p class="muted">載入中…</p></div>
+</section>
+
+<!-- ================= 防火安全 ================= -->
+<section id="fire" class="tab-section" hidden>
+  <h2 class="sec-title">🔥 防火安全</h2>
+  <div class="grid-2">
+    <div class="panel">
+      <h3>消防法例</h3>
+      <table class="tbl">
+        <thead><tr><th>法例</th><th>重點</th></tr></thead>
+        <tbody>
+          <tr><td>第572章《消防安全(建築物)條例》</td><td>1987年3月1日或之後建成/重建的綜合用途建築物及住用建築物的消防裝置、逃生途徑改善指令</td></tr>
+          <tr><td>第502章《消防安全(商業處所)條例》</td><td>訂明商業處所的防火保障措施</td></tr>
+          <tr><td>第295章《危險品條例》</td><td>危險品（如石油氣、易燃液體）儲存、運送及牌照（消防處執行）</td></tr>
+        </tbody>
+      </table>
+      <p class="src-line">來源：電子版香港法例 <a href="https://www.elegislation.gov.hk" target="_blank" rel="noopener">elegislation.gov.hk</a>｜香港法例第572章 <a href="https://www.elegislation.gov.hk/hk/cap572" target="_blank" rel="noopener">cap572</a>、第502章 <a href="https://www.elegislation.gov.hk/hk/cap502" target="_blank" rel="noopener">cap502</a></p>
+    </div>
+    <div class="panel">
+      <h3>官方防火資訊（消防處）</h3>
+      <ul class="link-list">
+        <li><a href="https://www.fsd.gov.hk" target="_blank" rel="noopener">消防處 FSD 官方網站</a> — 防火指引、危險品牌照、註冊消防裝置承辦商</li>
+        <li><a href="https://www.hkfsd.gov.hk" target="_blank" rel="noopener">消防處防火資訊</a>（社區防火宣傳）</li>
+        <li><a href="https://www.labour.gov.hk" target="_blank" rel="noopener">勞工處</a> — 工作場所火警危險及職安刊物</li>
+      </ul>
+      <p class="src-line">🧯 消防裝置（滅火筒等）須由<b>註冊承辦商</b>每年至少檢查一次並發出證書。</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>滅火筒類型速查</h3>
+    <table class="tbl">
+      <thead><tr><th>火警類別</th><th>燃燒物</th><th>適用滅火筒</th><th>切勿使用</th></tr></thead>
+      <tbody>
+        <tr><td>A類</td><td>固體（木、紙、布）</td><td>水、AFFF泡沫、乾粉</td><td>—</td></tr>
+        <tr><td>B類</td><td>易燃液體（油、溶劑）</td><td>泡沫、乾粉、CO₂</td><td>水（會令火勢蔓延）</td></tr>
+        <tr><td>C類</td><td>氣體（石油氣、天然氣）</td><td>乾粉（先截斷氣源！）</td><td>—</td></tr>
+        <tr><td>D類</td><td>金屬（鎂、鈉）</td><td>專用D類滅火劑</td><td>水、CO₂</td></tr>
+        <tr><td>F／K類</td><td>食用油脂（廚房）</td><td>濕化學式（Wet Chemical）</td><td>水（劇烈沸溢）</td></tr>
+        <tr><td>帶電設備</td><td>電器火警</td><td>CO₂、乾粉</td><td>水、泡沫（導電）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h3>工作場所防火檢查清單（節錄）</h3>
+      <ul class="plain-list small">
+        <li>☐ 走火通道暢通無阻，防火門保持關閉、無上鎖</li>
+        <li>☐ 出口指示牌及應急照明正常</li>
+        <li>☐ 滅火筒在有效期內、掛放正確、每年註冊承辦商檢查</li>
+        <li>☐ 易燃品以不超量存放於核准危險品倉</li>
+        <li>☐ 電線無破損、無亂接拖板「孖花」、下班關電</li>
+        <li>☐ 員工知道最近兩條逃生路線及集合點</li>
+        <li>☐ 火警演練定期舉行；消防處資料齊備</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>火警應變口訣 R.A.C.E.</h3>
+      <ul class="plain-list small">
+        <li><b>R — Rescue</b> 救人：協助有需要人士撤離</li>
+        <li><b>A — Alarm</b> 報警：按動火警鐘並致電999</li>
+        <li><b>C — Contain</b> 遏止：關上防火門、截斷氣源電源</li>
+        <li><b>E — Extinguish / Evacuate</b>：僅在火勢細小及有退路時用滅火筒；否則立即撤離</li>
+      </ul>
+      <p class="src-line">📚 來源：消防處防火守則及職安局教材。機構應自行編製火警應變計劃並定期演練。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 安全主任 ================= -->
+<section id="so" class="tab-section" hidden>
+  <h2 class="sec-title">👷 註冊安全主任（Registered Safety Officer）</h2>
+  <div class="grid-2">
+    <div class="panel">
+      <h3>什麼是註冊安全主任？</h3>
+      <p>根據<b>第59Z章《工廠及工業經營(安全主任及安全督導員)規例》</b>，指明類別的工業經營（如大型建築地盤、船廠、貨櫃碼頭等）東主須<b>僱用註冊安全主任</b>，協助履行安全責任：視察工作環境、提出改善建議、協助推行安全管理制度及安全培訓等。部分場所另須安排<b>安全督導員</b>（常見為持「平安卡」的施工管理人員）。</p>
+      <p class="src-line">法例來源：<a href="https://www.elegislation.gov.hk/hk/cap59Z" target="_blank" rel="noopener">香港法例第59Z章</a>｜勞工處註冊指南：<a href="https://www.labour.gov.hk/tc/faq/oshq8_whole.html" target="_blank" rel="noopener">勞工處「安全主任及安全審核員的註冊」</a></p>
+    </div>
+    <div class="panel">
+      <h3>註冊資格（概要）</h3>
+      <ul class="plain-list small">
+        <li>持有<b>認可的安全學歷</b>（勞工處認可學位／文憑／職安局課程等）</li>
+        <li>具<b>認可的相關工作經驗</b></li>
+        <li>向勞工處職業安全及健康部遞交申請並獲批准註冊</li>
+        <li>詳細資格準則、認可課程名單及申請表格：<a href="https://www.labour.gov.hk/tc/faq/oshq8_whole.html" target="_blank" rel="noopener">勞工處官方FAQ</a></li>
+      </ul>
+      <div class="contact-box">
+        <b>查詢（來源：勞工處／政府電話簿）</b><br>
+        安全主任註冊及學術資格認可<br>
+        📍 荃灣西樓角路1-17號新領域廣場8樓<br>
+        ☎️ 2151 3615｜✉️ dso_rst_2@labour.gov.hk
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>📊 註冊安全主任數目（自動更新）</h3>
+    <p class="muted" id="rso-note">資料來源：勞工處經 DATA.GOV.HK 發布之「註冊安全主任及安全審核員主要統計數字」開放數據（按年更新）。以下為本站自動下載的原始統計：</p>
+    <div id="rso-chart" class="bar-chart"></div>
+    <div id="rso-table"></div>
+    <p class="src-line">數據：<a id="rso-ds-link" href="https://data.gov.hk/tc-data/dataset/hk-ld-rstd-rstd-keystats" target="_blank" rel="noopener">DATA.GOV.HK 數據集（hk-ld-rstd-rstd-keystats）</a>｜原始檔：<a id="rso-file-link" href="https://www.labour.gov.hk/datagovhk/resource/rstd/rstd-keystats_tc.xlsx" target="_blank" rel="noopener">勞工處 XLSX</a>。以勞工處公佈為準。</p>
+  </div>
+
+  <div class="grid-3">
+    <div class="panel">
+      <h3>🎓 進修途徑</h3>
+      <ul class="link-list small">
+        <li><a href="https://www.oshc.org.hk" target="_blank" rel="noopener">職業安全健康局 OSHC</a> — 認可安全課程、安全審核員課程</li>
+        <li>本地大學職業安全及健康學位／碩士課程</li>
+        <li>建造業議會 <a href="https://www.cic.hk" target="_blank" rel="noopener">CIC</a> — 建造業安全培訓（平安卡等）</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>🤝 行業組織</h3>
+      <ul class="link-list small">
+        <li><a href="https://www.srso.org.hk" target="_blank" rel="noopener">註冊安全主任協會（SRSO）</a></li>
+        <li><a href="https://www.oshc.org.hk" target="_blank" rel="noopener">職業安全健康局（OSHC）</a></li>
+        <li>香港職業安全衞生協會等專業學會</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>💼 執業要點</h3>
+      <ul class="plain-list small">
+        <li>須按第59Z章指定類別場所受聘，職責須獲東主真正授權</li>
+        <li>持續進修：留意勞工處新守則、修例及科技發展</li>
+        <li>記錄及呈報：視察報告、建議跟進須存檔備查</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= YouTube ================= -->
+<section id="youtube" class="tab-section" hidden>
+  <h2 class="sec-title">▶️ YouTube 職安影片</h2>
+  <p class="sec-intro">下方為<b>自動同步</b>官方播放清單(勞工處《職安警示》)的最新影片;完整網主精選及影片管理請使用 Streamlit 版(網主後台)。</p>
+  <div id="yt-latest" class="news-list"><p class="muted">載入中…</p></div>
+  <div class="panel" style="margin-top:1rem">
+    <h3>📺 官方職安頻道</h3>
+    <ul class="link-list">
+      <li><a href="https://www.youtube.com/user/OSHC2009" target="_blank" rel="noopener">職業安全健康局 OSHC(轉載勞工處職安警示)</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLER7fEcUu9f7Vg8z4zUYZiEZWBC9rA4Fc" target="_blank" rel="noopener">勞工處職安警示播放清單</a></li>
+      <li><a href="https://www.youtube.com/channel/UCsK1xjqkm-xHCZTe1E3B26Q" target="_blank" rel="noopener">CIC Channel(建造業議會)</a></li>
+      <li><a href="https://www.youtube.com/@hkic.official" target="_blank" rel="noopener">香港建造學院 HKIC</a></li>
+      <li><a href="https://www.youtube.com/@isdgovhk" target="_blank" rel="noopener">政府新聞處 ISD</a></li>
+    </ul>
+    <p class="src-line">來源:YouTube 官方頻道;本站經 YouTube RSS 自動同步。</p>
+  </div>
+</section>
+
+<!-- ================= 會員專區(留位) ================= -->
+<section id="member" class="tab-section" hidden>
+  <h2 class="sec-title">👤 會員專區(預留)</h2>
+  <div class="panel">
+    <h3>系統留位說明</h3>
+    <p>會員系統為<b>預留功能</b>:完整註冊/登入功能設於 <b>Streamlit 版</b>(側欄「👤 會員專區」),日後可擴充收藏、課程報名、證書到期提醒等。目前先開放網主的 Google Drive 檔案資源庫:</p>
+    <p><a class="btn-refresh" style="text-decoration:none;display:inline-block" href="https://drive.google.com/drive/folders/17fBRgBi7aVPOJ7Il-nFBU0fMWKIlJ7oc?usp=sharing" target="_blank" rel="noopener">📁 開啟 Google Drive 資源庫</a></p>
+    <p class="src-line">🔒 會員資料僅存於應用程式容器(示範用途),請勿輸入真實密碼。</p>
+  </div>
+</section>
+
+<!-- ================= 資訊來源 ================= -->
+<section id="sources" class="tab-section" hidden>
+  <h2 class="sec-title">📚 資訊來源說明</h2>
+  <p class="sec-intro">本網<b>不自行生產任何官方資訊</b>：新聞及統計全部來自下列官方來源並自動抓取；靜態參考內容（法例簡介、PPE標準、防火知識等）均於文末列明出處。每項自動更新的新聞在列表中亦會顯示其來源機構。</p>
+
+  <div class="panel">
+    <h3>① 自動更新來源（即時狀態）</h3>
+    <p class="muted">下表由更新腳本自動寫入，顯示每個來源的抓取方式、最近更新時間及狀態：</p>
+    <div id="src-status-table"></div>
+  </div>
+
+  <div class="panel">
+    <h3>② 來源機構一覽</h3>
+    <table class="tbl">
+      <thead><tr><th>機構</th><th>提供內容</th><th>本網更新方式</th><th>官方網址</th></tr></thead>
+      <tbody>
+        <tr><td>香港特區政府<b>勞工處</b>（職業安全及健康部）</td><td>職安法例、工作守則、刊物、職安統計、註冊安全主任、新聞公報</td><td>新聞公報RSS（經政府新聞公報）+ 靜態連結</td><td><a href="https://www.labour.gov.hk" target="_blank" rel="noopener">labour.gov.hk</a></td></tr>
+        <tr><td><b>政府新聞公報</b>（政府新聞處）</td><td>全政府部門新聞公報（含勞工處、消防處）</td><td>RSS 自動抓取 + 關鍵字篩選</td><td><a href="https://www.info.gov.hk" target="_blank" rel="noopener">info.gov.hk</a></td></tr>
+        <tr><td><b>香港政府新聞網</b></td><td>頭條、法律及治安、政府施政新聞</td><td>RSS 自動抓取</td><td><a href="https://www.news.gov.hk" target="_blank" rel="noopener">news.gov.hk</a></td></tr>
+        <tr><td><b>香港電台 RTHK</b></td><td>本地／國際新聞（含工傷意外報道）</td><td>RSS 自動抓取 + 關鍵字篩選</td><td><a href="https://news.rthk.hk" target="_blank" rel="noopener">news.rthk.hk</a></td></tr>
+        <tr><td>中國<b>應急管理部</b></td><td>內地安全生產、應急管理新聞</td><td>網頁抓取（每日）</td><td><a href="https://www.mem.gov.cn" target="_blank" rel="noopener">mem.gov.cn</a></td></tr>
+        <tr><td>美國 <b>OSHA</b></td><td>美國職安法規、新聞發布</td><td>網頁抓取（每日）</td><td><a href="https://www.osha.gov" target="_blank" rel="noopener">osha.gov</a></td></tr>
+        <tr><td>英國 <b>HSE</b></td><td>英國職安新聞、研究及指引</td><td>網頁抓取（每日）</td><td><a href="https://www.hse.gov.uk" target="_blank" rel="noopener">hse.gov.uk</a></td></tr>
+        <tr><td>勞工處 × <b>DATA.GOV.HK</b></td><td>註冊安全主任及安全審核員統計數字（開放數據）</td><td>XLSX 自動下載解析</td><td><a href="https://data.gov.hk/tc-data/dataset/hk-ld-rstd-rstd-keystats" target="_blank" rel="noopener">數據集頁面</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h3>③ 靜態參考內容來源</h3>
+    <ul class="plain-list small">
+      <li><b>法例簡介：</b>勞工處職安法例專頁（<a href="https://www.labour.gov.hk/tc/legislat/contentB3.htm" target="_blank" rel="noopener">職安法例一覽</a>）、電子版香港法例（<a href="https://www.elegislation.gov.hk" target="_blank" rel="noopener">elegislation.gov.hk</a>）</li>
+      <li><b>工作守則：</b>勞工處「乙部：工作守則」官方清單（<a href="https://www.labour.gov.hk/tc/public/content2_8b.htm" target="_blank" rel="noopener">content2_8b.htm</a>）</li>
+      <li><b>安全主任註冊：</b>勞工處FAQ（<a href="https://www.labour.gov.hk/tc/faq/oshq8_whole.html" target="_blank" rel="noopener">oshq8_whole.html</a>）、香港法例第59Z章</li>
+      <li><b>PPE 標準：</b>CEN（EN系列）、ANSI/ISEA、ISO、國標GB；應用原則參考勞工處及職安局刊物</li>
+      <li><b>MSDS／GHS：</b>聯合國GHS制度、ISO 11014；查詢渠道 PubChem（美國國家醫學圖書館）</li>
+      <li><b>AI／4S：</b>發展局（<a href="https://www.devb.gov.hk" target="_blank" rel="noopener">devb.gov.hk</a>）、建造業議會（<a href="https://www.cic.hk" target="_blank" rel="noopener">cic.hk</a>）</li>
+      <li><b>防火安全：</b>消防處（<a href="https://www.fsd.gov.hk" target="_blank" rel="noopener">fsd.gov.hk</a>）、香港法例第572/502/295章</li>
+      <li><b>國際標準參考：</b>國際勞工組織 ILO（<a href="https://www.ilo.org" target="_blank" rel="noopener">ilo.org</a>）</li>
+    </ul>
+  </div>
+
+  <div class="panel notice">
+    <h3>⚠️ 免責聲明</h3>
+    <ul class="plain-list small">
+      <li>本網為<b>非官方</b>資訊整合平台，與香港特區政府或任何機構無關。</li>
+      <li>所有資訊僅供參考；法律、技術及統計事宜一律<b>以官方來源最新公佈為準</b>。</li>
+      <li>自動抓取的新聞標題及連結版權屬原本機構；點擊連結即前往原文。</li>
+      <li>「工傷新聞」為關鍵字自動分類，可能遺漏或誤分，不作官方統計用途。</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><b>香港職業安全資訊網</b>（非官方）· 資料來源見「📚 資訊來源」· 本頁內容僅供參考，以官方公佈為準。</p>
+    <p class="muted">自動更新：執行 <code>python scripts/update_data.py</code>（可加入工作排程器／cron）或使用 <code>python scripts/serve.py</code> 啟動後按「立即更新」。</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
