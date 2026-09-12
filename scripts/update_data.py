@@ -46,8 +46,11 @@ OSH_KEYWORDS = [
     "昏迷", "被困", "火警", "火災", "爆炸", "洩漏", "倒塌", "中毒",
     "安全事故", "消防", "建造業", "工地", "棚架", "吊運", "密閉空間",
     "註冊安全主任", "安全主任", "僱員", "僱主", "勞工", "檢控", "定罪",
-    "安全智慧工地", "個人防護裝備",
+    "安全智慧工地", "個人防護裝備", "中暑", "暑熱", "職安警示", "安全警示",
+    " 工作意外", "工場", "工廈工作",
 ]
+# 誤配排除:標題含以下詞彙即剔除(例如「食物中毒」並非職安)
+EXCLUDE_KEYWORDS = ["食物中毒", "中毒個案組"]
 # 工傷/意外類關鍵字(較嚴格,用於「工傷新聞」分類)
 ACCIDENT_KEYWORDS = [
     "工傷", "工業意外", "意外", "致命", "奪命", "墮斃", "墮樓", "墮海",
@@ -67,7 +70,7 @@ SOURCES = [
      "home": "https://www.news.gov.hk", "filter": True, "cap": 25},
     {"id": "news_law", "region": "HK", "label": "香港政府新聞網·法律及治安",
      "method": "rss", "url": "https://www.news.gov.hk/tc/categories/law_order/html/articlelist.rss.xml",
-     "home": "https://www.news.gov.hk", "filter": False, "cap": 30},
+     "home": "https://www.news.gov.hk", "filter": True, "cap": 30},
     {"id": "news_admin", "region": "HK", "label": "香港政府新聞網·政府施政",
      "method": "rss", "url": "https://www.news.gov.hk/tc/categories/admin/html/articlelist.rss.xml",
      "home": "https://www.news.gov.hk", "filter": True, "cap": 25},
@@ -110,6 +113,13 @@ RSO_STATS = {
 
 def now_hkt():
     return datetime.now(HKT).strftime("%Y-%m-%d %H:%M")
+
+
+def load_json_file(path):
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception:
+        return {}
 
 
 # ---------------------------------------------------------------- 網絡抓取
@@ -282,6 +292,38 @@ def read_xlsx_rows(data, max_rows=120):
 
 
 # ---------------------------------------------------------------- 主流程
+# ---------------------------------------------------------------- 法例變更監察
+LEGAL_WATCH = [
+    {"id": "ld_amend", "label": "勞工處:職安修例專頁",
+     "url": "https://www.labour.gov.hk/tc/news/Amendment_Ordinance.htm"},
+    {"id": "ld_legis", "label": "勞工處:職安法例一覽",
+     "url": "https://www.labour.gov.hk/tc/legislat/contentB3.htm"},
+]
+
+
+def watch_legals(fetched=None, baseline=None):
+    """比對勞工處法例頁面內容雜湊,偵測變更。baseline: {url: {"hash":..., "acked_at":...}}。
+    只報告變更,不會自行更新基準(由網主在後台確認後才更新)。"""
+    fetched = fetched or now_hkt()
+    baseline = baseline or {}
+    out = []
+    for w in LEGAL_WATCH:
+        try:
+            text = fetch(w["url"])
+            body = re.sub(r"<script.*?</script>|<style.*?</style>", "", text, flags=re.S | re.I)
+            h = hashlib.sha256(strip_tags(body).encode("utf-8")).hexdigest()[:16]
+            prev = baseline.get(w["url"], {})
+            changed = bool(prev.get("hash")) and prev["hash"] != h
+            out.append({"id": w["id"], "label": w["label"], "url": w["url"],
+                        "hash": h, "changed": changed, "last_checked": fetched,
+                        "first_seen": prev.get("first_seen", fetched)})
+        except Exception as e:
+            out.append({"id": w["id"], "label": w["label"], "url": w["url"],
+                        "hash": None, "changed": False, "error": str(e)[:80],
+                        "last_checked": fetched})
+    return out
+
+
 def fetch_source(src, fetched):
     try:
         text = fetch(src["url"])
@@ -290,8 +332,10 @@ def fetch_source(src, fetched):
         else:
             items = parse_html_list(text, src["url"], src, fetched)
         if src.get("filter"):
-            filtered = [i for i in items if any(k in i["title"] + i["summary"] for k in OSH_KEYWORDS)]
-            items = filtered or items[:3]  # 全部不合關鍵字時保留前3條作參考
+            items = [i for i in items if any(k in i["title"] + i["summary"] for k in OSH_KEYWORDS)]
+        # 剔除誤配(如食物中毒)
+        items = [i for i in items
+                 if not any(k in i["title"] for k in EXCLUDE_KEYWORDS)]
         items = items[: src.get("cap", 30)]
         return items, "ok"
     except Exception as e:  # 單一來源失敗不影響整體
@@ -353,15 +397,17 @@ def main():
     print(f"[{fetched}] 開始更新香港職業安全資訊網資料…")
 
     all_items, source_status = collect_news(fetched)
+    legal_watch = watch_legals(fetched, load_json_file(DATA_DIR / "legal_watch.json"))
     (DATA_DIR / "news.json").write_text(
         json.dumps({
             "generated_at": fetched,
             "description": "由 scripts/update_data.py 自動抓取之官方來源資訊,全部內容版權屬原本機構。",
             "sources": source_status,
+            "legal_watch": legal_watch,
             "count": len(all_items),
             "items": all_items,
         }, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"  ✓ data/news.json:共 {len(all_items)} 條")
+    print(f"  ✓ data/news.json:共 {len(all_items)} 條;法例監察:{sum(1 for w in legal_watch if w.get('changed'))} 項有變更")
 
     try:
         stats = collect_rso(fetched)

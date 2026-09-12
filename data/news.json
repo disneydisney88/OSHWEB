@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-12 07:55",
+ "generated_at": "2026-09-13 07:29",
  "description": "由 scripts/update_data.py 自動抓取之官方來源資訊,全部內容版權屬原本機構。",
  "sources": [
   {
@@ -10,7 +10,7 @@
    "url": "https://www.info.gov.hk/gia/rss/general_zh.xml",
    "status": "ok",
    "count": 14,
-   "fetched": "2026-09-12 07:55"
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "news_top",
@@ -19,8 +19,8 @@
    "method": "RSS 訂閱",
    "url": "https://www.news.gov.hk/tc/common/html/topstories.rss.xml",
    "status": "ok",
-   "count": 3,
-   "fetched": "2026-09-12 07:55"
+   "count": 0,
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "news_law",
@@ -29,8 +29,8 @@
    "method": "RSS 訂閱",
    "url": "https://www.news.gov.hk/tc/categories/law_order/html/articlelist.rss.xml",
    "status": "ok",
-   "count": 18,
-   "fetched": "2026-09-12 07:55"
+   "count": 3,
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "news_admin",
@@ -39,8 +39,8 @@
    "method": "RSS 訂閱",
    "url": "https://www.news.gov.hk/tc/categories/admin/html/articlelist.rss.xml",
    "status": "ok",
-   "count": 2,
-   "fetched": "2026-09-12 07:55"
+   "count": 0,
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "rthk_local",
@@ -48,9 +48,9 @@
    "region": "HK",
    "method": "RSS 訂閱",
    "url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_clocal.xml",
-   "status": "ok",
-   "count": 3,
-   "fetched": "2026-09-12 07:55"
+   "status": "失敗:URLError: <urlopen error [WinError 10060] 連線嘗試失敗，因為連線對象有一段時間並未正確回應，或是連線建立失敗，因為連線的主機無法回應。>",
+   "count": 0,
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "rthk_intl",
@@ -58,9 +58,9 @@
    "region": "INTL",
    "method": "RSS 訂閱",
    "url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_cinternational.xml",
-   "status": "ok",
-   "count": 1,
-   "fetched": "2026-09-12 07:55"
+   "status": "失敗:URLError: <urlopen error [WinError 10060] 連線嘗試失敗，因為連線對象有一段時間並未正確回應，或是連線建立失敗，因為連線的主機無法回應。>",
+   "count": 0,
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "mem_cn",
@@ -70,7 +70,7 @@
    "url": "https://www.mem.gov.cn/xw/bndt/",
    "status": "ok",
    "count": 20,
-   "fetched": "2026-09-12 07:55"
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "yt_alert",
@@ -80,7 +80,7 @@
    "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLER7fEcUu9f7Vg8z4zUYZiEZWBC9rA4Fc",
    "status": "ok",
    "count": 1,
-   "fetched": "2026-09-12 07:55"
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "hko_warn",
@@ -90,7 +90,7 @@
    "url": "https://rss.weather.gov.hk/rss/WeatherWarningSummaryv2_uc.xml",
    "status": "ok",
    "count": 1,
-   "fetched": "2026-09-12 07:55"
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "osha",
@@ -100,7 +100,7 @@
    "url": "https://www.osha.gov/news/newsreleases",
    "status": "ok",
    "count": 15,
-   "fetched": "2026-09-12 07:55"
+   "fetched": "2026-09-13 07:29"
   },
   {
    "id": "hse",
@@ -110,36 +110,82 @@
    "url": "https://press.hse.gov.uk/feed/",
    "status": "ok",
    "count": 10,
-   "fetched": "2026-09-12 07:55"
+   "fetched": "2026-09-13 07:29"
   }
  ],
- "count": 88,
+ "legal_watch": [
+  {
+   "id": "ld_amend",
+   "label": "勞工處:職安修例專頁",
+   "url": "https://www.labour.gov.hk/tc/news/Amendment_Ordinance.htm",
+   "hash": "7e51e22617c8fb44",
+   "changed": false,
+   "last_checked": "2026-09-13 07:29",
+   "first_seen": "2026-09-13 07:29"
+  },
+  {
+   "id": "ld_legis",
+   "label": "勞工處:職安法例一覽",
+   "url": "https://www.labour.gov.hk/tc/legislat/contentB3.htm",
+   "hash": "48dad30722ce2030",
+   "changed": false,
+   "last_checked": "2026-09-13 07:29",
+   "first_seen": "2026-09-13 07:29"
+  }
+ ],
+ "count": 64,
  "items": [
   {
-   "id": "d4fb53ffbbe0",
-   "title": "緬甸曼德勒國際機場於襲擊後重新開放",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1869733-20260912.htm",
-   "source_id": "rthk_intl",
-   "source_label": "香港電台·國際新聞",
-   "region": "INTL",
+   "id": "151fac86ad2d",
+   "title": "裝備升級 訓練革新",
+   "url": "https://www.news.gov.hk/chi/2026/09/20260911/20260911_155748_312.html",
+   "source_id": "news_law",
+   "source_label": "香港政府新聞網·法律及治安",
+   "region": "HK",
    "kind": "news",
-   "date": "2026-09-12 02:21",
-   "fetched": "2026-09-12 07:55",
-   "summary": "緬甸曼德勒國際機場運行指揮中心表示，機場內的航班已經恢復正常，旅客可在機場搭乘航班。 緬甸傳媒較早時報道，當地星期四下午，有恐怖分子使用6架無人機對曼德勒國際機場及周邊區域發動襲擊。安全部隊攔截了無人機，並對無人機攜帶的爆炸物進行無害化處理。襲擊未造成人員傷亡，車輛及跑道亦未受損。機場部分航班一度暫時停飛。報道說，緬甸",
+   "date": "2026-09-13 00:00",
+   "fetched": "2026-09-13 07:29",
+   "summary": "濃煙滾滾，視線受阻，要與烈焰對抗，除了倚仗消防員的勇氣，也需精良裝備作為後盾。 消防處今年全面更換新一代呼吸器，並在訓練設施上引入靈活的活動式間隔系統，從裝備到訓練，為前線消防員打造更堅實防線。 先利其器 「以往替換氣樽需要像扭螺絲一樣轉動接頭，耗時約一分半鐘；現在換上快速接頭，只需對準、輕按，不到十秒便完成。」 消防",
    "category": "news"
   },
   {
-   "id": "590280cea766",
-   "title": "深水埗男工外牆搭建吊棚疑高處墮下不治 勞工處發暫時停工通知書",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1869720-20260911.htm",
-   "source_id": "rthk_local",
-   "source_label": "香港電台·本地新聞",
+   "id": "4a74c01d8ca1",
+   "title": "發出強烈季候風信號 (23:00 HKT 12/09/2026)",
+   "url": "http://www.weather.gov.hk/textonly/warning/warnc.htm",
+   "source_id": "hko_warn",
+   "source_label": "天文台·天氣警示",
+   "region": "HK",
+   "kind": "weather",
+   "date": "2026-09-12 23:00",
+   "fetched": "2026-09-13 07:29",
+   "summary": "強烈季候風信號在23時00分發出( 2026年9月12日 )。",
+   "category": "news"
+  },
+  {
+   "id": "b42b02b885dc",
+   "title": "天氣酷熱 衞生署提醒市民預防高溫引發的疾病",
+   "url": "https://www.info.gov.hk/gia/general/202609/12/P2026091200494.htm",
+   "source_id": "gia",
+   "source_label": "香港政府新聞公報(含勞工處)",
    "region": "HK",
    "kind": "news",
-   "date": "2026-09-11 20:46",
-   "fetched": "2026-09-12 07:55",
-   "summary": "勞工處高度關注在深水埗一幢大廈外牆發生的致命工業意外，一名男工在外牆搭建吊棚時，從高處墮下，送院後證實不治。勞工處對此十分難過，並對他的家屬致以深切慰問，已即時派員到意外現場展開調查。 發言人表示，已向有關承建商發出「暫時停工通知書」，停止其在該大廈外牆搭建、更改、拆卸及使用棚架，直至信納有關承建商已採取適當的措施消除",
-   "category": "accident"
+   "date": "2026-09-12 15:39",
+   "fetched": "2026-09-13 07:29",
+   "summary": "天氣酷熱，衞生署衞生防護中心（中心）今日（九月十二日）提醒市民，應採取適當措施預防高溫引發的疾病，例如熱痙攣、熱衰竭和中暑。 在高溫環境下，大量出汗及散熱困難，均會導致身體不勝負荷，市民應採取以下預防措施： 適時補充水分，以防脫水； 穿着淺色、寬鬆及通爽的衣物，減少吸熱，方便排汗及散熱； 保持室內空氣流通和適宜的溫度和",
+   "category": "news"
+  },
+  {
+   "id": "9edc7b4a60ec",
+   "title": "酷熱天氣警告已發出",
+   "url": "https://www.info.gov.hk/gia/general/202609/12/P2026091200488.htm",
+   "source_id": "gia",
+   "source_label": "香港政府新聞公報(含勞工處)",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-09-12 15:39",
+   "fetched": "2026-09-13 07:29",
+   "summary": "電台及電視台當值宣布員注意： 請盡速播出下列特別報告： 天文台已發出酷熱天氣警告。 預防中暑，要避免長時間在戶外活動。 如果要在戶外活動或工作，最好戴寬邊帽，穿淺色、寬鬆的衣服，盡量留在蔭涼的地方。 要充分喝水，但避免喝含咖啡因或酒精的飲品。 如有不適，要盡快看醫生。",
+   "category": "news"
   },
   {
    "id": "0d0e49d33568",
@@ -150,34 +196,8 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-11 20:35",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "勞工處高度關注今日（九月十一日）上午在深水埗一幢大廈外牆發生的致命工作意外。意外中，一名男工在外牆搭建吊棚時，從高處墮下，送院後證實不治。對於在意外中有工友身故，勞工處十分難過，並對其家屬致以深切慰問。 勞工處發言人說：「在得知意外發生後，本處已即時派員到意外現場展開調查。我們已向有關承建商發出『暫時停工通知書』，停止",
-   "category": "accident"
-  },
-  {
-   "id": "cd12ae6f5fd8",
-   "title": "孫玉菡：人才計劃毋須劃定上限",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1869709-20260911.htm",
-   "source_id": "rthk_local",
-   "source_label": "香港電台·本地新聞",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-11 19:38",
-   "fetched": "2026-09-12 07:55",
-   "summary": "勞工及福利局局長孫玉菡，與來自歐洲的創科創業者交流，他說無論是哪裡的人才，香港都歡迎，又認為人才計劃毋須劃定上限。 編輯：王濱南",
-   "category": "news"
-  },
-  {
-   "id": "609e8203b35c",
-   "title": "何文田有私家車疑撞上行人路 3人受傷送院",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1869715-20260911.htm",
-   "source_id": "rthk_local",
-   "source_label": "香港電台·本地新聞",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-11 19:38",
-   "fetched": "2026-09-12 07:55",
-   "summary": "何文田忠孝街下午5時許，有私家車懷疑撞上行人路，兩女一男受傷，全部送往伊利沙伯醫院治理。 編輯：任順熙",
    "category": "accident"
   },
   {
@@ -189,7 +209,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-11 19:33",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "以下是保安局局長鄧炳強今日（九月十一日）在添馬政府總部就「支聯會煽動顛覆國家政權案」判刑會見傳媒的談話內容： 保安局局長：各位香港市民、各位記者朋友，大家好。就「支聯會」、李卓人、何俊仁和鄒幸彤被控煽動顛覆國家政權罪的案件，高等法院原訟庭在八月二十一日已作出定罪裁決，今早作出判刑。三名被告分別被判囚五年兩個月至七年三個",
    "category": "news"
   },
@@ -202,7 +222,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-11 16:40",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "以下是勞工及福利局局長孫玉菡和香港人才服務辦公室（人才辦）總監陳海勁今日（九月十一日）早上在數碼港與全球創科人才考察團成員交流後會見傳媒的談話內容： 勞工及福利局局長：大家好，很高興今日大家來到數碼港，我們邀請了總共二十位歐洲的年青人來到香港、深圳前海及廣州南沙，共五、六天的行程，看看這裏整個創科和未來發展的生態圈。去",
    "category": "news"
   },
@@ -215,7 +235,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-11 16:30",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "入境事務處（入境處）於九月四日至昨日（九月十日）在全港多區展開反非法勞工行動，包括「曙光行動」、聯同香港警務處執行的「冠軍行動」以及聯同香港海關、香港警務處、食物環境衞生署和康樂及文化事務署等執行的聯合行動。行動中，調查人員搜查了多個目標地點，包括餐廳、髮型屋及零售店等，共拘捕十七名懷疑非法勞工、一名涉嫌聘用非法勞工的",
    "category": "news"
   },
@@ -228,7 +248,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-11 16:07",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "勞工處現正調查今日（九月十一日）上午在深水埗發生的一宗致命工作意外，意外中一名男子死亡。 勞工處接報後已即時派員到現場，現正就意外原因展開調查。",
    "category": "accident"
   },
@@ -241,7 +261,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-11 13:20",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "就「支聯會」、李卓人、何俊仁及鄒幸彤被控「煽動顛覆國家政權罪」（違反《香港國安法》第二十三條）的案件，高等法院原訟法庭於八月二十一日作出定罪判決後，於今日（九月十一日）判刑。鄒幸彤被判監禁七年三個月、李卓人被判監禁七年、早前認罪的何俊仁被判監禁五年兩個月，而「支聯會」則被判罰款150萬港元。 法庭裁定本案屬於「情節嚴重",
    "category": "news"
   },
@@ -254,60 +274,8 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-11 11:03",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "路政署今日（九月十一日）招標承投「為行人天橋、高架行人道及行人隧道加建暢道通行設施（第十組）—工地準備工程」工程（合約編號：HY／2026／06）。 工程預計於二○二六年十二月展開，約需時四十八個月完成。工程主要為行人天橋、高架行人道及行人隧道加建暢道通行設施（第十組）進行工地準備工程包括地盤勘察、公用設施遷移工程及相",
-   "category": "news"
-  },
-  {
-   "id": "a25042d6d6dd",
-   "title": "特首：法律不容假借民主傷害國家",
-   "url": "https://www.news.gov.hk/chi/2026/09/20260911/20260911_132456_243.html",
-   "source_id": "news_top",
-   "source_label": "香港政府新聞網·頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-11 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "高等法院原訟法庭今日就「支聯會」、李卓人、何俊仁、鄒幸彤被控煽動顛覆國家政權罪，違反《香港國安法》第23條的案件判刑。行政長官李家超說，判刑顯示法庭確定被告所犯罪行非常嚴重，必須嚴懲，又指法律從不容許任何人假借人權、民主和自由之名偷樑換柱，公然傷害自己的國家及同胞。 鄒幸彤被法庭判處監禁七年三個月、李卓人被判監禁七年、",
-   "category": "news"
-  },
-  {
-   "id": "099a0c725504",
-   "title": "支聯會案判刑彰顯法律公義",
-   "url": "https://www.news.gov.hk/chi/2026/09/20260911/20260911_165101_775.html",
-   "source_id": "news_top",
-   "source_label": "香港政府新聞網·頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-11 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "高等法院原訟法庭今日就「支聯會」、李卓人、何俊仁、鄒幸彤被控煽動顛覆國家政權罪，違反《香港國安法》第23條的案件判刑。保安局局長鄧炳強指，法庭的裁決和判刑斷定此案情節嚴重，必須嚴懲以彰顯法治。 鄧炳強今日會見傳媒時說，案件清晰揭露「支聯會」的本質，其綱領目標是要推翻和破壞中國共產黨在《憲法》下的領導地位。「支聯會」長期",
-   "category": "news"
-  },
-  {
-   "id": "7a5813a238bc",
-   "title": "銀債申請最多獲發13手",
-   "url": "https://www.news.gov.hk/chi/2026/09/20260911/20260911_172210_052.html",
-   "source_id": "news_top",
-   "source_label": "香港政府新聞網·頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-11 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "新一批銀色債券的認購和配發結果今日公布，有效申請均可獲配發債券，最多可獲13手。 銀色債券的最終發行額為550億元，有效申請共476,703份，本金總額逾1,193億元。 認購12手或以下債券的申請88,422份，均獲全數配發；認購12手以上的388,281份申請先獲配發12手債券，抽籤後97,396份申請獲多配一手債",
-   "category": "news"
-  },
-  {
-   "id": "1afd35e1e0d4",
-   "title": "選委會界別分組選舉活動指引發表",
-   "url": "https://www.news.gov.hk/chi/2026/09/20260911/20260911_150612_001.html",
-   "source_id": "news_admin",
-   "source_label": "香港政府新聞網·政府施政",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-11 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "選舉管理委員會今日發表選舉委員會界別分組選舉活動 指引 ，並提醒有意參選人士和其他持份者仔細閱讀指引和相關選舉法例，嚴格遵守相關法例和指引。 指引適用於11月22日舉行的2026年選委會界別分組一般選舉，以及其後的選委會界別分組補選。指引可在選管會網站下載，或於選舉事務處辦事處、各區民政事務處民政諮詢中心、各主要和分區",
    "category": "news"
   },
   {
@@ -319,7 +287,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-10 17:30",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "​政府今日（九月十日）公布再度委任陳賢宗、連正森和潘海琳為建造業創新及科技基金督導委員會成員，任期至二○二八年十二月三十一日。 政府於二○一八年成立建造業創新及科技基金，旨在提升企業及從業員應用新技術的能力，並支援業界應用創新科技。政府今年再向基金注資10億元，連同建造業議會出資四億元，合共14億元，以繼續推動建造業，",
    "category": "news"
   },
@@ -332,7 +300,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-10 16:50",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "​一名婚禮布置公司男東主於銷售服務時作出不當地接受付款的營業行為，違反《商品說明條例》（《條例》），於七月三十一日在九龍城裁判法院被裁定罪成後，今日（九月十日）被判處二百四十小時社會服務令。法庭亦下令該男東主須向案中受害人賠償約四萬五千元。 海關早前接獲多宗舉報，指一間位於新蒲崗的婚禮布置公司於二○二五年五月突然結業，",
    "category": "news"
   },
@@ -345,7 +313,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-10 15:50",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "​一間本地貨運代理因沒有根據及按照出口許可證而輸出禁運物品，即中藥材及中成藥，違反《進出口條例》，今日（九月十日）在觀塘裁判法院被判處罰款二萬元。 香港海關在調查一宗出口禁運物品案件時，發現一間本地貨運代理在沒有有效出口許可證下，將一批中藥材威靈仙及一批含「阿膠」成份的中成藥出口往加拿大，估計市值共約六萬七千元。 海關",
    "category": "news"
   },
@@ -358,34 +326,8 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-10 11:00",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "​兩名業主由於不遵從根據《建築物條例》（第123章）發出的清拆令，昨日（九月九日）在西九龍裁判法院被定罪及判罰款合共154,140元。 第一宗個䅁涉及葵涌葵秀路一幢工業大廈天台上加建的圍牆及面積共約260平方米的若干搭建物。該等僭建物並無事先獲得屋宇署的批准及同意，屋宇署根據《建築物條例》第24（1）條向業主發出清拆令",
-   "category": "news"
-  },
-  {
-   "id": "4a74c01d8ca1",
-   "title": "現時並無警告生效 (05:45 HKT 10/09/2026)",
-   "url": "http://www.weather.gov.hk/textonly/warning/warnc.htm",
-   "source_id": "hko_warn",
-   "source_label": "天文台·天氣警示",
-   "region": "HK",
-   "kind": "weather",
-   "date": "2026-09-10 05:45",
-   "fetched": "2026-09-12 07:55",
-   "summary": "現時並無警告生效。",
-   "category": "news"
-  },
-  {
-   "id": "6a43442e25f6",
-   "title": "特首晤深圳市委書記",
-   "url": "https://www.news.gov.hk/chi/2026/09/20260910/20260910_203543_676.html",
-   "source_id": "news_admin",
-   "source_label": "香港政府新聞網·政府施政",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-10 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "行政長官李家超今日在禮賓府與深圳市委書記靳磊會面，就深化港深合作交流意見，並共同見證兩地簽署多份合作備忘錄和協議。 李家超歡迎靳磊書記率團訪港。李家超表示，港深一直在經貿和人文交流等領域關係密切，在港深合作機制下，兩地設立了不同合作專班，在各重點領域持續深化協作。今日簽署的合作備忘錄和協議涵蓋金融、創新科技、服務企業出",
    "category": "news"
   },
   {
@@ -397,7 +339,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-09 20:54",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Maintenance engineer suffered catastrophic, life-changing injuries after his arm was pulled into an unguarded conveyor Working alone, he waved at a CCTV camera ",
    "category": "news"
   },
@@ -410,7 +352,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-09 19:59",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Gheorghita Arsene, 33, died after being buried under around two tonnes of soil when the trench collapsed at a site in Banstead on 24 June 2020. A joint investig",
    "category": "news"
   },
@@ -423,35 +365,9 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-09 19:42",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "勞工處發言人今日（九月九日）表示，就去年十一月二十六日在大埔宏福苑樓宇修葺工程地盤發生的火災導致五名工程承建商人員遇難，經徵詢律政司意見後，勞工處現階段根據《工廠及工業經營條例》（第59章）循公訴程序，向相關持責者（包括承建商、工程顧問及個別人士）就違反該條例下的「一般責任」條文提出共25項檢控。 發言人強調，勞工處絕",
    "category": "accident"
-  },
-  {
-   "id": "f8d98e07cedc",
-   "title": "入境事務處與旅遊業監管局採取聯合行動打擊非法勞工拘兩人（附圖）",
-   "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900607.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-09 18:52",
-   "fetched": "2026-09-12 07:55",
-   "summary": "入境事務處（入境處）聯同旅遊業監管局（旅監局）於九月七及八日一連兩日展開反非法勞工行動，打擊非法勞工在港提供導遊及攝影服務，拘捕兩名懷疑從事非法工作的內地旅客。 因應有懷疑非法勞工利用社交媒體宣傳，聲稱可來港提供導遊及攝影服務，入境處聯同旅監局以「放蛇」方式喬裝顧客，透過社交平台向目標人物查詢及預訂服務。其後，當兩名目",
-   "category": "news"
-  },
-  {
-   "id": "77a55ad6d6f3",
-   "title": "​保安局局長率領紀律部隊首長出席江蘇全球公共安全合作論壇（連雲港）2026年大會（附圖）",
-   "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900539.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-09 18:08",
-   "fetched": "2026-09-12 07:55",
-   "summary": "保安局局長鄧炳強今日（九月九日）率領六支紀律部隊的首長，包括警務處處長周一鳴、入境事務處處長郭俊峯、海關關長陳子達、懲教署署長黃國興、消防處處長楊恩健和政府飛行服務隊總監廖嘉俊機長，出席在江蘇舉行的全球公共安全合作論壇（連雲港）2026年大會。 今年大會的主題為「團結推動公共安全治理 為動盪世界注入穩定力量」。與會者來",
-   "category": "news"
   },
   {
    "id": "a9e880e83a39",
@@ -462,35 +378,9 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-09 00:00",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "屋宇署今日就去年11月26日大埔宏福苑火災所涉大型樓宇維修工程，向兩間公司和四名人士提出合共259項檢控。 兩間被起訴公司為宏福苑維修工程的工程顧問公司鴻毅建築師有限公司、工程總承建商宏業建築工程有限公司。四名被起訴人士為鴻毅董事黃俠然、該公司聘用的註冊檢驗人員吳躍，以及宏業兩名董事侯華建和何建業。 宏福苑火災後，屋宇",
    "category": "accident"
-  },
-  {
-   "id": "0d505beff46f",
-   "title": "國際法律培訓班提升涉外法治能力",
-   "url": "https://www.news.gov.hk/chi/2026/09/20260907/20260907_144705_518.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-07 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "香港國際法律人才培訓學院首次與商務部聯合主辦的國際經貿及國際投資法律實務培訓班今日展開。 律政司司長林定國在開班儀式致辭時表示，香港作為國際金融、貿易及專業服務中心，長期以來與內地及國際社會保持緊密的經貿聯繫，培訓班旨在提升參加者應對新興風險和挑戰的能力，使他們了解瞬息萬變的政策和市場發展，增進與國際同業的交流，從而制",
-   "category": "news"
-  },
-  {
-   "id": "9ecbee4d724c",
-   "title": "國安處拘兩男一女",
-   "url": "https://www.news.gov.hk/chi/2026/09/20260905/20260905_132050_447.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-05 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "警方發現8月31日晚上有人在港鐵太子站外手持花束站立，叫喊具煽動性口號。警務處國家安全處本月3日以涉嫌違反《維護國家安全條例》「出於煽動意圖作出具煽動意圖的作為」罪拘捕兩男一女。 三名涉案人年齡介乎33至79歲。他們涉嫌散播假消息，以謊言攻擊特區政府和抹黑警隊，意圖煽動他人引起對特區政府和執法部門的憎恨。三人現時仍然被",
-   "category": "news"
   },
   {
    "id": "d54c4b8f6c0a",
@@ -501,7 +391,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-04 22:39",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Colin Williams died at the scene after being crushed under an All Terrian Vehicle (ATV) Neither of the men in the ATV were wearing seatbelts or had received ade",
    "category": "news"
   },
@@ -514,21 +404,8 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-04 18:17",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Worker suffered multiple fractures after arm was caught in unguarded conveyor machinery. HSE investigation found the company failed to prevent access to dangero",
-   "category": "news"
-  },
-  {
-   "id": "dd9fe0b60b12",
-   "title": "推廣憲法基本法資助計劃接受申請",
-   "url": "https://www.news.gov.hk/chi/2026/09/20260904/20260904_161635_780.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-04 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "政制及內地事務局公布，新一輪《憲法》和《基本法》推廣活動及研究資助計劃接受申請，11月13日截止。 為配合明年慶祝香港回歸祖國30周年，在這一輪申請，若建議的推廣活動是以慶祝香港回歸祖國30周年為主題的大型宣傳教育活動，且具創新性，可獲優先考慮。 資助計劃旨在把《憲法》、《基本法》和《香港國安法》推廣至社區各界別。申請",
    "category": "news"
   },
   {
@@ -540,7 +417,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-02 22:12",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Father and son were injured when a large pile of scrap metal collapsed onto them. HSE found members of the public were not adequately segregated from workplace ",
    "category": "news"
   },
@@ -553,7 +430,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -566,7 +443,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -579,7 +456,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -592,7 +469,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -605,47 +482,8 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
-   "category": "news"
-  },
-  {
-   "id": "3b099b468233",
-   "title": "林定國烏茲別克斯坦深化法律合作",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260829/20260829_203604_842.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-29 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "律政司司長林定國率領由香港法律和爭議解決專業，以及金融和會計專業等成員組成的跨專業代表團，今日在烏茲別克斯坦塔什干繼續訪問行程，深化兩地法律合作。 今日上午，林定國與烏茲別克斯坦司法部部長阿克巴爾·塔什庫洛夫會面，提及香港享有內聯外通和普通法制度優勢，將協助烏茲別克斯坦企業拓展香港、中國內地，以至國際市場。 雙方並簽訂",
-   "category": "news"
-  },
-  {
-   "id": "1866494089e0",
-   "title": "皇崗口岸舉行二萬人跨境壓力測試",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260829/20260829_170812_619.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-29 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "特區政府今日於皇崗口岸與深圳相關單位合作舉行第二次跨境壓力測試，超過20,000名公務員參與，重點聚焦峰值承載，進一步增加人流車流，為口岸順暢開通做好充分準備。 演練首次測試供車輛通關的聯合一站式車道，並邀請汽車團體、社團和商會協助招募兩地通行的私家車，進行超過1,000架次的跨境循環測試，以測試車道和相關系統的調適應",
-   "category": "news"
-  },
-  {
-   "id": "6b2c99554a6c",
-   "title": "人大常委會通過律師法修正草案",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260829/20260829_101416_296.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-29 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "律政司歡迎全國人民代表大會常務委員會昨日通過《中華人民共和國律師法》修正草案。 有關修改下月1日起施行。修改後的《律師法》第62條規定香港特區法律執業者、澳門特區執業律師通過國務院司法行政部門組織的粵港澳大灣區律師執業考試，並取得內地執業資質，可在廣東省廣州市、深圳市、 珠海市、佛山市、惠州市、東莞市、中山市、江門市、",
    "category": "news"
   },
   {
@@ -657,7 +495,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-08-28 21:31",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Pelagia Shetland Limited fined after man was injured in machinery 41-year-old was clearing a blockage when the machine restarted He was airlifted to hospital af",
    "category": "news"
   },
@@ -670,7 +508,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-08-26 20:37",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "36-year-old worker seriously injured by falling pillar drill weighing 500kg Health and Safety Executive inspectors found lifting operation involving a forklift ",
    "category": "news"
   },
@@ -683,86 +521,8 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-08-26 19:50",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Five leaks of extremely flammable hydrocarbons occurred at Fife Ethylene Plant between February 2018 and September 2019 – including one which lasted four months",
-   "category": "news"
-  },
-  {
-   "id": "ba90cd0466a5",
-   "title": "林定國哈薩克斯坦推廣香港優勢",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260826/20260826_192235_900.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-26 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "律政司司長林定國今日繼續率領跨專業代表團訪問哈薩克斯坦阿拉木圖，推廣香港普通法制度的獨特優勢。 他出席由律政司和香港貿易發展局合辦的協作共贏研討會，該研討會吸引超過160名當地法律、商界等代表出席。 林定國於開幕致辭時表示，香港作為主要普通法司法管轄區，提供可靠且優質的國際法律服務，同時一直致力善用其普通法優勢，維持並",
-   "category": "news"
-  },
-  {
-   "id": "eb61e9e4da9f",
-   "title": "皇崗口岸周六舉行二萬人壓力測試",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260826/20260826_164026_556.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-26 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "行政長官李家超表示，政府本周六將在皇崗口岸進行測試，二萬名公務員參與，以測試口岸於頂峰時間的運作和承受能力，以確保運作安全有序，旅客體驗良好。 他表示，一萬名公務員參與上周六的演練，測試人流、車流、指示牌位置等，認為演練非常有效。當局過去三星期已進行逾80次不同形式的測試和演練，每次也總結經驗，有助改善整體運作和配置。",
-   "category": "news"
-  },
-  {
-   "id": "294a7578e1e9",
-   "title": "內地民商事法律實務課程圓滿結束",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260822/20260822_214927_548.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-22 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "香港國際法律人才培訓學院舉辦的2026年內地民商事法律實務課程今日圓滿結束。課程吸引超過400人報名參加。 培訓學院為本地法律和爭議解決從業者舉辦是次為期兩天的課程，旨在深化本地業界對內地民商事法律制度，以及相關實務操作和最新發展的了解，促進兩地業界的專業交流與經驗分享。 律政司司長林定國於開班儀式致辭時表示，隨着國家",
-   "category": "news"
-  },
-  {
-   "id": "1ba86137468e",
-   "title": "陳國基：全速推進口岸籌備工作",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260822/20260822_163310_372.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-22 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "特區政府今日於皇崗口岸首次與深圳相關單位合作舉行人流車流壓力測試。政務司司長陳國基表示，測試流程暢順，達到預期效果和測試目標。他說，會與深方緊密合作，全速推進各項籌備工作。 陳國基視察測試後會見傳媒時表示，是次測試動員來自70多個政策局和部門逾10,000名公務員參與。他說，現時落馬洲/皇崗口岸最高峰每小時出入境人次約",
-   "category": "news"
-  },
-  {
-   "id": "17ae2b374a82",
-   "title": "皇崗口岸舉行萬人壓力測試",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260822/20260822_174241_637.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-22 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "特區政府今日於皇崗口岸首次與深圳相關單位合作舉行人流車流壓力測試，逾10,000名來自70多個政策局和部門的公務員參與。 演練以公共交通營辦商的車輛進行超過400發車班次的循環測試，以模擬人流和車流進出口岸的情況。參與人員按指示以公共交通工具抵達口岸，演練出入境程序後離開。 演練首次測試供旅客通關的合作查驗自助通道，參",
-   "category": "news"
-  },
-  {
-   "id": "9c5619cba678",
-   "title": "林定國率團訪問中亞",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260822/20260822_160352_449.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-22 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "律政司司長林定國明日率領由香港法律和爭議解決專業、金融和會計專業等成員組成的跨專業代表團啟程訪問新疆、哈薩克斯坦和烏茲別克斯坦，加強香港與三地法律和專業服務業界的交流合作，推廣香港內聯外通的優勢和專業服務實力。 林定國下星期一在新疆烏魯木齊出席由香港國際法律人才培訓學院舉辦的香港普通法與爭議解決實務培訓開班儀式，並與當",
    "category": "news"
   },
   {
@@ -774,7 +534,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-08-22 00:00",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "特區政府今日就多個美西方國家、反華媒體、組織及政客，藉法庭於昨日就「支聯會」煽動顛覆國家政權案的定罪裁決，針對香港特區作出毫無事實根據的詆毀抹黑，表示強烈不滿和堅決反對，並予以強烈譴責。 特區政府指出，《憲法》是國家的根本大法，是香港特區憲制秩序的最重要組成部分，其序言明確了中國共產黨領導是中華人民共和國憲制秩序的核心",
    "category": "news"
   },
@@ -787,61 +547,9 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-08-21 16:21",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Health and Safety Executive inspectors issued Truro Sawmills Ltd with Improvement Notices after finding it failed to protect workers from health risks of wood d",
    "category": "news"
-  },
-  {
-   "id": "e603bd4599c8",
-   "title": "皇崗持續演練 防範突發事件",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260821/20260821_193742_233.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-21 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "特區政府繼續在皇崗口岸港方口岸區舉行多場跨部門演練，涵蓋旅客出入境和跨境車輛檢查，警務處、入境事務處、海關、衞生署、政府產業署等多個部門參與，為口岸通關作好萬全準備。 旅客出入境檢查方面，入境處模擬口岸聯檢大樓的離境大堂合作查驗自助通道發生故障，職員隨即將部分旅客分流至傳統人工櫃枱，並與深方協調，加開臨時人工櫃枱，以手",
-   "category": "news"
-  },
-  {
-   "id": "b45965925469",
-   "title": "支聯會煽動行為違反國安法",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260821/20260821_164702_763.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-21 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "高等法院原訟法庭今日就「支聯會」煽動顛覆國家政權案作出裁決。保安局局長鄧炳強表示，案中各被告在《香港國安法》生效後仍舉辦公開活動，企圖煽動香港市民顛覆國家政權，相關行為違反《香港國安法》所訂定的罪行。 鄧炳強今日會見傳媒時說，「支聯會」自成立以來，其根本主張和目標就是要推翻中國共產黨的領導，以及《中華人民共和國憲法》確",
-   "category": "news"
-  },
-  {
-   "id": "26e091db4f39",
-   "title": "李家超：支聯會案被告必須懲治",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260821/20260821_130443_331.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-21 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "高等法院原訟法庭今日就「支聯會」煽動顛覆國家政權案作出裁決，「支聯會」、李卓人、鄒幸彤被裁定罪成。特區政府歡迎法庭裁決。行政長官李家超表示，各被告長期以來的行為危害國家安全，其陰謀昭然若揭，必須予以懲治。 「支聯會」、李卓人、何俊仁和鄒幸彤被控煽動顛覆國家政權罪，「支聯會」、李卓人和鄒幸彤經審訊後被裁定罪名成立，而何俊",
-   "category": "news"
-  },
-  {
-   "id": "603085cfcbfb",
-   "title": "跨部門桌上演練準備皇崗口岸開通",
-   "url": "https://www.news.gov.hk/chi/2026/08/20260820/20260820_182751_576.html",
-   "source_id": "news_law",
-   "source_label": "香港政府新聞網·法律及治安",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-08-20 00:00",
-   "fetched": "2026-09-12 07:55",
-   "summary": "特區政府今日舉行跨部門桌上演練，模擬皇崗口岸投入運作後可能出現的安全事故和緊急情況，加強各部門和相關持份者應對緊急情況的協作和應變能力，為皇崗口岸開通作好全面準備。 演練在警察總部舉行，以模擬實際情境為基礎，涵蓋極端天氣、供電系統故障、聯檢大樓內火警、新連接橋或公共運輸交匯處發生嚴重交通意外、入境旅客疑患高度傳染性疾病",
-   "category": "accident"
   },
   {
    "id": "2ec641bb82eb",
@@ -852,7 +560,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-08-19 21:25",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "Company fined £300,000 after health and safety inspectors find failings when investigating incident Nightshift worker had been attempting to unblock machine whe",
    "category": "news"
   },
@@ -865,7 +573,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -878,7 +586,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -891,7 +599,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -904,7 +612,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -917,7 +625,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -930,7 +638,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -943,7 +651,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -956,7 +664,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -969,7 +677,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -982,7 +690,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -995,7 +703,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1008,7 +716,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-07",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1021,7 +729,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-07",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1034,7 +742,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-07",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1047,7 +755,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-07",
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1060,7 +768,7 @@
    "region": "HK",
    "kind": "video",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1073,7 +781,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1086,7 +794,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1099,7 +807,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1112,7 +820,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1125,7 +833,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1138,7 +846,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1151,7 +859,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1164,7 +872,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1177,7 +885,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1190,7 +898,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1203,7 +911,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1216,7 +924,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1229,7 +937,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1242,7 +950,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   },
@@ -1255,7 +963,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-09-12 07:55",
+   "fetched": "2026-09-13 07:29",
    "summary": "",
    "category": "news"
   }

@@ -11,6 +11,7 @@ import hashlib
 import json
 import os
 import sys
+import urllib.request
 from pathlib import Path
 
 import pandas as pd
@@ -110,7 +111,7 @@ def using_default_pw():
 
 
 # ---------------------------------------------------------------- 資料抓取(自動更新)
-@st.cache_data(ttl=3600, show_spinner=False)
+@st.cache_data(ttl=1800, show_spinner="🔄 開站自動更新:正在向官方來源抓取最新資料…(首次約30-60秒)")
 def _live_data():
     fetched_ts = updater.now_hkt()
     try:
@@ -123,6 +124,11 @@ def _live_data():
         rso = None
     return {"items": items, "sources": src_status, "rso": rso,
             "generated_at": fetched_ts, "live": bool(items)}
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def _legal_watch(ts, baseline):
+    return updater.watch_legals(ts, baseline)
 
 
 def load_file_fallback():
@@ -146,6 +152,12 @@ def get_data():
         out.update(fb)
     out["partial_fallback"] = not live["live"]
     return out
+
+
+def get_legal_watch():
+    baseline = load_json(DATA / "legal_watch.json", {})
+    d = get_data()
+    return _legal_watch(d["generated_at"], baseline)
 
 
 def news_items(d):
@@ -210,6 +222,12 @@ def pg_home():
     d = get_data()
     if d.get("partial_fallback"):
         st.warning(t("fallback_note"))
+
+    # 法例變更監察警示
+    changed = [w for w in get_legal_watch() if w.get("changed")]
+    if changed:
+        lines = " ｜ ".join(f"[{w['label']}]({w['url']})" for w in changed)
+        st.error(t("legal_alert") + " " + lines, icon="⚖️")
 
     # 網主公告
     for a in get_settings()["announcements"]:
@@ -344,6 +362,27 @@ def pg_accident():
     d = get_data()
     acc = [i for i in news_items(d) if i.get("category") == "accident"]
     st.caption(f"{len(acc)} " + ("條" if LANG != "en" else "items"))
+
+    # 月度 PDF 報告
+    try:
+        import monthly_report
+        today = updater.datetime.now(updater.HKT).date()
+        y, m = (today.year - 1, 12) if today.month == 1 else (today.year, today.month - 1)
+        with st.expander(t("report_btn"), icon="📄"):
+            with st.spinner(t("ai_thinking")):
+                pdf = monthly_report.build_pdf(y, m, monthly_report.collect(y, m, d["items"]))
+            st.download_button(t("report_btn"), pdf,
+                               file_name=f"injury-report-{y}-{m:02d}.pdf",
+                               mime="application/pdf")
+            st.caption(C.L(C.T(
+                "報告來源:政府新聞公報/政府新聞網/香港電台(關鍵字自動分類,非官方統計);"
+                "每月1日亦會由 GitHub Actions 自動生成並存入 repo 的 reports/。",
+                "Sources: official news, keyword-classified (not official statistics); "
+                "regenerated automatically on the 1st monthly by GitHub Actions into reports/."),
+                LANG))
+    except ImportError:
+        st.caption("📄 reportlab 未安裝,PDF 報告功能停用(pip install reportlab)。")
+
     news_block(acc[:80])
 
 
@@ -416,6 +455,128 @@ def pg_yt():
     for name, url, desc in C.YT_CHANNELS:
         st.markdown(f"**[{name}]({url})** ｜ {C.L(desc, LANG)}")
     st.markdown(f"<small>🔗 {C.L(C.SECTIONS['yt']['src'], LANG)}</small>", unsafe_allow_html=True)
+
+
+# ---------------------------------------------------------------- 頁面:AI 職安助手
+def _llm_config():
+    try:
+        api_key = st.secrets.get("LLM_API_KEY", None)
+    except Exception:
+        api_key = None
+    api_key = api_key or os.environ.get("LLM_API_KEY")
+    try:
+        base = st.secrets.get("LLM_BASE_URL", None) or os.environ.get("LLM_BASE_URL") \
+            or "https://open.bigmodel.cn/api/paas/v4"
+    except Exception:
+        base = os.environ.get("LLM_BASE_URL") or "https://open.bigmodel.cn/api/paas/v4"
+    try:
+        model = st.secrets.get("LLM_MODEL", None) or os.environ.get("LLM_MODEL") or "glm-4-flash"
+    except Exception:
+        model = os.environ.get("LLM_MODEL") or "glm-4-flash"
+    return api_key, base, model
+
+
+@st.cache_data(show_spinner=False)
+def build_corpus():
+    """把本站內容拆成知識塊,供檢索。"""
+    chunks = []
+    for sid, sec in C.SECTIONS.items():
+        title = C.L(sec["title"], "tc")
+        texts = [C.L(sec.get("intro") or C.T("", ""), "tc")] if sec.get("intro") else []
+        for panel in sec.get("panels", []):
+            parts = [C.L(panel["h"], "tc")]
+            for b in panel.get("blocks", []):
+                kind = b[0]
+                if kind == "p":
+                    parts.append(C.L(b[1], "tc"))
+                elif kind == "table":
+                    parts.extend(" / ".join(map(str, r)) for r in C.L(b[2], "tc"))
+                elif kind in ("ul", "ol"):
+                    parts.extend(C.L(b[1], "tc"))
+                elif kind == "src":
+                    parts.append("來源:" + C.L(b[1], "tc"))
+            texts.append("\n".join(parts))
+        chunks.append({"id": sid, "title": title,
+                       "text": title + "\n" + "\n".join(t for t in texts if t)})
+    return chunks
+
+
+def _tokens(q):
+    import re
+    q = q.strip()
+    toks = set(re.findall(r"[A-Za-z]{2,}", q.upper()))
+    cn = re.findall(r"[\u4e00-\u9fff]", q)
+    toks |= {a + b for a, b in zip(cn, cn[1:])} if len(cn) > 1 else set(cn)
+    return toks
+
+
+def retrieve(question, k=4):
+    toks = _tokens(question)
+    scored = []
+    for ch in build_corpus():
+        score = sum(1 for tk in toks if tk in ch["text"])
+        if score:
+            scored.append((score, ch))
+    scored.sort(key=lambda x: -x[0])
+    return [c for _, c in scored[:k]]
+
+
+def ask_llm(question, context):
+    api_key, base, model = _llm_config()
+    body = json.dumps({
+        "model": model,
+        "temperature": 0.2,
+        "messages": [
+            {"role": "system", "content":
+                "你是香港職業安全資訊網的AI職安助手。只用「參考資料」及通用職安常識回答,"
+                "回答須简明、列出參考的本站章節;法律事宜提醒以勞工處/官方最新公佈為準。"
+                "用戶語言:繁體中文優先,若用戶用英文則以英文回答。"},
+            {"role": "user", "content":
+                f"參考資料:\n{context}\n\n問題:{question}"},
+        ],
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        base.rstrip("/") + "/chat/completions", data=body,
+        headers={"Content-Type": "application/json", "Authorization": f"Bearer {api_key}"})
+    with urllib.request.urlopen(req, timeout=90) as resp:
+        data = json.loads(resp.read().decode("utf-8"))
+    return data["choices"][0]["message"]["content"]
+
+
+def pg_ai():
+    st.markdown("## " + t("nav_ai"))
+    st.markdown(t("ai_intro"))
+    api_key, base, model = _llm_config()
+    if not api_key:
+        st.warning(t("ai_no_key"))
+        return
+    st.caption(f"模型:`{model}`")
+
+    if "ai_history" not in st.session_state:
+        st.session_state.ai_history = []
+    for m in st.session_state.ai_history:
+        with st.chat_message(m["role"]):
+            st.markdown(m["content"])
+
+    q = st.chat_input(C.L(C.T("例如:安全主任註冊要求是什麼?密閉空間工作要注意什麼?",
+                              "e.g. What are the RSO registration requirements?"), LANG))
+    if q:
+        st.session_state.ai_history.append({"role": "user", "content": q})
+        with st.chat_message("user"):
+            st.markdown(q)
+        refs = retrieve(q)
+        ctx = "\n\n---\n\n".join(f"【{r['title']}】\n{r['text']}" for r in refs) \
+            or "(無特定章節,以通用職安常識回答)"
+        with st.chat_message("assistant"):
+            with st.spinner(t("ai_thinking")):
+                try:
+                    answer = ask_llm(q, ctx)
+                except Exception as e:
+                    answer = f"⚠️ {type(e).__name__}: {e}"
+            st.markdown(answer)
+            if refs:
+                st.caption(t("ai_sources") + ":" + "、".join(r["title"] for r in refs))
+        st.session_state.ai_history.append({"role": "assistant", "content": answer})
 
 
 # ---------------------------------------------------------------- 頁面:會員
@@ -507,6 +668,30 @@ def pg_sources():
 def pg_admin():
     st.markdown("## " + t("nav_admin"))
     s = get_settings()
+
+    st.markdown("### " + t("legal_watch_admin"))
+    watch = get_legal_watch()
+    baseline = load_json(DATA / "legal_watch.json", {})
+    for w in watch:
+        if w.get("error"):
+            st.caption(f"⚠️ {w['label']}:抓取失敗({w['error']})")
+        else:
+            icon = "🔴" if w.get("changed") else "🟢"
+            st.markdown(f"{icon} **{w['label']}** ｜ {C.L(C.UI['src_line'], LANG)}: <{w['url']}>"
+                        f" ｜ {C.L(C.UI['updated_at'], LANG)}:{w['last_checked']}",
+                        unsafe_allow_html=True)
+    if any(w.get("changed") for w in watch):
+        if st.button(t("legal_ack"), type="primary"):
+            now = updater.now_hkt()
+            for w in watch:
+                baseline[w["url"]] = {"hash": w["hash"], "acked_at": now,
+                                      "first_seen": w.get("first_seen", now)}
+            save_json(DATA / "legal_watch.json", baseline)
+            _legal_watch.clear()
+            st.rerun()
+    else:
+        st.caption(t("legal_none"))
+    st.divider()
 
     st.markdown("### 📢 " + C.L(C.T("公告管理(主頁頂部顯示)", "Announcements (shown on home)"), LANG))
     for i, a in enumerate(s["announcements"]):
@@ -609,6 +794,11 @@ def pg_admin():
 
 # ---------------------------------------------------------------- 側邊欄
 def sidebar():
+    # 一開網自動更新:每個瀏覽 session 首次載入即強制重抓官方來源
+    if "initial_refresh_done" not in st.session_state:
+        st.session_state.initial_refresh_done = True
+        _live_data.clear()
+        _legal_watch.clear()
     with st.sidebar:
         st.markdown(f"## 🦺 {C.L(C.UI['app_title'], LANG)}")
         st.caption(C.L(C.UI["tagline"], LANG))
@@ -661,6 +851,7 @@ def build_app():
         st.Page(pg_ppe, title=t("nav_ppe"), icon=":material/health_and_safety:"),
         st.Page(pg_msds, title=t("nav_msds"), icon=":material/science:"),
         st.Page(pg_tech, title=t("nav_tech"), icon=":material/smart_toy:"),
+        st.Page(pg_ai, title=t("nav_ai"), icon=":material/forum:"),
         st.Page(pg_news, title=t("nav_news"), icon=":material/newspaper:"),
         st.Page(pg_accident, title=t("nav_accident"), icon=":material/emergency:"),
         st.Page(pg_fire, title=t("nav_fire"), icon=":material/local_fire_department:"),
