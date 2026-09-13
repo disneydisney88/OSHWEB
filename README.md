@@ -62,6 +62,31 @@ OSH 最新資訊、工傷新聞、防火安全、註冊安全主任資訊及**�
 勞工處開放數據:註冊安全主任統計(XLSX 自動下載)、香港天文台天氣警示(RSS)、
 YouTube 職安警示播放清單(RSS)。
 
+## 🤖 自動化功能明細
+
+| 功能 | 運作方式 |
+| --- | --- |
+| **開站自動更新** | 每個瀏覽 session 首次載入即強制重抓全部來源(約30-60秒,有進度提示);其後每30分鐘自動重抓;側欄按鈕可即時重抓 |
+| **法例變更監察** | 每次更新時對勞工處[修例專頁](https://www.labour.gov.hk/tc/news/Amendment_Ordinance.htm)及[法例一覽](https://www.labour.gov.hk/tc/legislat/contentB3.htm)計算內容雜湊,有變更即在主頁顯示「⚖️ 法例有更新」;網主於後台確認後清除警示 |
+| **月度工傷PDF報告** | 每月1日 GitHub Actions 自動彙總上月工傷新聞成 PDF 存入 `reports/`;站內「工傷新聞」頁亦可即時生成下載 |
+| **AI 職安助手** | 「🤖 AI 職安助手」頁:以 GLM(OpenAI兼容接口)回答職安問題,檢索範圍為本站法例/守則/PPE/MSDS/防火/安全主任內容並列明參考章節 |
+
+### AI 助手設定(Streamlit Cloud → Settings → Secrets)
+
+```toml
+LLM_API_KEY = "你的GLM金鑰"            # 必填,https://open.bigmodel.cn 申請
+LLM_MODEL = "glm-4-flash"              # 可選,預設 glm-4-flash(免費)
+LLM_BASE_URL = "https://open.bigmodel.cn/api/paas/v4"   # 可選,預設 GLM;可換任何 OpenAI 兼容接口
+```
+
+### 線上監控(UptimeRobot 免費)
+
+1. 到 <https://uptimerobot.com> 免費註冊(50個監測點、5分鐘間隔)。
+2. 「Add New Monitor」→ Monitor Type:**HTTP(s)** → Friendly Name:`OSHWEB` →
+   URL:`https://klchoyhkosh.streamlit.app`(換成你的實際網址)→ interval 5 分鐘。
+3. 「Alert Contacts To Notify」加入你的 Email;網站掛線/恢復會自動收到通知。
+4. 建議同時加一個 **Keyword** 監測(關鍵字填 `香港職業安全資訊網`),防止「頁面開到但應用壞掉」的情況。
+
 ## 💻 本機執行
 
 ```bash

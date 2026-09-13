@@ -6,6 +6,7 @@ const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
 
 let NEWS = null;   // data/news.json
 let RSO = null;    // data/rso_stats.json
+let RHIST = null;  // data/rso_history.json
 
 /* ---------------- 頁籤路由 ---------------- */
 function showSection(id) {
@@ -80,12 +81,54 @@ function fallbackHTML() {
 /* ---------------- 安全主任統計 ---------------- */
 function renderRsoStats() {
   const tableEl = $("#rso-table"), chartEl = $("#rso-chart"), homeEl = $("#home-rso-latest");
-  if (!RSO || !Array.isArray(RSO.rows) || !RSO.rows.length) {
+  const noData = () => {
     [tableEl, chartEl, homeEl].forEach(el => {
-      if (el) el.innerHTML = '<p class="muted">暫未取得統計數據。執行更新腳本後會自動下載勞工處開放數據（XLSX）。</p>';
+      if (el) el.innerHTML = '<p class="muted">暫未取得統計數據。執行更新腳本後會自動下載勞工處開放數據(XLSX)。</p>';
     });
+  };
+  if (RHIST && RHIST.series && Object.keys(RHIST.series).length) {
+    // 歷年數據(勞工處年報,2015起)+ 開放數據最新年份
+    const years = Object.keys(RHIST.series).sort();
+    const rows = RSO && Array.isArray(RSO.rows) ? RSO.rows : null;
+    if (rows && rows.length > 1) {
+      let numCol = -1;
+      for (let c = 0; c < rows[0].length; c++) {
+        if (String(rows[0][c]).includes("安全主任") && String(rows[0][c]).includes("人數")) { numCol = c; break; }
+      }
+      if (numCol > 0) {
+        rows.slice(1).forEach(r => {
+          const y = parseInt(String(r[0]).slice(0, 4), 10);
+          const v = parseFloat(String(r[numCol]).replace(/,/g, ""));
+          if (!isNaN(y) && !isNaN(v)) RHIST.series[y] = { count: v, source: RHIST.dataset_page || "https://data.gov.hk/tc-data/dataset/hk-ld-rstd-rstd-keystats", auto: true };
+        });
+      }
+    }
+    const allYears = Object.keys(RHIST.series).sort((a, b) => a - b);
+    const max = Math.max(...allYears.map(y => RHIST.series[y].count || 0)) || 1;
+    chartEl.innerHTML = allYears.map(y => {
+      const v = RHIST.series[y].count || 0;
+      const tag = RHIST.series[y].auto ? " (開放數據)" : "";
+      return `<div class="bar-row">
+        <span class="bar-label">${y}${tag}</span>
+        <div class="bar-track"><div class="bar-fill" style="width:${(v / max * 100).toFixed(1)}%"></div></div>
+        <span class="bar-val">${v.toLocaleString("en-US")}</span>
+      </div>`;
+    }).join("");
+    tableEl.innerHTML = `<div style="overflow-x:auto"><table class="tbl">
+      <thead><tr><th>年份</th><th>截至年底有效註冊人數</th><th>資料來源</th></tr></thead>
+      <tbody>${allYears.slice().reverse().map(y => {
+        const s = RHIST.series[y];
+        const src = s.auto ? "勞工處開放數據(自動更新)" : "勞工處年報";
+        const url = s.source || RHIST.source_home || "#";
+        return `<tr><td>${y}</td><td>${(s.count || 0).toLocaleString("en-US")}</td><td><a href="${esc(url)}" target="_blank" rel="noopener">${src}</a></td></tr>`;
+      }).join("")}</tbody></table></div>`;
+    const latest = allYears[allYears.length - 1];
+    if (homeEl) {
+      homeEl.innerHTML = `${(RHIST.series[latest].count || 0).toLocaleString("en-US")}<br><small>${latest}｜來源:勞工處</small>`;
+    }
     return;
   }
+  if (!RSO || !Array.isArray(RSO.rows) || !RSO.rows.length) { noData(); return; }
   const rows = RSO.rows.map(r => r.map(c => String(c).trim()));
   // 表格
   const thead = `<tr>${rows[0].map(h => `<th>${esc(h)}</th>`).join("")}</tr>`;
@@ -119,7 +162,7 @@ function renderRsoStats() {
       </div>`).join("");
     const latest = data[data.length - 1];
     if (latest && homeEl) {
-      homeEl.innerHTML = `${latest.val.toLocaleString("en-US")}<br><small>${esc(latest.label)}｜來源：勞工處</small>`;
+      homeEl.innerHTML = `${latest.val.toLocaleString("en-US")}<br><small>${esc(latest.label)}|來源:勞工處</small>`;
     }
   }
 }
@@ -169,6 +212,9 @@ async function loadData() {
   try {
     RSO = await (await fetch("data/rso_stats.json?" + bust, { cache: "no-store" })).json();
   } catch (e) { RSO = null; }
+  try {
+    RHIST = await (await fetch("data/rso_history.json?" + bust, { cache: "no-store" })).json();
+  } catch (e) { RHIST = null; }
 
   // 最後更新時間
   const lu = $("#last-updated");
