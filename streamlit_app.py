@@ -7,10 +7,12 @@
       YouTube職安影片專區、網主後台(公告/影片/連結/密碼)、會員專區(預留)、
       Google Drive 檔案庫、資訊來源說明。
 """
+import base64
 import hashlib
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -505,9 +507,15 @@ def _llm_config():
         base = os.environ.get("LLM_BASE_URL") or "https://open.bigmodel.cn/api/paas/v4"
     try:
         model = st.secrets.get("LLM_MODEL", None) or os.environ.get("LLM_MODEL") or "glm-4-flash"
+        vision = st.secrets.get("LLM_VISION_MODEL", None) or os.environ.get("LLM_VISION_MODEL") \
+            or "glm-4v-flash"
     except Exception:
         model = os.environ.get("LLM_MODEL") or "glm-4-flash"
-    return api_key, base, model
+        vision = os.environ.get("LLM_VISION_MODEL") or "glm-4v-flash"
+    return api_key, base, model, vision
+
+
+DISCLAIMER_TXT = "本回答僅供參考,不構成法律或專業意見;請向註冊安全主任、合資格專業人士或勞工處職業安全及健康部等有關人士查詢,一切以官方最新公佈為準。"
 
 
 @st.cache_data(show_spinner=False)
@@ -555,24 +563,35 @@ def retrieve(question, k=4):
     return [c for _, c in scored[:k]]
 
 
-def ask_llm(question, context):
-    api_key, base, model = _llm_config()
-    body = json.dumps({
-        "model": model,
-        "temperature": 0.2,
-        "messages": [
-            {"role": "system", "content":
-                "你是香港職業安全資訊網的AI職安助手。只用「參考資料」及通用職安常識回答,"
-                "回答須简明、列出參考的本站章節;法律事宜提醒以勞工處/官方最新公佈為準。"
-                "用戶語言:繁體中文優先,若用戶用英文則以英文回答。"},
-            {"role": "user", "content":
-                f"參考資料:\n{context}\n\n問題:{question}"},
-        ],
-    }).encode("utf-8")
+def ask_llm(question, context, image=None, mime="image/jpeg"):
+    """呼叫 GLM(OpenAI 兼容接口);image=(bytes,mime) 時改用視覺模型。"""
+    api_key, base, model, vision = _llm_config()
+    use_model = vision if image else model
+    sys_prompt = (
+        "你是香港職業安全資訊網的AI職安助手。只用「參考資料」及通用職安常識回答,"
+        "回答須簡明、列出參考的本站章節;涉及法例時提醒具體條文以勞工處/官方最新公佈為準。"
+        "分析相片時:指出可見危險及可能相關的香港職安法例(第509章/第59章及其規例),"
+        "但不得斷言一定違法,只說「可能涉及」。"
+        "**每次回答的最後必須另起一行加上這句聲明:**「" + DISCLAIMER_TXT + "」"
+        "用戶語言:繁體中文優先,若用戶用英文則以英文回答。"
+    )
+    user_text = f"參考資料:\n{context}\n\n問題:{question}"
+    if image:
+        b64 = base64.b64encode(image).decode("utf-8")
+        content = [
+            {"type": "text", "text": sys_prompt + "\n\n" + user_text},
+            {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{b64}"}},
+        ]
+        messages = [{"role": "user", "content": content}]
+    else:
+        messages = [{"role": "system", "content": sys_prompt},
+                    {"role": "user", "content": user_text}]
+    body = json.dumps({"model": use_model, "temperature": 0.2,
+                       "messages": messages}).encode("utf-8")
     req = urllib.request.Request(
         base.rstrip("/") + "/chat/completions", data=body,
         headers={"Content-Type": "application/json", "Authorization": f"Bearer {api_key}"})
-    with urllib.request.urlopen(req, timeout=90) as resp:
+    with urllib.request.urlopen(req, timeout=120) as resp:
         data = json.loads(resp.read().decode("utf-8"))
     return data["choices"][0]["message"]["content"]
 
@@ -580,11 +599,11 @@ def ask_llm(question, context):
 def pg_ai():
     st.markdown("## " + t("nav_ai"))
     st.markdown(t("ai_intro"))
-    api_key, base, model = _llm_config()
+    api_key, base, model, vision = _llm_config()
     if not api_key:
         st.warning(t("ai_no_key"))
         return
-    st.caption(f"模型:`{model}`")
+    st.caption(f"模型:`{model}`｜圖片分析:`{vision}`")
 
     if "ai_history" not in st.session_state:
         st.session_state.ai_history = []
@@ -592,22 +611,47 @@ def pg_ai():
         with st.chat_message(m["role"]):
             st.markdown(m["content"])
 
+    img_file = st.file_uploader(t("ai_upload"), type=["jpg", "jpeg", "png", "webp"])
+    if img_file is not None:
+        st.image(img_file, width=260)
+
+    analyze_btn = False
+    if img_file is not None:
+        analyze_btn = st.button("🔍 " + C.L(C.T("分析相片", "Analyse photo"), LANG),
+                                type="primary")
+
     q = st.chat_input(C.L(C.T("例如:安全主任註冊要求是什麼?密閉空間工作要注意什麼?",
                               "e.g. What are the RSO registration requirements?"), LANG))
-    if q:
-        st.session_state.ai_history.append({"role": "user", "content": q})
+    if q or analyze_btn:
+        question = q or t("ai_img_question")
+        shown_q = (f"📷 {img_file.name}\n\n{q}" if img_file else q)
+        st.session_state.ai_history.append({"role": "user", "content": shown_q})
         with st.chat_message("user"):
-            st.markdown(q)
-        refs = retrieve(q)
+            st.markdown(shown_q)
+        refs = retrieve(question)
         ctx = "\n\n---\n\n".join(f"【{r['title']}】\n{r['text']}" for r in refs) \
             or "(無特定章節,以通用職安常識回答)"
         with st.chat_message("assistant"):
             with st.spinner(t("ai_thinking")):
                 try:
-                    answer = ask_llm(q, ctx)
+                    if img_file is not None:
+                        img_bytes = img_file.getvalue()
+                        answer = ask_llm(question, ctx, image=img_bytes,
+                                         mime=img_file.type or "image/jpeg")
+                    else:
+                        answer = ask_llm(question, ctx)
+                except urllib.error.HTTPError as e:
+                    if e.code == 401:
+                        answer = "⚠️ " + t("ai_err_401")
+                    elif e.code == 429:
+                        answer = "⚠️ " + C.L(C.T("請求次數超出限制(429),請稍後再試。",
+                                                 "Rate limited (429) — please retry later."), LANG)
+                    else:
+                        answer = f"⚠️ HTTP {e.code}: {e.reason}"
                 except Exception as e:
                     answer = f"⚠️ {type(e).__name__}: {e}"
             st.markdown(answer)
+            st.markdown(t("ai_disclaimer"))
             if refs:
                 st.caption(t("ai_sources") + ":" + "、".join(r["title"] for r in refs))
         st.session_state.ai_history.append({"role": "assistant", "content": answer})
