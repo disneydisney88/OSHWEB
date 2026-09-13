@@ -16,7 +16,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: 抓取官方來源並更新 data/*.json
-        run: python scripts/update_data.py
+        run: |
+          python scripts/update_data.py
+          python scripts/fetch_rso_history.py
       - name: 提交並推送
         run: |
           git config user.name "oshweb-bot"

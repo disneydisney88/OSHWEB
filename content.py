@@ -607,7 +607,7 @@ SECTIONS["sources"] = {
                      ["中國**應急管理部**", "內地安全生產新聞", "網頁抓取", "[mem.gov.cn](https://www.mem.gov.cn)"],
                      ["美國 **OSHA**", "美國職安新聞發布", "網頁抓取", "[osha.gov](https://www.osha.gov)"],
                      ["英國 **HSE**", "英國職安新聞(新聞中心)", "RSS", "[hse.gov.uk](https://www.hse.gov.uk)"],
-                     ["勞工處 × DATA.GOV.HK", "註冊安全主任及安全審核員統計(開放數據)", "XLSX 自動下載解析", "[數據集](https://data.gov.hk/tc-data/dataset/hk-ld-rstd-rstd-keystats)"],
+                     ["勞工處年報 × DATA.GOV.HK", "註冊安全主任歷年數目(2015起,年報章節)+ 安全主任/審核員統計(開放數據)", "年報頁解析 + XLSX 自動下載", "[年報存檔](https://www.labour.gov.hk/tc/public/AnnualReportArchived.htm)｜[數據集](https://data.gov.hk/tc-data/dataset/hk-ld-rstd-rstd-keystats)"],
                      ["香港天文台", "天氣警示(酷熱、颱風、暴雨)", "RSS", "[hko.gov.hk](https://www.hko.gov.hk)"],
                      ["YouTube(職安局/CIC)", "職安警示及安全培訓影片", "YouTube RSS", "[OSHC頻道](https://www.youtube.com/user/OSHC2009)"],
                  ], [
@@ -618,7 +618,7 @@ SECTIONS["sources"] = {
                      ["China **MEM** (Emergency Management)", "Mainland work-safety news", "HTML scrape", "[mem.gov.cn](https://www.mem.gov.cn)"],
                      ["US **OSHA**", "US OSH news releases", "HTML scrape", "[osha.gov](https://www.osha.gov)"],
                      ["UK **HSE**", "UK OSH news (media centre)", "RSS", "[hse.gov.uk](https://www.hse.gov.uk)"],
-                     ["LD × DATA.GOV.HK", "RSO and safety auditor statistics (open data)", "XLSX auto-download", "[dataset](https://data.gov.hk/tc-data/dataset/hk-ld-rstd-rstd-keystats)"],
+                     ["HK **Labour Department** annual reports × DATA.GOV.HK", "RSO numbers by year (2015–, from AR chapters) + RSO/auditor statistics (open data)", "AR page parsing + XLSX auto-download", "[AR archive](https://www.labour.gov.hk/tc/public/AnnualReportArchived.htm)｜[dataset](https://data.gov.hk/tc-data/dataset/hk-ld-rstd-rstd-keystats)"],
                      ["HK Observatory", "Weather warnings (heat, typhoon, rainstorm)", "RSS", "[hko.gov.hk](https://www.hko.gov.hk)"],
                      ["YouTube (OSHC/CIC)", "Safety alerts and training videos", "YouTube RSS", "[OSHC channel](https://www.youtube.com/user/OSHC2009)"],
                  ])),

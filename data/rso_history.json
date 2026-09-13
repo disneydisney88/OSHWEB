@@ -1,0 +1,48 @@
+{
+ "generated_at": "2026-09-13 10:02",
+ "source_label": "香港勞工處年報「工作安全與健康」章節(官網 iprd 存檔)",
+ "source_home": "https://www.labour.gov.hk/tc/public/AnnualReportArchived.htm",
+ "note": "歷年「截至年底持有有效註冊的安全主任」人數,逐句解析自勞工處年報官方網頁;最近兩年以勞工處開放數據 XLSX 自動更新並交叉核對。",
+ "series": {
+  "2015": {
+   "count": 3260,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2015/chapter4.html"
+  },
+  "2016": {
+   "count": 3607,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2016/chapter4.html"
+  },
+  "2017": {
+   "count": 3844,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2017/chapter4.html"
+  },
+  "2018": {
+   "count": 3718,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2018/chapter4.html"
+  },
+  "2019": {
+   "count": 3904,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2019/chapter4.html"
+  },
+  "2020": {
+   "count": 3977,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2020/chapter4.html"
+  },
+  "2021": {
+   "count": 4203,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2021/chapter4.html"
+  },
+  "2022": {
+   "count": 4110,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2022/chapter4.html"
+  },
+  "2023": {
+   "count": 4118,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2023/chapter4.html"
+  },
+  "2024": {
+   "count": 4409,
+   "source": "https://www.labour.gov.hk/tc/public/iprd/2024/chapter4.html"
+  }
+ }
+}

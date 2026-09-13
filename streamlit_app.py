@@ -294,7 +294,7 @@ def pg_home():
         for name, url in links:
             st.markdown(f"- [{name}]({url})")
 
-    st.link_button(t("drive_btn"), C.DRIVE_URL, use_container_width=True)
+    # 檔案資源庫入口已移至「會員專區」及「檔案資源庫」頁(主頁不再顯示)
 
 
 def rso_value_col(headers):
@@ -392,22 +392,56 @@ def pg_so():
     render_section("so")
     st.divider()
     d = get_data()
+    st.subheader("📊 " + C.L(C.T("註冊安全主任數目(歷年,自動更新)", "RSO numbers by year (auto-updated)"), LANG))
+
+    # 合併:歷年(勞工處年報)+ 最新(開放數據 XLSX,自動更新)
+    hist = load_json(DATA / "rso_history.json", {})
+    series = {}      # year -> {"count":int, "source":str, "auto":bool}
+    for y, v in hist.get("series", {}).items():
+        try:
+            series[int(y)] = {"count": int(v["count"]), "source": v.get("source", ""),
+                              "auto": False}
+        except Exception:
+            pass
     rso = d.get("rso")
-    st.subheader("📊 " + C.L(C.T("註冊安全主任數目(自動更新)", "RSO numbers (auto-updated)"), LANG))
     if rso and rso.get("rows"):
         rows = rso["rows"]
-        st.dataframe(pd.DataFrame(rows[1:], columns=rows[0]), width="stretch",
-                     hide_index=True)
         col = rso_value_col(rows[0])
-        labels = [r[0] for r in rows[1:]]
-        vals = pd.to_numeric(pd.Series([r[col] if col < len(r) else None for r in rows[1:]]
-                                       ).astype(str).str.replace(",", ""), errors="coerce")
-        chart = pd.DataFrame({"value": vals.values}, index=labels)
-        st.bar_chart(chart, height=280, x_label=rows[0][0], y_label=str(rows[0][col]))
-        st.caption(f"{rso['note']} ｜ {C.L(C.UI['src_line'], LANG)}:"
-                   f"[DATA.GOV.HK]({rso['dataset_page']})({rso['retrieved'][:10]}抓取)")
+        for r in rows[1:]:
+            try:
+                year = int(str(r[0])[:4])
+                series[year] = {"count": int(float(str(r[col]).replace(",", ""))),
+                                "source": rso["dataset_page"], "auto": True}
+            except Exception:
+                pass
+
+    if series:
+        years = sorted(series)
+        chart = pd.DataFrame(
+            {"value": [series[y]["count"] for y in years]}, index=[str(y) for y in years])
+        st.bar_chart(chart, height=300, x_label=C.L(C.T("年份", "Year"), LANG),
+                     y_label=C.L(C.T("持有有效註冊的安全主任", "RSOs with valid registration"), LANG))
+        hist_home = hist.get("source_home", "")
+        tbl = [[y, f"{series[y]['count']:,}",
+                C.L(C.T("勞工處開放數據(自動更新)", "LD open data (auto)"), LANG) if series[y]["auto"]
+                else C.L(C.T("勞工處年報", "LD Annual Report"), LANG),
+                series[y]["source"] or hist_home]
+               for y in reversed(years)]
+        st.markdown(md_table(
+            [C.L(C.T("年份", "Year"), LANG), C.L(C.T("截至年底有效註冊人數", "Valid registrations (year-end)"), LANG),
+             C.L(C.UI["src_line"], LANG), "URL"],
+            tbl))
+        st.caption(f"{C.L(C.UI['src_line'], LANG)}:{hist.get('source_label', '')}（{hist.get('generated_at', '')}更新）"
+                   f"｜ <{hist_home}>；{C.L(C.UI['src_line'], LANG)}:[DATA.GOV.HK 開放數據]({rso['dataset_page'] if rso else ''})"
+                   f"（{rso['retrieved'][:10]}抓取,自動更新）" if rso else "")
     else:
         st.info(t("none_yet"))
+
+    if rso and rso.get("rows"):
+        with st.expander(C.L(C.T("開放數據原始檔(含安全審核員等明細)", "Raw open-data table (incl. safety auditors)"), LANG)):
+            rows = rso["rows"]
+            st.dataframe(pd.DataFrame(rows[1:], columns=rows[0]), width="stretch",
+                         hide_index=True)
 
 
 # ---------------------------------------------------------------- 頁面:YouTube
