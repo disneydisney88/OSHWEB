@@ -878,26 +878,37 @@ def sidebar():
 def build_app():
     sidebar()
     admin = st.session_state.is_admin
-    pages = [
-        st.Page(pg_home, title=t("nav_home"), icon=":material/home:", default=True),
+    home = st.Page(pg_home, title=t("nav_home"), icon=":material/home:", default=True)
+    knowledge = [
         st.Page(pg_law, title=t("nav_law"), icon=":material/gavel:"),
         st.Page(pg_cop, title=t("nav_cop"), icon=":material/menu_book:"),
         st.Page(pg_ppe, title=t("nav_ppe"), icon=":material/health_and_safety:"),
         st.Page(pg_msds, title=t("nav_msds"), icon=":material/science:"),
         st.Page(pg_tech, title=t("nav_tech"), icon=":material/smart_toy:"),
-        st.Page(pg_ai, title=t("nav_ai"), icon=":material/forum:"),
-        st.Page(pg_news, title=t("nav_news"), icon=":material/newspaper:"),
-        st.Page(pg_accident, title=t("nav_accident"), icon=":material/emergency:"),
         st.Page(pg_fire, title=t("nav_fire"), icon=":material/local_fire_department:"),
         st.Page(pg_so, title=t("nav_so"), icon=":material/engineering:"),
+    ]
+    news = [
+        st.Page(pg_news, title=t("nav_news"), icon=":material/newspaper:"),
+        st.Page(pg_accident, title=t("nav_accident"), icon=":material/emergency:"),
+    ]
+    interactive = [
+        st.Page(pg_ai, title=t("nav_ai"), icon=":material/forum:"),
         st.Page(pg_yt, title=t("nav_yt"), icon=":material/play_circle:"),
         st.Page(pg_files, title=t("nav_files"), icon=":material/folder:"),
         st.Page(pg_member, title=t("nav_member"), icon=":material/person:"),
-        st.Page(pg_sources, title=t("nav_sources"), icon=":material/library_books:"),
     ]
+    about = [st.Page(pg_sources, title=t("nav_sources"), icon=":material/library_books:")]
     if admin:
-        pages.append(st.Page(pg_admin, title=t("nav_admin"), icon=":material/settings:"))
-    nav = st.navigation(pages, position="sidebar")
+        about.append(st.Page(pg_admin, title=t("nav_admin"), icon=":material/settings:"))
+
+    nav = st.navigation({
+        "": [home],
+        C.L(C.UI["grp_knowledge"], LANG): knowledge,
+        C.L(C.UI["grp_news"], LANG): news,
+        C.L(C.UI["grp_inter"], LANG): interactive,
+        C.L(C.UI["grp_about"], LANG): about,
+    }, position="sidebar")
     nav.run()
     st.divider()
     st.caption(f"🦺 {C.L(C.UI['app_title'], LANG)} — {C.L(C.UI['footer'], LANG)}")
