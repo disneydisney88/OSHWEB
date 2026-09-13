@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -20,7 +22,7 @@ jobs:
         run: |
           python scripts/update_data.py
           python scripts/monthly_report.py
-      - name: 提交報告
+      - name: 提交到 main 並同步 master
         run: |
           git config user.name "oshweb-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -29,5 +31,6 @@ jobs:
             echo "無變更"
           else
             git commit -m "📄 自動生成月度工傷報告 $(date -u +'%Y-%m')"
-            git push
+            git push origin main
           fi
+          git push origin main:master --force-with-lease
