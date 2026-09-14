@@ -80,6 +80,12 @@ SOURCES = [
     {"id": "rthk_intl", "region": "INTL", "label": "香港電台·國際新聞",
      "method": "rss", "url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_cinternational.xml",
      "home": "https://news.rthk.hk", "filter": True, "cap": 20},
+    {"id": "stheadline", "region": "HK", "label": "星島頭條",
+     "method": "rss", "url": "https://www.stheadline.com/rss",
+     "home": "https://www.stheadline.com", "filter": True, "cap": 20},
+    {"id": "oncc", "region": "HK", "label": "東方日報·東網on.cc",
+     "method": "html", "url": "https://hk.on.cc/hk/bkn/cnt/news/{ym}/index.html",
+     "home": "https://hk.on.cc", "filter": True, "cap": 20},
     {"id": "mem_cn", "region": "CN", "label": "中華人民共和國應急管理部",
      "method": "html", "url": "https://www.mem.gov.cn/xw/bndt/",
      "home": "https://www.mem.gov.cn", "filter": False, "cap": 20},
@@ -157,6 +163,10 @@ def parse_date(raw, url=None):
         except Exception:
             pass
     if url:
+        m = re.search(r"/(\d{8})/", url)      # 東網式:20260914
+        if m:
+            d = m.group(1)
+            return f"{d[:4]}-{d[4:6]}-{d[6:8]}"
         m = re.search(r"/(\d{6})/", url)
         if m:
             ym = m.group(1)
@@ -326,11 +336,12 @@ def watch_legals(fetched=None, baseline=None):
 
 def fetch_source(src, fetched):
     try:
-        text = fetch(src["url"])
+        url = src["url"].replace("{ym}", datetime.now(HKT).strftime("%Y%m"))
+        text = fetch(url)
         if src["method"] == "rss":
             items = parse_rss(text, src, fetched)
         else:
-            items = parse_html_list(text, src["url"], src, fetched)
+            items = parse_html_list(text, url, src, fetched)
         if src.get("filter"):
             items = [i for i in items if any(k in i["title"] + i["summary"] for k in OSH_KEYWORDS)]
         # 剔除誤配(如食物中毒)

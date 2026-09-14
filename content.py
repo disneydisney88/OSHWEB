@@ -287,8 +287,8 @@ SECTIONS["ppe"] = {
                      ["Fall protection", "Full harness + energy absorber + fall arrester", "EN 361 / EN 355 / EN 360", "100% tie-off with twin lanyards; plan suspension-trauma rescue; inspect before use."],
                      ["Visibility", "Hi-vis vest", "EN ISO 20471", "Mandatory at night or near traffic."],
                  ])),
-                ("src", T("標準以各標準機構最新版本為準;應用原則參考勞工處及職安局刊物([labour.gov.hk](https://www.labour.gov.hk)｜[oshc.org.hk](https://www.oshc.org.hk))。",
-                          "Standards per latest editions; application per LD/OSHC publications ([labour.gov.hk](https://www.labour.gov.hk)｜[oshc.org.hk](https://www.oshc.org.hk)).")),
+                ("src", T("標準以各標準機構最新版本為準。官方參考:職安局[個人防護裝備專頁](https://www.oshc.org.hk/tchi/main/hot/ppe/)｜勞工處[丙部:安全指引(含化學品PPE指引)](https://www.labour.gov.hk/tc/public/content2_8c.htm)。",
+                          "Standards per latest editions. Official references: OSHC [PPE corner](https://www.oshc.org.hk/tchi/main/hot/ppe/)｜LD [Part C: Safety Guidelines (incl. chemical PPE)](https://www.labour.gov.hk/tc/public/content2_8c.htm).")),
             ],
         },
         {
@@ -372,8 +372,8 @@ SECTIONS["msds"] = {
 SECTIONS["tech"] = {
     "title": T("🤖 AI／4S 安全智慧科技", "🤖 AI / 4S Smart-safety Technology"),
     "intro": T(
-        "**4S = Site Safety Smart System(安全智慧工地系統)**。發展局近年於工務工程推動4S,規定超過指定造價門檻的合約採用;建造業議會提供支援及培訓。",
-        "**4S = Site Safety Smart System**. The Development Bureau mandates 4S for public works contracts above cost thresholds; CIC provides support and training."),
+        "**4S = Site Safety Smart System(安全智慧工地系統)**。根據發展局《工務技術通告第3/2023號》,自2023年起造價超過3,000萬元的工務工程合約須採用4S,並逐步擴展至更多合約;建造業議會另設「4S標籤計劃」及資助。",
+        "**4S = Site Safety Smart System**. Under DEVB Technical Circular (Works) No. 3/2023, public works contracts over HK$30M must adopt 4S since 2023, with wider coverage since; CIC runs a 4S Labelling Scheme and funding."),
     "panels": [
         {
             "h": T("4S 系統四大核心", "Four pillars of 4S"),
@@ -391,8 +391,8 @@ SECTIONS["tech"] = {
                      ["🖥️ Central dashboard", "Live site dashboard, alert logs and analytics for management."],
                      ["🌐 Environmental sensing", "Gas, noise and heat-stress sensors with linked alerts."],
                  ])),
-                ("src", T("來源:[發展局](https://www.devb.gov.hk)｜[建造業議會](https://www.cic.hk)(最新門檻以官方公佈為準)。",
-                          "Sources: [DEVB](https://www.devb.gov.hk)｜[CIC](https://www.cic.hk) (latest thresholds per official notices).")),
+                ("src", T("來源:發展局[「廣泛應用4S 提升工地安全」局長隨筆](https://www.devb.gov.hk/tc/home/my_blog/index_id_1558.html)、[工務技術通告TC(W)第3/2023號](https://www.devb.gov.hk)(devb.gov.hk技術通告欄)｜建造業議會[4S標籤計劃](https://www.cic.hk)。",
+                          "Sources: DEVB [blog “Extensive Adoption of 4S”](https://www.devb.gov.hk/tc/home/my_blog/index_id_1558.html), [TC(W) No. 3/2023](https://www.devb.gov.hk) (Technical Circulars section)｜CIC [4S Labelling Scheme](https://www.cic.hk).")),
             ],
         },
         {
@@ -616,6 +616,8 @@ SECTIONS["sources"] = {
                      ["政府新聞公報(政府新聞處)", "全政府部門新聞公報", "RSS + 關鍵字篩選", "[info.gov.hk](https://www.info.gov.hk)"],
                      ["香港政府新聞網", "頭條、法律及治安、施政新聞", "RSS", "[news.gov.hk](https://www.news.gov.hk)"],
                      ["香港電台 RTHK", "本地/國際新聞", "RSS + 關鍵字篩選", "[news.rthk.hk](https://news.rthk.hk)"],
+                     ["星島頭條", "本地新聞(關鍵字篩選職安相關)", "RSS + 關鍵字篩選", "[stheadline.com](https://www.stheadline.com)"],
+                     ["東方日報·東網 on.cc", "本地新聞(關鍵字篩選職安相關)", "網頁抓取(按月列表)", "[hk.on.cc](https://hk.on.cc)"],
                      ["中國**應急管理部**", "內地安全生產新聞", "網頁抓取", "[mem.gov.cn](https://www.mem.gov.cn)"],
                      ["美國 **OSHA**", "美國職安新聞發布", "網頁抓取", "[osha.gov](https://www.osha.gov)"],
                      ["英國 **HSE**", "英國職安新聞(新聞中心)", "RSS", "[hse.gov.uk](https://www.hse.gov.uk)"],
@@ -627,6 +629,8 @@ SECTIONS["sources"] = {
                      ["HK Gov Press Releases (ISD)", "All-government press releases", "RSS + keyword filter", "[info.gov.hk](https://www.info.gov.hk)"],
                      ["HK Gov News", "Top stories, law and order, administration", "RSS", "[news.gov.hk](https://www.news.gov.hk)"],
                      ["RTHK", "Local / international news", "RSS + keyword filter", "[news.rthk.hk](https://news.rthk.hk)"],
+                     ["Sing Tao Headline", "Local news (OSH-filtered)", "RSS + keyword filter", "[stheadline.com](https://www.stheadline.com)"],
+                     ["Oriental Daily · on.cc", "Local news (OSH-filtered)", "HTML scrape (monthly index)", "[hk.on.cc](https://hk.on.cc)"],
                      ["China **MEM** (Emergency Management)", "Mainland work-safety news", "HTML scrape", "[mem.gov.cn](https://www.mem.gov.cn)"],
                      ["US **OSHA**", "US OSH news releases", "HTML scrape", "[osha.gov](https://www.osha.gov)"],
                      ["UK **HSE**", "UK OSH news (media centre)", "RSS", "[hse.gov.uk](https://www.hse.gov.uk)"],
