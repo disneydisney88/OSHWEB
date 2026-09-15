@@ -104,6 +104,9 @@ SOURCES = [
     {"id": "shmag", "region": "INTL", "label": "Safety+Health 雜誌(美國國家安全委員會)",
      "method": "rss", "url": "https://www.safetyandhealthmagazine.com/rss",
      "home": "https://www.safetyandhealthmagazine.com", "filter": False, "cap": 12},
+    {"id": "ohsonline", "region": "INTL", "label": "OHS Online(美國OH&S雜誌)",
+     "method": "html", "url": "https://ohsonline.com/articles/list/news.aspx",
+     "home": "https://ohsonline.com", "filter": False, "cap": 10},
 ]
 
 # 明顯非新聞的錨點標題(小寫比對)
