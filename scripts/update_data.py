@@ -101,6 +101,9 @@ SOURCES = [
     {"id": "hse", "region": "INTL", "label": "英國健康與安全局(HSE)",
      "method": "rss", "url": "https://press.hse.gov.uk/feed/",
      "home": "https://www.hse.gov.uk", "filter": False, "cap": 15},
+    {"id": "shmag", "region": "INTL", "label": "Safety+Health 雜誌(美國國家安全委員會)",
+     "method": "rss", "url": "https://www.safetyandhealthmagazine.com/rss",
+     "home": "https://www.safetyandhealthmagazine.com", "filter": False, "cap": 12},
 ]
 
 # 明顯非新聞的錨點標題(小寫比對)
