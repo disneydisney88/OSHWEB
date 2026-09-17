@@ -9,6 +9,7 @@
 """
 import base64
 import hashlib
+import html as _html
 import json
 import os
 import sys
@@ -665,7 +666,7 @@ def pg_ra():
     url = (s.get("ra_url") or "").strip() or "https://safety-report-assistant-klchoy.streamlit.app/"
     st.link_button(t("ra_btn"), url, use_container_width=True)
     st.markdown(
-        f'<iframe src="{esc(url)}" height="950" loading="lazy" '
+        f'<iframe src="{_html.escape(url, quote=True)}" height="950" loading="lazy" '
         f'style="width:100%;border:1px solid #dde5ec;border-radius:12px;background:#fff;"></iframe>',
         unsafe_allow_html=True)
     st.caption(t("ra_note"))
