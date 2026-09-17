@@ -657,6 +657,20 @@ def pg_ai():
         st.session_state.ai_history.append({"role": "assistant", "content": answer})
 
 
+# ---------------------------------------------------------------- 頁面:風險評估報告生成器
+def pg_ra():
+    st.markdown("## " + t("nav_ra"))
+    st.markdown(t("ra_intro"))
+    s = get_settings()
+    url = (s.get("ra_url") or "").strip() or "https://safety-report-assistant-klchoy.streamlit.app/"
+    st.link_button(t("ra_btn"), url, use_container_width=True)
+    st.markdown(
+        f'<iframe src="{esc(url)}" height="950" loading="lazy" '
+        f'style="width:100%;border:1px solid #dde5ec;border-radius:12px;background:#fff;"></iframe>',
+        unsafe_allow_html=True)
+    st.caption(t("ra_note"))
+
+
 # ---------------------------------------------------------------- 頁面:會員
 def pg_member():
     sec = C.SECTIONS["member"]
@@ -796,6 +810,15 @@ def pg_admin():
     cc1, cc2 = st.columns([1, 3])
     if cc1.button(C.L(C.T("儲存", "Save"), LANG), key="save_ov"):
         s["owner_video"] = ow.strip()
+        save_settings(s)
+        st.rerun()
+
+    st.markdown("### 📝 " + C.L(C.T("風險評估生成器網址", "Risk assessment generator URL"), LANG))
+    ra = st.text_input(C.L(C.T("外部工具網址(預設 safety-report-assistant)", "External tool URL"), LANG),
+                       value=s.get("ra_url", ""), key="ra_url_in")
+    rc1, rc2 = st.columns([1, 3])
+    if rc1.button(C.L(C.T("儲存", "Save"), LANG), key="save_ra"):
+        s["ra_url"] = ra.strip()
         save_settings(s)
         st.rerun()
     for i, v in enumerate(s["extra_videos"]):
@@ -938,6 +961,7 @@ def build_app():
     ]
     interactive = [
         st.Page(pg_ai, title=t("nav_ai"), icon=":material/forum:"),
+        st.Page(pg_ra, title=t("nav_ra"), icon=":material/edit_document:"),
         st.Page(pg_yt, title=t("nav_yt"), icon=":material/play_circle:"),
         st.Page(pg_files, title=t("nav_files"), icon=":material/folder:"),
         st.Page(pg_member, title=t("nav_member"), icon=":material/person:"),
