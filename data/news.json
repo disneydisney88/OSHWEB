@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01 10:16",
+ "generated_at": "2026-10-01 14:55",
  "description": "由 scripts/update_data.py 自動抓取之官方來源資訊,全部內容版權屬原本機構。",
  "sources": [
   {
@@ -10,7 +10,7 @@
    "url": "https://www.info.gov.hk/gia/rss/general_zh.xml",
    "status": "ok",
    "count": 12,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "news_top",
@@ -20,7 +20,7 @@
    "url": "https://www.news.gov.hk/tc/common/html/topstories.rss.xml",
    "status": "ok",
    "count": 0,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "news_law",
@@ -30,7 +30,7 @@
    "url": "https://www.news.gov.hk/tc/categories/law_order/html/articlelist.rss.xml",
    "status": "ok",
    "count": 1,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "news_admin",
@@ -40,7 +40,7 @@
    "url": "https://www.news.gov.hk/tc/categories/admin/html/articlelist.rss.xml",
    "status": "ok",
    "count": 0,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "rthk_local",
@@ -49,8 +49,8 @@
    "method": "RSS 訂閱",
    "url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_clocal.xml",
    "status": "ok",
-   "count": 2,
-   "fetched": "2026-10-01 10:16"
+   "count": 3,
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "rthk_intl",
@@ -60,7 +60,7 @@
    "url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_cinternational.xml",
    "status": "ok",
    "count": 5,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "stheadline",
@@ -69,8 +69,8 @@
    "method": "RSS 訂閱",
    "url": "https://www.stheadline.com/rss",
    "status": "ok",
-   "count": 10,
-   "fetched": "2026-10-01 10:16"
+   "count": 5,
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "oncc",
@@ -79,8 +79,8 @@
    "method": "網頁抓取",
    "url": "https://hk.on.cc/hk/bkn/cnt/news/{ym}/index.html",
    "status": "ok",
-   "count": 3,
-   "fetched": "2026-10-01 10:16"
+   "count": 9,
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "news_ticker",
@@ -90,7 +90,7 @@
    "url": "https://www.news.gov.hk/tc/common/html/ticker.rss.xml",
    "status": "ok",
    "count": 1,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "mem_cn",
@@ -100,7 +100,7 @@
    "url": "https://www.mem.gov.cn/xw/bndt/",
    "status": "ok",
    "count": 20,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "yt_alert",
@@ -110,7 +110,7 @@
    "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLER7fEcUu9f7Vg8z4zUYZiEZWBC9rA4Fc",
    "status": "失敗:HTTPError: HTTP Error 404: Not Found",
    "count": 0,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "hko_warn",
@@ -120,7 +120,7 @@
    "url": "https://rss.weather.gov.hk/rss/WeatherWarningSummaryv2_uc.xml",
    "status": "ok",
    "count": 1,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "osha",
@@ -130,7 +130,7 @@
    "url": "https://www.osha.gov/news/newsreleases.xml",
    "status": "ok",
    "count": 5,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "osha_qt",
@@ -140,7 +140,7 @@
    "url": "https://www.osha.gov/sites/default/files/quicktakes.xml",
    "status": "ok",
    "count": 8,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "hse",
@@ -150,7 +150,7 @@
    "url": "https://press.hse.gov.uk/feed/",
    "status": "ok",
    "count": 10,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "shmag",
@@ -160,7 +160,7 @@
    "url": "https://www.safetyandhealthmagazine.com/rss",
    "status": "ok",
    "count": 10,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   },
   {
    "id": "ohsonline",
@@ -170,7 +170,7 @@
    "url": "https://ohsonline.com/articles/list/news.aspx",
    "status": "ok",
    "count": 10,
-   "fetched": "2026-10-01 10:16"
+   "fetched": "2026-10-01 14:55"
   }
  ],
  "legal_watch": [
@@ -180,8 +180,8 @@
    "url": "https://www.labour.gov.hk/tc/news/Amendment_Ordinance.htm",
    "hash": "7e51e22617c8fb44",
    "changed": false,
-   "last_checked": "2026-10-01 10:16",
-   "first_seen": "2026-10-01 10:16"
+   "last_checked": "2026-10-01 14:55",
+   "first_seen": "2026-10-01 14:55"
   },
   {
    "id": "ld_legis",
@@ -189,12 +189,116 @@
    "url": "https://www.labour.gov.hk/tc/legislat/contentB3.htm",
    "hash": "48dad30722ce2030",
    "changed": false,
-   "last_checked": "2026-10-01 10:16",
-   "first_seen": "2026-10-01 10:16"
+   "last_checked": "2026-10-01 14:55",
+   "first_seen": "2026-10-01 14:55"
   }
  ],
- "count": 98,
+ "count": 100,
  "items": [
+  {
+   "id": "6295c654a19c",
+   "title": "外籍男子參加坪洲游泳比賽疑遇溺 獲救送院後不治",
+   "url": "https://news.rthk.hk/rthk/ch/component/k2/1872288-20261001.htm",
+   "source_id": "rthk_local",
+   "source_label": "香港電台·本地新聞",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01 14:43",
+   "fetched": "2026-10-01 14:55",
+   "summary": "一名外籍男子參與坪洲一個游泳比賽期間，懷疑遇溺昏迷，送院後死亡。 警方在中午12時許接報，58歲男事主被救起後，由直升機送往東區醫院搶救，其後不治。 編輯：黃佩珊",
+   "category": "accident"
+  },
+  {
+   "id": "64b9beb3e4f2",
+   "title": "十一國慶︱湖南高速奪命意外6死4傷 拖頭司機深夜疲勞駕駛連接3車",
+   "url": "https://www.stheadline.com/realtime-china/3621331/十一國慶湖南高速奪命意外6死4傷-拖頭司機深夜疲勞駕駛連接3車",
+   "source_id": "stheadline",
+   "source_label": "星島頭條",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01 14:35",
+   "fetched": "2026-10-01 14:55",
+   "summary": "十一國慶假期是民眾出遊高峰，駕駛時務必小心，若感到疲倦，勿勉強駕。湖南今日（1日）凌晨發生嚴重交通意外，事故致6死4傷。 湖南高速警察事發後通報，今日凌晨2時7分許，滬昆高速懷化段1407KM+200M處發生一宗道路交通事故。 經初步核查，任某某（男，57歲，河南鹿邑人）駕駛一部重型半掛牽引車（俗稱拖頭）由東往西行駛至",
+   "category": "accident"
+  },
+  {
+   "id": "14748da4c63e",
+   "title": "大埔大美督國慶長跑男子暈倒 送院搶救",
+   "url": "https://www.stheadline.com/breaking-news/3621330/大埔大美督國慶長跑男子暈倒-送院搶救",
+   "source_id": "stheadline",
+   "source_label": "星島頭條",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01 14:26",
+   "fetched": "2026-10-01 14:55",
+   "summary": "今日（10月1日）早上9時34分，一名55歲姓韋男子在大埔汀角路近大美督水壩參加跑步比賽期間，突然暈倒。救援人員接報到場，事主昏迷由救護車送往大埔那打素醫院救治。警方正調查事件原因。 跑步賽是由工聯會汽車交通運輸業總工會，與工聯會青年事務委員會合辦，屬國慶長跑活動。比賽在大美督船灣淡水湖水壩舉行，設有4公里和10公里賽",
+   "category": "accident"
+  },
+  {
+   "id": "6e38cb1ace08",
+   "title": "坪洲游泳賽外籍男遇溺昏迷 由直升機送院不治",
+   "url": "https://www.stheadline.com/breaking-news/3621323/坪洲游泳賽外籍男遇溺昏迷-由直升機送院不治",
+   "source_id": "stheadline",
+   "source_label": "星島頭條",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01 13:59",
+   "fetched": "2026-10-01 14:55",
+   "summary": "今日（10月1日）中午12時21分，坪洲東灣沙灘一名50多歲外籍男子參加游泳比賽時懷疑遇溺，陷入昏迷。他被救起送往坪洲診所，再由政府飛行服務隊派出直升機，轉送至東區醫院搶救。救援人員不斷用自動心外壓機，為事主進行急救，惟事主經送院後不治。 據了解，事發時現場舉行「坪洲環島泳賽」。網上資料顯示，賽事由「香港渡游團」舉辦，",
+   "category": "accident"
+  },
+  {
+   "id": "e6ec559c6ac3",
+   "title": "珍惜生命│啟德簡約公屋男子墮樓 送院不治",
+   "url": "https://www.stheadline.com/breaking-news/3621321/珍惜生命啟德簡約公屋男子墮樓-送院不治",
+   "source_id": "stheadline",
+   "source_label": "星島頭條",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01 13:39",
+   "fetched": "2026-10-01 14:55",
+   "summary": "今日（10月1日）早上11時54分，啟德世運道20號簡約公屋一名男子懷疑墮樓，倒臥在3座對開空地。救護車到場，發現事主昏迷不醒，連忙將他送往廣華醫院搶救，惜終告不治。警方正調查事件。 防止自殺求助熱線： 「情緒通」精神健康支援熱線及WhatsApp：18111；網址：https://www.shallwetalk.hk",
+   "category": "accident"
+  },
+  {
+   "id": "2f349b728bde",
+   "title": "勞工處提醒僱主及僱員在工作暑熱警告生效期間採取預防中暑措施",
+   "url": "https://www.info.gov.hk/gia/general/202610/01/P2026100100292.htm",
+   "source_id": "gia",
+   "source_label": "香港政府新聞公報(含勞工處)",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01 11:30",
+   "fetched": "2026-10-01 14:55",
+   "summary": "由於工作暑熱警告現已生效，勞工處提醒僱主及僱員在警告生效期間採取適當措施，以預防在酷熱天氣下或高溫環境中工作而引致中暑。 在戶外或沒有空調的室內環境工作的僱員會面對高水平的熱壓力，中暑的風險亦相對較高。僱主應評估僱員工作時的熱壓力風險因素，並因應所識別的風險因素採取所需的預防及控制措施，包括重新編排工作時段、設置遮蔭上",
+   "category": "news"
+  },
+  {
+   "id": "eaf199138126",
+   "title": "黃色工作暑熱警告生效",
+   "url": "https://news.rthk.hk/rthk/ch/component/k2/1872268-20261001.htm",
+   "source_id": "rthk_local",
+   "source_label": "香港電台·本地新聞",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01 11:30",
+   "fetched": "2026-10-01 14:55",
+   "summary": "黃色工作暑熱警告在早上11時30分生效。 編輯：方潤南",
+   "category": "news"
+  },
+  {
+   "id": "fb72e459547e",
+   "title": "何啟明：社福界納入短期訪客計劃 實習後返回原地不影響本地市場",
+   "url": "https://news.rthk.hk/rthk/ch/component/k2/1872262-20261001.htm",
+   "source_id": "rthk_local",
+   "source_label": "香港電台·本地新聞",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01 10:49",
+   "fetched": "2026-10-01 14:55",
+   "summary": "政府今日起擴展短期訪客計劃，讓非本地人才無須申請工作簽證進入許可，可參與指定短期活動。 勞工及福利局副局長何啟明出席國慶酒會後表示，新計劃便利有關人士來港從事短期取酬工作，但需要相關政策局先發出邀請。對於新增「社會福利」界別，他說有關人士來港實習，可了解本港社福界運作，在工作大約兩星期後便返回原本地方，因此對本地市場不",
+   "category": "news"
+  },
   {
    "id": "336b088f54b3",
    "title": "迪拜航空宣布暫停所有往返以色列航班",
@@ -204,8 +308,8 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-01 09:20",
-   "fetched": "2026-10-01 10:16",
-   "summary": "迪拜航空一班原定飛往以色列的客機發生嚴重安全事故，機上一名副機長懷疑刺傷機長後，試圖令飛機墜毀。其他機組人員及乘客將副機長制服後，客機緊急降落沙特阿拉伯一個機場，所有乘客安全。 阿聯酋迪拜航空事後宣布，暫停所有往返以色列的航班，待有關方面對事件展開調查。 迪拜航空在聲明說，公司將繼續與政府部門、監管機構和機場方面保持密",
+   "fetched": "2026-10-01 14:55",
+   "summary": "迪拜航空一班原定飛往以色列的客機發生嚴重安全事故，客機不到30秒內急降一萬四千尺，最終安全降落沙特阿拉伯一個機場，機上百多名乘客安全。 當局表示，客機的兩名機長打鬥，副機長懷疑刺傷機長，其他機組人員及乘客將副機長制服，他之後被捕。 總理內塔尼亞胡表示，副機場明顯試圖把客機墜毀，形容事件極其嚴重，已指示安全部門做好應對其",
    "category": "news"
   },
   {
@@ -217,7 +321,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-10-01 08:16",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "今日 （10月1日）凌晨零時42分，荃灣登發街4至6號一梯間冒出濃煙，一名32歲男住戶發現報案。警員接報到場，發現上址梯間有裝修物料起火，消防將火救熄，經初步調查相信起火原因有可疑。案件暫列「縱火」，交由荃灣警區刑事調查隊第六隊跟進，暫未有人被捕。 報案的男住戶吸入濃煙不適，清醒被送往仁濟醫院治理。事故中約100人自行",
    "category": "news"
   },
@@ -230,7 +334,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-10-01 06:45",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "天氣酷熱，衞生署衞生防護中心（中心）今日（十月一日）提醒市民，應採取適當措施預防高溫引發的疾病，例如熱痙攣、熱衰竭和中暑。 在高溫環境下，大量出汗及散熱困難，均會導致身體不勝負荷，市民應採取以下預防措施： 適時補充水分，以防脫水； 穿着淺色、寬鬆及通爽的衣物，減少吸熱，方便排汗及散熱； 保持室內空氣流通和適宜的溫度和濕",
    "category": "news"
   },
@@ -243,7 +347,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-10-01 06:45",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "電台及電視台當值宣布員注意： 請盡速播出下列特別報告： 天文台已發出酷熱天氣警告。 預防中暑，要避免長時間在戶外活動。 如果要在戶外活動或工作，最好戴寬邊帽，穿淺色、寬鬆的衣服，盡量留在蔭涼的地方。 要充分喝水，但避免喝含咖啡因或酒精的飲品。 如有不適，要盡快看醫生。",
    "category": "news"
   },
@@ -256,7 +360,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-01 06:30",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "迪拜航空一班原定飛往以色列的客機發生嚴重安全事故，機上一名副機長懷疑刺傷機長後，試圖令飛機墜毀。其他機組人員及乘客將副機長制服後，客機緊急降落沙特阿拉伯境內機場，所有乘客安全。 以色列總理內塔尼亞胡表示，涉事航班載有174名乘客，大部分是以色列人，懷疑施襲的機師已被捕，正接受沙特當局問話。他形容事件極其嚴重，已指示安全",
    "category": "news"
   },
@@ -269,7 +373,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-10-01 06:02",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "電台、電視台當值宣布員注意： 為大眾安全起見，請播放下列警告： 火災危險警告 天文台今日（十月一日）已發出黃色火災危險警告，表示火警容易發生，市民應小心防火，郊遊人士亦應小心防止山火。",
    "category": "accident"
   },
@@ -282,47 +386,8 @@
    "region": "HK",
    "kind": "weather",
    "date": "2026-10-01 06:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "黃色火災危險警告在06時00分發出( 2026年10月1日 )。",
-   "category": "accident"
-  },
-  {
-   "id": "2b9bdf1441b6",
-   "title": "深水埗基隆街後巷可疑男疑偷竊 父子上前阻止 賊人與父同受傷送院",
-   "url": "https://www.stheadline.com/breaking-news/3621244/深水埗基隆街後巷可疑男疑偷竊-父子上前阻止-賊人與父同受傷送院",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-10-01 04:47",
-   "fetched": "2026-10-01 10:16",
-   "summary": "深水埗發生懷疑盜竊案。今日（1日）凌晨1時許，警方接獲報案，指一名約63歲男子進入基隆街220至222號後巷後，懷疑偷取財物，期間一對父子發現並上前阻止，混亂間姓李（53歲）父親及疑賊均受輕傷，送院治理。 據了解，53歲姓李男子昨日（30日）中午將4支鐵棍放置於深水埗基隆街220至222號後樓梯位置，其後發現鐵棍不見。",
-   "category": "accident"
-  },
-  {
-   "id": "e8a9b931c39a",
-   "title": "紐約地鐵車門夾膠袋 男子遭拖行撞牆跌落路軌亡",
-   "url": "https://www.stheadline.com/realtime-world/3620992/紐約地鐵車門夾膠袋-男子遭拖行撞牆跌落路軌亡",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-10-01 03:02",
-   "fetched": "2026-10-01 10:16",
-   "summary": "美國紐約地鐵發生離奇死亡事故，一名57歲男子下車時，手中膠袋被車門夾住，男子被拖行至月台盡頭後摔落軌道，當場不治，在場目擊者驚恐不已。 根據《紐約郵報》報道，事發於當地28日傍晚約5時50分，地點位於貝德福德-斯圖文森特區（Bedford-Stuyvesant）的尤蒂卡大道站（Utica Avenue）。警方稱，死者博",
-   "category": "accident"
-  },
-  {
-   "id": "53bfe0879b66",
-   "title": "旺角及何文田多幢大廈停電 老翁呼吸困難送院 中電：正全力搶修",
-   "url": "https://www.stheadline.com/breaking-news/3621241/旺角及何文田多幢大廈停電-老翁呼吸困難送院-中電正全力搶修",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-10-01 02:34",
-   "fetched": "2026-10-01 10:16",
-   "summary": "旺角及何文田多幢大廈今日（1日）凌晨突然停電，中電人員到場搶修並安排供電車輛提供臨時電力。事故期間，一名居住在受影響大廈的老翁因氧氣機未能運作，出現呼吸困難，需送院治理。 有網民今日在社交平台發文，指窩打老道與亞皆老街一帶多幢大廈突然停電，中電人員其後到場進行搶修。據了解，何文田街亦有至少3座大廈停電，中電安排臨時發電",
    "category": "accident"
   },
   {
@@ -334,60 +399,125 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-01 00:51",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Indianapolis — The National Safety Council and other safety organizations are teaming up with OSHA to develop resources, training and practical solutions focuse",
    "category": "news"
   },
   {
+   "id": "2da4d0cca7c7",
+   "title": "坪洲游泳比賽外籍男遇溺 昏迷直升機送院搶救不治",
+   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001123133326-1001_00822_001.html",
+   "source_id": "oncc",
+   "source_label": "東方日報·東網on.cc",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01",
+   "fetched": "2026-10-01 14:55",
+   "summary": "",
+   "category": "accident"
+  },
+  {
+   "id": "8709a41160af",
+   "title": "女畫師約稿遭騙4萬多人民幣 家中墮樓身亡",
+   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001141017808-1001_00822_001.html",
+   "source_id": "oncc",
+   "source_label": "東方日報·東網on.cc",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01",
+   "fetched": "2026-10-01 14:55",
+   "summary": "",
+   "category": "accident"
+  },
+  {
+   "id": "c7f2e68706fb",
+   "title": "牛頭角女子墮樓 當場證實氣絕",
+   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001134614859-1001_00822_001.html",
+   "source_id": "oncc",
+   "source_label": "東方日報·東網on.cc",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01",
+   "fetched": "2026-10-01 14:55",
+   "summary": "",
+   "category": "accident"
+  },
+  {
+   "id": "f5b09e6635ea",
+   "title": "黃色工作暑熱警告生效　部分環境熱壓力頗高",
+   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001123126824-1001_00822_001.html",
+   "source_id": "oncc",
+   "source_label": "東方日報·東網on.cc",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01",
+   "fetched": "2026-10-01 14:55",
+   "summary": "",
+   "category": "news"
+  },
+  {
+   "id": "5e057f6e01f1",
+   "title": "啟德簡約公屋男子墮樓　昏迷送院搶救",
+   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001121854283-1001_00822_001.html",
+   "source_id": "oncc",
+   "source_label": "東方日報·東網on.cc",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01",
+   "fetched": "2026-10-01 14:55",
+   "summary": "",
+   "category": "accident"
+  },
+  {
+   "id": "4c0e06e71a4b",
+   "title": "大埔船灣淡水湖水壩跑步比賽　中年男暈倒昏迷送院",
+   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001101858496-1001_00822_001.html",
+   "source_id": "oncc",
+   "source_label": "東方日報·東網on.cc",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-10-01",
+   "fetched": "2026-10-01 14:55",
+   "summary": "",
+   "category": "accident"
+  },
+  {
    "id": "7afc381f2f35",
-   "title": "荃灣縱火狂徒燒裝修物料 百人疏散一男子吸入濃煙不適送院",
+   "title": "荃灣縱火狂徒燒裝修物料　百人疏散一男子吸入濃煙不適送院",
    "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001075006363-1001_00822_001.html",
    "source_id": "oncc",
    "source_label": "東方日報·東網on.cc",
    "region": "HK",
    "kind": "news",
    "date": "2026-10-01",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "accident"
   },
   {
    "id": "939258f36c0a",
-   "title": "酷熱天氣警告仍生效 巿民應慎防中暑",
+   "title": "酷熱天氣警告仍生效　巿民應慎防中暑",
    "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001070127081-1001_00822_001.html",
    "source_id": "oncc",
    "source_label": "東方日報·東網on.cc",
    "region": "HK",
    "kind": "news",
    "date": "2026-10-01",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
   {
    "id": "14a1b9d774f2",
-   "title": "七旬翁遭虎頭蜂蜇傷不治　責任歸屬惹議",
+   "title": "七旬翁遭虎頭蜂螫傷不治　責任歸屬惹議",
    "url": "https://hk.on.cc/hk/bkn/cnt/news/20261001/bkn-20261001041828112-1001_00822_001.html",
    "source_id": "oncc",
    "source_label": "東方日報·東網on.cc",
    "region": "HK",
    "kind": "news",
    "date": "2026-10-01",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
-   "category": "accident"
-  },
-  {
-   "id": "0aa32102eac4",
-   "title": "消防處巡查8幢高風險樓宇 發9張消除火警危險通知書、3宗檢控",
-   "url": "https://www.stheadline.com/breaking-news/3621175/消防處巡查8幢高風險樓宇-發9張消除火警危險通知書3宗檢控",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-30 23:22",
-   "fetched": "2026-10-01 10:16",
-   "summary": "消防處一直高度關注大廈消防安全，自去年12月起，消防處已先後4次主動巡查較高風險樓宇，包括多次回訪覆查，結果顯示大部分樓宇的消防安全狀況均有顯著改善。為進一步鞏固執法成果，消防處於9月29日及30日再度採取特別執法行動，派員以便衣方式主動巡查8幢較高風險樓宇。 消防處指，行動共動員86名消防人員，發現28項火警危險違規",
    "category": "accident"
   },
   {
@@ -399,61 +529,9 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 23:04",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "迪拜航空一班原定由阿聯酋前往以色列的客機，飛行途中報稱被劫持，發出求助信號後，緊急降落沙特阿拉伯，乘客沒有受傷。 外電引述匿名以色列官員表示，事件是由於正副機長在駕駛艙發生肢體衝突，有人持刀襲擊對方，正副機長事後均受傷送院。 經路透社核實的片段見到，涉事客機機艙內有血跡，兩人受傷倒地，其中一人穿著相信是機組人員制服、肩",
    "category": "news"
-  },
-  {
-   "id": "b9ae8b32684f",
-   "title": "黎燕珊自認四十八孝媽媽苦盡甘來 拒絕孤獨終老決要尋找人生價值 與未婚夫鬧意見仔女反應超意外",
-   "url": "https://www.stheadline.com/film-drama/3621149/黎燕珊自認四十八孝媽媽苦盡甘來-拒絕孤獨終老決要尋找人生價值-與未婚夫鬧意見仔女反應超意外",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-30 23:00",
-   "fetched": "2026-10-01 10:16",
-   "summary": "首屆亞洲小姐冠軍黎燕珊日前宣布再婚，在一對子女「舉腳贊成」下，將於明年與男友結婚，這段黃昏戀修成正果，甜蜜迎接人生第二春。黎燕珊曾表示離婚對她傷痛很大，雖然一直也有不少追求者，當中不乏事業有成的好男人，但她礙於當時一對仔女年紀尚小，擔心仔女不能接受新爸爸，所以年多年來獨力撫養一對子女，直到仔女已經長大，黎燕珊亦決定放開",
-   "category": "accident"
-  },
-  {
-   "id": "b7efc5d3cb59",
-   "title": "「爆炸頭」被捕｜與李盈姿仍被扣查 警指拘捕行動繼續 所謂「831」無事實根據",
-   "url": "https://www.stheadline.com/breaking-news/3621168/爆炸頭被捕與李盈姿仍被扣查-警指拘捕行動繼續-所謂831無事實根據",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-30 22:49",
-   "fetched": "2026-10-01 10:16",
-   "summary": "警方國安處就涉及8月31日在太子站外散播假訊息以煽動行為的案件，累計拘捕8名涉案人，包括於今日（9月30日）清晨落網的網絡媒體「Boom News - 爆炸頭」的創辦人兼網主鄧浩榮，以及前「社民連」成員牙醫李盈姿。警方表示，早前被捕6人已獲准保釋候查，而今晨被捕2人則被扣留調查。警方拘捕行動仍然繼續，並強調所謂「831",
-   "category": "accident"
-  },
-  {
-   "id": "0c4df5c15b58",
-   "title": "珍惜生命｜九龍灣19歲少女服藥自殺亡 疑受學業問題困擾尋短",
-   "url": "https://www.stheadline.com/breaking-news/3621164/珍惜生命九龍灣19歲少女服藥自殺亡-疑受學業問題困擾尋短",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-30 22:34",
-   "fetched": "2026-10-01 10:16",
-   "summary": "今日（30日）傍晚6時許，警方接獲一名男子報案，指其19歲姓胡女兒在九龍灣偉業街33號德福花園寓所內暈倒。救援人員接報到場，少女已經昏迷不醒，倒臥客廳，現場有一些藥物包裝，經檢查後證實當場死亡。警方於現場沒有檢獲遺書，少女的死因有待驗屍後確定，案件暫列「自殺」處理。據了解，少女有學業及情緒問題。 防止自殺求助熱線： 「",
-   "category": "accident"
-  },
-  {
-   "id": "99ac0a3eb8c6",
-   "title": "銅鑼灣裝修中餐廳疑甲醛超標 8男廚師吸入後不適送院",
-   "url": "https://www.stheadline.com/breaking-news/3621153/銅鑼灣裝修中餐廳疑甲醛超標-8男廚師吸入後不適送院",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-30 22:00",
-   "fetched": "2026-10-01 10:16",
-   "summary": "銅鑼灣發生工業意外。昨晚（30日）8時56分，警方接獲報案，銅鑼灣駱克道近波斯富街一商廈，上址一間裝修中的餐廳內，8名男廚師在上址工作期間疑吸入異味後感到不適，當中有人出現皮膚紅腫及眼痛，8人清醒送往律敦治醫院治理。 警方接報到場，初步調查相信，8名年齡介乎25至51歲男子當時在上址工作，期間疑吸入過量甲醛，導致不適。",
-   "category": "accident"
   },
   {
    "id": "8fb7de1dbff1",
@@ -464,7 +542,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 22:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Whether you manage a warehouse, manufacturing facility, office, health care organization or school, implementing a 5S program can help reduce waste, improve eff",
    "category": "news"
   },
@@ -477,34 +555,8 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 21:34",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "迪拜航空一班原定由阿聯酋前往以色列的客機，飛行途中報稱被劫持，發出求助信號後，緊急降落沙特阿拉伯，乘客沒有受傷。 外電引述匿名以色列官員表示，事件是由於正副機長在駕駛艙發生肢體衝突，有人持刀襲擊對方，正副機長事後均受傷送院，以方調查人員正在向他們問話。 經路透社核實的片段見到，涉事客機機艙內有血跡，兩人受傷倒地，其中一",
-   "category": "news"
-  },
-  {
-   "id": "d803ce24cfa4",
-   "title": "食環署針對蟲鼠及衞生問題 巡查逾300間超市及食肆",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1872200-20260930.htm",
-   "source_id": "rthk_local",
-   "source_label": "香港電台·本地新聞",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-30 21:33",
-   "fetched": "2026-10-01 10:16",
-   "summary": "食環署高度關注近日涉及食物業處所蟲鼠及食物衞生的事件，今日起展開為期兩星期的專項巡查及執法行動。署方截至今日6時，共巡查288間超級市場、16間食肆及23間其他食物業處所，發出28張「消除蟲鼠通知」及22張「規定食物業處所改善清潔狀況及維修通知」、一項警告及提出兩宗檢控。 就太子塘尾道一間超級市場被指有老鼠爬過及啃咬水",
-   "category": "news"
-  },
-  {
-   "id": "082eb2372b24",
-   "title": "食環署展開兩周「天羅行動」加強打擊蟲鼠問題 截至下午六時已提出兩宗檢控",
-   "url": "https://www.stheadline.com/politics/3621140/食環署展開兩周天羅行動加強打擊蟲鼠問題-截至下午六時已提出兩宗檢控",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-30 20:59",
-   "fetched": "2026-10-01 10:16",
-   "summary": "近日接連有食肆甚至是健身處所發現鼠蹤，食環署表示高度關注近日事件，除即時跟進個別個案外，亦由今日（30日）起展開為期兩周的「天羅行動」，靈活巡查超市及食肆等處所，重點檢視衞生改善與持續處理情況。 截至今日下午六時，食環署已巡查288間超市、16間食肆及23間其他處所，發出28張消除蟲鼠通知、22張改善清潔通知、一項警告",
    "category": "news"
   },
   {
@@ -516,7 +568,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 20:39",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Washington — The Department of Health and Human Services has unveiled “the first official, recurring process to identify, consolidate, and publish anticipated H",
    "category": "news"
   },
@@ -529,7 +581,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 20:30",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Washington — Incidents reported to the Chemical Safety Board during fiscal year 2026 “have been particularly deadly in comparison to previous years,” CSB Chair ",
    "category": "news"
   },
@@ -542,21 +594,8 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 20:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Washington — Prentice Cline is the new deputy assistant secretary at OSHA, the agency’s updated organizational chart shows. Cline previously served as acting de",
-   "category": "news"
-  },
-  {
-   "id": "1b6c176231c9",
-   "title": "食安中心發現日本受管制千葉縣梭魚乾產品進口本港 沒有流出市面",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1872189-20260930.htm",
-   "source_id": "rthk_local",
-   "source_label": "香港電台·本地新聞",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-30 19:46",
-   "fetched": "2026-10-01 10:16",
-   "summary": "食物安全中心公布，檢查日本進口食品時，發現當中有來自受管制縣份、千葉縣的梭魚乾產品，懷疑違反相關《食物安全命令》，涉事產品已被中心封存，沒有流出市面，中心正跟進事件，調查仍然繼續。 中心表示，會繼續跟進事件和採取適當行動，包括就事件通知日本有關當局，如有足夠證據，會向涉事進口商提出檢控。 編輯：任順熙",
    "category": "news"
   },
   {
@@ -568,7 +607,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-30 17:55",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "保安局局長鄧炳強今日（九月三十日）主持「跨部門反黑工專責組」第三次會議。會議上，專責組討論二○二六年《施政報告》中有關打擊非法勞工的措施，跟進非法勞工的最新情況，並通過增補商務及經濟發展局、發展局、食物環境衞生署、民政事務總署和旅遊事務署為專責組成員，以加強打擊重點行業的非法勞工。 身兼專責組組長的鄧炳強表示：「行政長",
    "category": "news"
   },
@@ -581,7 +620,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 17:32",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "日本神戶警方拘捕一名男子，懷疑與市內兩宗槍擊案有關。 神戶市今天接連發生兩宗槍擊案，第一宗發生在當地時間下午1時15分左右，中央區有人開槍，一名60多歲男子腹部中槍，送院搶救後不治。大約20分鐘後，神戶市警方再接報，指兵庫區有人開槍，一名男子背部中槍。 日本傳媒報道，警方在第二宗槍擊案現場附近，拘捕一名大約80歲的持槍",
    "category": "news"
   },
@@ -594,7 +633,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-30 15:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "​一名業主由於屢不遵從根據《建築物條例》（第123章）發出的清拆令，昨日（九月二十九日）在觀塘裁判法院被定罪及判罰款合共150,060元，當中30,060元屬就罪行持續的日數所判的罰款。 有關個䅁涉及觀塘鴻圖道一幢工業大廈天台上一個面積約750平方米的搭建物。該僭建物並無事先獲得屋宇署的批准及同意，屋宇署根據《建築物條",
    "category": "news"
   },
@@ -607,7 +646,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-30 10:50",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "以下是勞工及福利局局長孫玉菡今日（九月三十日）在立法會人力事務委員會政策簡報會，就《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》（《香港第一個五年規劃》）及《行政長官2026年施政報告》中有關勞工及福利局的政策措施的書面發言稿： 主席： 我重點介紹《五年規劃》中有關人力及勞工範疇的整體方向，以及",
    "category": "news"
   },
@@ -620,7 +659,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-30 10:10",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "由於工作暑熱警告現已生效，勞工處提醒僱主及僱員在警告生效期間採取適當措施，以預防在酷熱天氣下或高溫環境中工作而引致中暑。 在戶外或沒有空調的室內環境工作的僱員會面對高水平的熱壓力，中暑的風險亦相對較高。僱主應評估僱員工作時的熱壓力風險因素，並因應所識別的風險因素採取所需的預防及控制措施，包括重新編排工作時段、設置遮蔭上",
    "category": "news"
   },
@@ -633,7 +672,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-30 06:46",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "天氣酷熱，衞生署衞生防護中心（中心）今日（九月三十日）提醒市民，應採取適當措施預防高溫引發的疾病，例如熱痙攣、熱衰竭和中暑。 在高溫環境下，大量出汗及散熱困難，均會導致身體不勝負荷，市民應採取以下預防措施： 適時補充水分，以防脫水； 穿着淺色、寬鬆及通爽的衣物，減少吸熱，方便排汗及散熱； 保持室內空氣流通和適宜的溫度和",
    "category": "news"
   },
@@ -646,7 +685,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-30 06:45",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "電台及電視台當值宣布員注意： 請盡速播出下列特別報告： 天文台已發出酷熱天氣警告。 預防中暑，要避免長時間在戶外活動。 如果要在戶外活動或工作，最好戴寬邊帽，穿淺色、寬鬆的衣服，盡量留在蔭涼的地方。 要充分喝水，但避免喝含咖啡因或酒精的飲品。 如有不適，要盡快看醫生。",
    "category": "news"
   },
@@ -659,7 +698,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 00:39",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Washington — A new toolbox talk on safe practices for operating boom trucks is available from NIOSH and CPWR – The Center for Construction Research and Training",
    "category": "news"
   },
@@ -672,7 +711,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 00:39",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Washington — A pair of construction safety organizations are teaming up to coordinate efforts on education and outreach related to worker mental health and suic",
    "category": "news"
   },
@@ -685,7 +724,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-30 00:37",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Washington — Employers and workers should be prepared to respond to an opioid overdose on the job, OSHA stresses in a recently published fact sheet. The fact sh",
    "category": "news"
   },
@@ -698,7 +737,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-29 22:06",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Worker died from crush injuries after being drawn into machinery through a gap in fixed guarding. Company fined and ordered to pay contribution to costs after p",
    "category": "news"
   },
@@ -711,7 +750,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-29 17:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "一手住宅物業銷售監管局（銷售監管局）今日（九月二十九日）成功檢控一個一手住宅發展項目的賣方違反《一手住宅物業銷售條例》（《條例》）。該賣方涉及的十一項控罪為沒有在擁有人與另一人就發展項目的指明住宅物業訂立臨時買賣合約之後的24小時之內，記入支付條款，即售價的折扣，及就該項購買而連帶提供的財務優惠或利益到發展項目的成交紀",
    "category": "news"
   },
@@ -724,21 +763,8 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-29 12:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "勞工處今日（九月二十九日）宣布，對三有有限公司實施行政制裁，即時中止該公司已提交的「補充勞工優化計劃」（優化計劃）輸入勞工申請，並由即日起拒絕處理該公司隨後兩年在優化計劃下提交的申請。 勞工處發言人表示：「經調查後，勞工處確定上述公司經優化計劃申請輸入勞工期間，無合理理由拒絕聘用應徵普通文員的合資格求職者，違反本地招聘",
-   "category": "news"
-  },
-  {
-   "id": "98a50c8afb12",
-   "title": "勞工處提醒僱主及僱員在工作暑熱警告生效期間採取預防中暑措施",
-   "url": "https://www.info.gov.hk/gia/general/202609/29/P2026092900289.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-09-29 10:51",
-   "fetched": "2026-10-01 10:16",
-   "summary": "由於工作暑熱警告現已生效，勞工處提醒僱主及僱員在警告生效期間採取適當措施，以預防在酷熱天氣下或高溫環境中工作而引致中暑。 在戶外或沒有空調的室內環境工作的僱員會面對高水平的熱壓力，中暑的風險亦相對較高。僱主應評估僱員工作時的熱壓力風險因素，並因應所識別的風險因素採取所需的預防及控制措施，包括重新編排工作時段、設置遮蔭上",
    "category": "news"
   },
   {
@@ -750,7 +776,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-29 04:03",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "How can video and telematics data be combined to distinguish risky driving from circumstances such as sudden traffic changes, poor weather or another vehicle cu",
    "category": "news"
   },
@@ -763,7 +789,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-29 01:53",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Boston — The top 10 causes of workplace injuries and illnesses accounted for about 85% of U.S. employers’ overall injury costs in 2023, according to the latest ",
    "category": "news"
   },
@@ -776,7 +802,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-28 00:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "金融管理局和銀行公會今日宣布，考慮到大埔火警部分受影響居民仍需時完成住屋和財務相關安排，銀行業界將再次延長信貸支援。 所有28間零售銀行進一步延長受影響人士現有的按揭、私人、信用卡等貸款，包括本金和利息的還款寬限期六個月至明年5月底，以減輕受影響人士的財務壓力，讓他們在處理長遠住屋安排上有更大彈性。 另外，所有宏福苑按",
    "category": "accident"
   },
@@ -789,7 +815,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-26 00:58",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "74-year-old Grace Mecaley killed after being struck by a bus while using a pedestrian crossing TfL failed to properly manage risks to pedestrians at Walthamstow",
    "category": "news"
   },
@@ -802,7 +828,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-25 01:21",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Mick Ferris, a coach driver on his break, was killed by a falling window pane from the 26th floor of the luxury Corniche development in London The Companies fai",
    "category": "news"
   },
@@ -815,7 +841,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-24 20:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "September 24, 2026",
    "category": "news"
   },
@@ -828,7 +854,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-24 02:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "SHARING OSHA'S VISION SAFE TRACTORS SAVE LIVES DATES TO REMEMBER START THE CONVERSATION SAFETY AT EVERY LEVEL YOUR RIGHT TO REPORT YOU ASK...WE ANSWER WHAT'S TR",
    "category": "news"
   },
@@ -841,7 +867,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-23 20:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "September 23, 2026",
    "category": "news"
   },
@@ -854,7 +880,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-23 20:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "September 23, 2026",
    "category": "news"
   },
@@ -867,7 +893,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-21 22:26",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Father-of-one Joseph Tuck sustained serious spinal injuries that prevented him returning to a physical job. Simple measures to prevent a fall, including securin",
    "category": "news"
   },
@@ -880,7 +906,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-17 17:54",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Craig Pearson, 37, sustained fatal injuries when fire extinguisher exploded Father-of-four described by his fiancé Rachelle as “bubbly, thoughtful and kind’ HSE",
    "category": "news"
   },
@@ -893,7 +919,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-16 19:38",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Samworth Brothers Ltd, which owns Ginsters, Soreen and West Cornwall Pasty Co. brands, handed six-figure fine over failings. An employee and a contractor suffer",
    "category": "news"
   },
@@ -906,7 +932,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-09-16 00:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "（可按 這裏 收看香港特區第一個五年規劃和施政報告記者會整段附有手語翻譯的影片。） 行政長官李家超表示，政府推動人工智能（AI）發展的同時要作風險治理。施政報告列出，AI風險治理策略有七方面，包括打擊利用AI犯罪、加強保護未成年人使用者、研究AI產品導致意外的法律責任等。 李家超今日下午在記者會闡述香港特區第一個五年規",
    "category": "accident"
   },
@@ -919,7 +945,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-15 23:58",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Following the incident which took place on July 30, 2026, at Taff’s Well Quarry, the Health and Safety Executive (HSE) is continuing its investigation into the ",
    "category": "news"
   },
@@ -932,7 +958,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-15 23:09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Worker sustained life-changing injuries after a 1.2-tonne crate fell from a forklift truck. HSE investigation found unloading operation was poorly planned, not ",
    "category": "news"
   },
@@ -945,7 +971,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-15 20:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "September 15, 2026",
    "category": "news"
   },
@@ -958,7 +984,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-14 16:21",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Public urged to check Gas Safe Register as new HSE figures released show seventeen people convicted for illegal gas work in the past 18 months alone They includ",
    "category": "news"
   },
@@ -971,7 +997,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-09 20:54",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "Maintenance engineer suffered catastrophic, life-changing injuries after his arm was pulled into an unguarded conveyor Working alone, he waved at a CCTV camera ",
    "category": "news"
   },
@@ -984,7 +1010,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -997,7 +1023,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1010,7 +1036,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1023,7 +1049,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1036,7 +1062,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1049,7 +1075,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1062,7 +1088,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1075,7 +1101,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1088,7 +1114,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1101,7 +1127,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1114,7 +1140,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1127,7 +1153,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1140,7 +1166,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1153,7 +1179,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-08-26 20:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "August 26, 2026",
    "category": "news"
   },
@@ -1166,7 +1192,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-08-07 02:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "PROTECTING WAREHOUSE WORKERS PARTNERSHIP IN ACTION BEFORE YOU DIG DATES TO REMEMBER STAY SAFE AND CARRY ON CONNECT WITH US PREVENTING TRENCH CAVE-INS BUILDING S",
    "category": "news"
   },
@@ -1179,7 +1205,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1192,7 +1218,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1205,7 +1231,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1218,7 +1244,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1231,7 +1257,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1244,7 +1270,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-08",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1257,7 +1283,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-07",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1270,7 +1296,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-06-25 02:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "BETTER TOGETHER SAFETY AT EVERY LEVEL 30 YEARS OF SAFETY EXCELLENCE DATES TO REMEMBER CONNECT WITH US SHORE UP WORKER SAFETY COLLABORATION BUILDS SUCCESS PROTEC",
    "category": "news"
   },
@@ -1283,7 +1309,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-06-23 02:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "JOINING FORCES FOR MARITIME SAFETY SPEAKING UP MATTERS DATES TO REMEMBER CLEARING THE AIR SAFETY AT EVERY LEVEL BETTER TOGETHER MOVING SAFETY FORWARD OSHA CARES",
    "category": "news"
   },
@@ -1296,7 +1322,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-06-10 02:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "HOLDING VIOLATORS ACCOUNTABLE KEEPING CONNECTED TRAINING GRANTS AVAILABLE INSIDE OSHA'S VISION DATES TO REMEMBER SAFETY IN MOTION KEEP YOUR COOL SAFETY AT EVERY",
    "category": "news"
   },
@@ -1309,7 +1335,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-06-09 02:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "PROTECTING YOUNG WORKERS TRENCH SAFETY BE PREPARED DATES TO REMEMBER KEEP YOUR COOL IN THE HEAT SAFETY IS PERSONAL OSHA CARES SUMMER HAZARDS SAFETY AT EVERY LEV",
    "category": "news"
   },
@@ -1322,7 +1348,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-05-21 02:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "STANDING TOGETHER TO PEVENT FALLS OSHA ON THE ROAD ALLIES IN CONSTRUCTION SAFETY THE WORD ON THE STREET EXPANDING OUR FOCUS WORKPLACE SAFETY MILESTONES YOU ASK.",
    "category": "news"
   },
@@ -1335,7 +1361,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-05-08 02:00",
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "REFLECTING ON WORKERS MEMORIAL DAY TAKING A STAND TO PREVENT FALLS MENTAL HEALTH MATTERS DATES TO REMEMBER SUPPORT MENTAL WELL-BEING PROTECTING YOUR RIGHTS SAFE",
    "category": "news"
   },
@@ -1348,7 +1374,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1361,7 +1387,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1374,7 +1400,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1387,7 +1413,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1400,7 +1426,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1413,7 +1439,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1426,7 +1452,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1439,7 +1465,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1452,7 +1478,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   },
@@ -1465,7 +1491,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-10-01 10:16",
+   "fetched": "2026-10-01 14:55",
    "summary": "",
    "category": "news"
   }
