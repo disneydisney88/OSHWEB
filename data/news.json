@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18 12:37",
+ "generated_at": "2026-11-19 12:19",
  "description": "由 scripts/update_data.py 自動抓取之官方來源資訊,全部內容版權屬原本機構。",
  "sources": [
   {
@@ -9,8 +9,8 @@
    "method": "RSS 訂閱",
    "url": "https://www.info.gov.hk/gia/rss/general_zh.xml",
    "status": "ok",
-   "count": 10,
-   "fetched": "2026-11-18 12:37"
+   "count": 7,
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "news_top",
@@ -20,7 +20,7 @@
    "url": "https://www.news.gov.hk/tc/common/html/topstories.rss.xml",
    "status": "ok",
    "count": 3,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "news_law",
@@ -30,7 +30,7 @@
    "url": "https://www.news.gov.hk/tc/categories/law_order/html/articlelist.rss.xml",
    "status": "ok",
    "count": 1,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "news_admin",
@@ -39,8 +39,8 @@
    "method": "RSS 訂閱",
    "url": "https://www.news.gov.hk/tc/categories/admin/html/articlelist.rss.xml",
    "status": "ok",
-   "count": 0,
-   "fetched": "2026-11-18 12:37"
+   "count": 1,
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "rthk_local",
@@ -49,8 +49,8 @@
    "method": "RSS 訂閱",
    "url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_clocal.xml",
    "status": "ok",
-   "count": 2,
-   "fetched": "2026-11-18 12:37"
+   "count": 0,
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "rthk_intl",
@@ -59,8 +59,8 @@
    "method": "RSS 訂閱",
    "url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_cinternational.xml",
    "status": "ok",
-   "count": 2,
-   "fetched": "2026-11-18 12:37"
+   "count": 0,
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "stheadline",
@@ -69,8 +69,8 @@
    "method": "RSS 訂閱",
    "url": "https://www.stheadline.com/rss",
    "status": "ok",
-   "count": 8,
-   "fetched": "2026-11-18 12:37"
+   "count": 5,
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "oncc",
@@ -79,8 +79,8 @@
    "method": "網頁抓取",
    "url": "https://hk.on.cc/hk/bkn/cnt/news/{ym}/index.html",
    "status": "ok",
-   "count": 3,
-   "fetched": "2026-11-18 12:37"
+   "count": 0,
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "news_ticker",
@@ -90,7 +90,7 @@
    "url": "https://www.news.gov.hk/tc/common/html/ticker.rss.xml",
    "status": "ok",
    "count": 0,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "mem_cn",
@@ -100,7 +100,7 @@
    "url": "https://www.mem.gov.cn/xw/bndt/",
    "status": "ok",
    "count": 20,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "yt_alert",
@@ -110,7 +110,7 @@
    "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLER7fEcUu9f7Vg8z4zUYZiEZWBC9rA4Fc",
    "status": "ok",
    "count": 1,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "hko_warn",
@@ -120,7 +120,7 @@
    "url": "https://rss.weather.gov.hk/rss/WeatherWarningSummaryv2_uc.xml",
    "status": "ok",
    "count": 1,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "osha",
@@ -130,7 +130,7 @@
    "url": "https://www.osha.gov/news/newsreleases.xml",
    "status": "ok",
    "count": 5,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "osha_qt",
@@ -140,7 +140,7 @@
    "url": "https://www.osha.gov/sites/default/files/quicktakes.xml",
    "status": "ok",
    "count": 8,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "hse",
@@ -150,7 +150,7 @@
    "url": "https://press.hse.gov.uk/feed/",
    "status": "ok",
    "count": 10,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "shmag",
@@ -160,7 +160,7 @@
    "url": "https://www.safetyandhealthmagazine.com/rss",
    "status": "ok",
    "count": 10,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   },
   {
    "id": "ohsonline",
@@ -170,7 +170,7 @@
    "url": "https://ohsonline.com/articles/list/news.aspx",
    "status": "ok",
    "count": 10,
-   "fetched": "2026-11-18 12:37"
+   "fetched": "2026-11-19 12:19"
   }
  ],
  "legal_watch": [
@@ -180,8 +180,8 @@
    "url": "https://www.labour.gov.hk/tc/news/Amendment_Ordinance.htm",
    "hash": "7e51e22617c8fb44",
    "changed": false,
-   "last_checked": "2026-11-18 12:37",
-   "first_seen": "2026-11-18 12:37"
+   "last_checked": "2026-11-19 12:19",
+   "first_seen": "2026-11-19 12:19"
   },
   {
    "id": "ld_legis",
@@ -189,50 +189,206 @@
    "url": "https://www.labour.gov.hk/tc/legislat/contentB3.htm",
    "hash": "48dad30722ce2030",
    "changed": false,
-   "last_checked": "2026-11-18 12:37",
-   "first_seen": "2026-11-18 12:37"
+   "last_checked": "2026-11-19 12:19",
+   "first_seen": "2026-11-19 12:19"
   }
  ],
- "count": 94,
+ "count": 82,
  "items": [
   {
-   "id": "48d9dece7bb9",
-   "title": "保安局介紹自動心臟除顫器使用法 鄧炳強:「救人一命 你都做得到」",
-   "url": "https://www.stheadline.com/breaking-news/3638418/保安局介紹自動心臟除顫器使用法-鄧炳強救人一命-你都做得到",
+   "id": "c7f78ce74133",
+   "title": "深圳APEC｜普京隨行軍官直認手上「核公事包」 中美俄會晤前「騷肌肉」？",
+   "url": "https://www.stheadline.com/realtime-china/3638787/深圳APEC普京隨行軍官直認手上核公事包-中美俄會晤前騷肌肉",
    "source_id": "stheadline",
    "source_label": "星島頭條",
    "region": "HK",
    "kind": "news",
-   "date": "2026-11-18 12:20",
-   "fetched": "2026-11-18 12:37",
-   "summary": "保安局局長鄧炳強今日在社交平台分享使用自動心臟除顫器（AED）的重要性。他指當有人突然心臟驟停，每一秒都可能係生與死的關鍵，而一部自動心臟除顫器，隨時可以救人一命！ 好多人以為AED只有專業救護人員先識用，其實人人都可以！就算無接受過專業訓練，只要跟住語音指示逐步操作，一樣可以出手救人！鄧炳強介紹消防處救護同袍，介紹如",
+   "date": "2026-11-19 11:07",
+   "fetched": "2026-11-19 12:19",
+   "summary": "中美俄三國元首今日（19日）在深圳亞太經合組織峰會場邊舉行歷史性會談前夕，俄方一個神秘黑色公事包意外成為焦點。普京隨行海軍軍官在深圳下榻酒店外被拍到手提代號「Cheget」的核武公事包，面對記者追問更罕有在鏡頭前微笑承認：「沒錯，就是它。」 綜合外電報道，隨着國家主席習近平、美國總統特朗普與俄羅斯總統普京齊聚深圳出席亞",
+   "category": "accident"
+  },
+  {
+   "id": "83a79d72263b",
+   "title": "龍翔道救護車遭私家車撞尾 行車線一度封閉",
+   "url": "https://www.stheadline.com/breaking-news/3638755/龍翔道救護車遭私家車撞尾-行車線一度封閉",
+   "source_id": "stheadline",
+   "source_label": "星島頭條",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-11-19 08:29",
+   "fetched": "2026-11-19 12:19",
+   "summary": "今日（19日）早上7時44分，一輛救護車沿龍翔道往荃灣方向行駛，當駛至近港鐵鑽石山站對開時，與尾隨一輛私家車相撞。現場所見，私家車撞向救護車的車尾，有救護員下車視察車輛損毀情況。事件中無人受傷，警方正調查事故成因。 受交通意外影響期間，龍翔道往荃灣方向近鑽石山港鐵站的中線一度封閉，交通受阻，其後現場始解封。",
+   "category": "accident"
+  },
+  {
+   "id": "c8b2baea41e2",
+   "title": "四方峰會尷尬一幕瘋傳 莫迪「提醒移步」遭特朗普無視",
+   "url": "https://www.stheadline.com/realtime-world/3638750/四方峰會尷尬一幕瘋傳-莫迪提醒移步遭特朗普無視",
+   "source_id": "stheadline",
+   "source_label": "星島頭條",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-11-19 07:18",
+   "fetched": "2026-11-19 12:19",
+   "summary": "四方安全對話（Quad）領袖峰會於17日在菲律賓馬尼拉登場，由美、日、印、澳四國領導人出席。然而，合照環節卻發生一段意外插曲，美國總統特普將合照時間變成即興記者會，且無視印度總理莫迪的提醒，在場暢談網路服務中斷及黃仁勳事件相關議題，引發全球網友熱議。 合照變即興記者會 莫迪提醒無果面無表情 綜合外媒報道，此次峰會由特朗",
+   "category": "accident"
+  },
+  {
+   "id": "02eb7fea6727",
+   "title": "5架的士「死城」︱甘肅小縣慢活節奏爆紅 居民：這裡連老鼠都沒有︱有片",
+   "url": "https://www.stheadline.com/realtime-china/3638417/5架的士死城甘肅小縣慢活節奏爆紅-居民這裡連老鼠都沒有有片",
+   "source_id": "stheadline",
+   "source_label": "星島頭條",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-11-19 07:00",
+   "fetched": "2026-11-19 12:19",
+   "summary": "都市人嚮往小城鄉郊的恬靜與慢活，而小地方居民亦對大城市的石屎森林與繁華節奏心生憧憬，正如名著《圍城》所言：「城裡的人想出去，城外的人想進去。」近日，甘肅省隴南市轄下的兩當縣，便因地廣人稀及悠閒的生活步調，在內地網絡意外走紅。 四季皆宜旅遊 美食琳琅滿目 一名內地旅遊博主日前（11月16日）在社交平台發布短片，直言「在這",
+   "category": "accident"
+  },
+  {
+   "id": "f9173392c516",
+   "title": "Nonfatal injuries and illnesses trending downward, BLS data shows",
+   "url": "https://www.safetyandhealthmagazine.com/nonfatal-injuries-and-illnesses-trending-downward-bls-data-shows/",
+   "source_id": "shmag",
+   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
+   "region": "INTL",
+   "kind": "news",
+   "date": "2026-11-19 03:19",
+   "fetched": "2026-11-19 12:19",
+   "summary": "The number of reported workplace injuries and illnesses in the U.S. private sector totaled an estimated 2.4 million in 2025, or 3% below the 2024 total of 2.5 m",
    "category": "news"
   },
   {
-   "id": "bba3e86026ed",
-   "title": "議政四方｜林振昇倡考慮沙井等工程納入呈報機制",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1878264-20261118.htm",
-   "source_id": "rthk_local",
-   "source_label": "香港電台·本地新聞",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18 12:07",
-   "fetched": "2026-11-18 12:37",
-   "summary": "建造業的致命工業意外數目和每千名工人意外率，均是各行業之中最高。在立法會大會上，勞聯選委界立法會議員林振昇提出口頭質詢，關注涉及裝修及維修工程的致命意外數目，以及勞工處就小型建築工程的法定呈報。林振昇表示，現時小型工程毋須呈報，政府無法巡查。他表示，政府幾年前曾建議修例，擴大呈報範圍，當時有小型工程承辦商關注會否加重工",
-   "category": "accident"
-  },
-  {
-   "id": "a5a28cf8f799",
-   "title": "深圳APEC｜雷軍發言緊張意外成熱搜 小米回應「這麼大的國際場合，緊張太正常」",
-   "url": "https://www.stheadline.com/realtime-finance/3638393/深圳APEC雷軍發言緊張意外成熱搜-小米回應這麼大的國際場合緊張太正常",
+   "id": "12faa335137b",
+   "title": "車Cam直擊｜窩打老道客貨車疑天雨路滑失控 「甩尾」撞石壆翻側 44歲女司機幸無傷",
+   "url": "https://www.stheadline.com/breaking-news/3638704/車Cam直擊窩打老道客貨車疑天雨路滑失控-甩尾撞石壆翻側-44歲女司機幸無傷",
    "source_id": "stheadline",
    "source_label": "星島頭條",
    "region": "HK",
    "kind": "news",
-   "date": "2026-11-18 11:20",
-   "fetched": "2026-11-18 12:37",
-   "summary": "2026年APEC工商領導人峰會在深圳舉行，小米（1810）創辦人雷軍發表演說時，分享了小米在人工智能、具身智能及生態建設等領域的布局，但因神態拘謹而意外引起網上熱議，甚至令「小米回應雷軍APEC發言緊張」衝上微博熱搜榜首。 據內媒報道，雷軍在微博貼出自己於APEC峰會現場的演講照片後，有粉絲在評論區表示，「全程看完雷",
+   "date": "2026-11-19 01:01",
+   "fetched": "2026-11-19 12:19",
+   "summary": "九龍塘發生交通意外。一輛輕型貨車沿窩打老道行駛，駛至龍翔道公園對開時，懷疑天雨路滑突然失控，橫越行車線撞向路中分隔石壆，繼而向左翻側。尾隨私家車及貨車見狀急煞，幸未有波及其他車輛，44歲女司機並無受傷。 社交平台今日（18日）流傳一段車Cam片段，顯示事發於下午約4時，涉事輕型貨車沿窩打老道往獅子山隧道方向行駛，駛至龍",
    "category": "accident"
+  },
+  {
+   "id": "f04eec576ee6",
+   "title": "Data shows dramatic rise in young kids ingesting recreational drugs at home",
+   "url": "https://www.safetyandhealthmagazine.com/data-shows-dramatic-rise-in-young-kids-ingesting-recreational-drugs-at-home/",
+   "source_id": "shmag",
+   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
+   "region": "INTL",
+   "kind": "news",
+   "date": "2026-11-18 22:56",
+   "fetched": "2026-11-19 12:19",
+   "summary": "Researchers identified nearly 42,000 cases – most involving cannabinoids – among children younger than 6.",
+   "category": "news"
+  },
+  {
+   "id": "7437961bee38",
+   "title": "Lockout/tagout/tryout in construction: New toolbox talk available",
+   "url": "https://www.safetyandhealthmagazine.com/lockout-tagout-tryout-in-construction-new-toolbox-talk-available/",
+   "source_id": "shmag",
+   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
+   "region": "INTL",
+   "kind": "news",
+   "date": "2026-11-18 22:33",
+   "fetched": "2026-11-19 12:19",
+   "summary": "It features an incident narrative along with an illustration on injury prevention.",
+   "category": "news"
+  },
+  {
+   "id": "100348bf6c47",
+   "title": "Work zone safety act advances in Ohio",
+   "url": "https://www.safetyandhealthmagazine.com/work-zone-safety-act-advances-in-ohio/",
+   "source_id": "shmag",
+   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
+   "region": "INTL",
+   "kind": "news",
+   "date": "2026-11-18 22:25",
+   "fetched": "2026-11-19 12:19",
+   "summary": "“It is imperative that we look out for the men and women in hard hats on our highways,” the bill’s co-sponsor said.",
+   "category": "news"
+  },
+  {
+   "id": "bc49a823ea46",
+   "title": "Study offers strategies for preventing ‘camouflaging’ among workers with autism",
+   "url": "https://www.safetyandhealthmagazine.com/study-offers-strategies-for-preventing-camouflaging-among-workers-with-autism/",
+   "source_id": "shmag",
+   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
+   "region": "INTL",
+   "kind": "news",
+   "date": "2026-11-18 22:17",
+   "fetched": "2026-11-19 12:19",
+   "summary": "Hiding their “authentic” selves can weigh heavily on worker mental health.",
+   "category": "news"
+  },
+  {
+   "id": "0bb4dd7309e8",
+   "title": "香港與智利簽署工作假期計劃協議（附圖／短片）",
+   "url": "https://www.info.gov.hk/gia/general/202611/18/P2026111800460.htm",
+   "source_id": "gia",
+   "source_label": "香港政府新聞公報(含勞工處)",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-11-18 18:15",
+   "fetched": "2026-11-19 12:19",
+   "summary": "香港與智利今日（十一月十八日）簽署協議，設立讓兩地青年參與的雙邊工作假期計劃。 工作假期計劃協議在香港特別行政區（香港特區）行政長官李家超與智利總統卡斯特共同見證下，由香港特區政府勞工及福利局局長孫玉菡與智利外交部部長弗朗西斯科·佩雷斯·麥肯納於深圳舉行的亞太區經濟合作組織第三十三次領導人非正式會議期間簽署。 孫玉菡歡",
+   "category": "news"
+  },
+  {
+   "id": "dc6ce714e112",
+   "title": "勞福局局長為香港情緒健康學會「自殺可預防」WeCare SOS應急情緒支援項目成效及情緒健康先鋒發布會致辭（只有中文）",
+   "url": "https://www.info.gov.hk/gia/general/202611/18/P2026111800447.htm",
+   "source_id": "gia",
+   "source_label": "香港政府新聞公報(含勞工處)",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-11-18 15:20",
+   "fetched": "2026-11-19 12:19",
+   "summary": "以下是勞工及福利局（勞福局）局長孫玉菡今日（十一月十八日）為香港情緒健康學會「自殺可預防」WeCare SOS應急情緒支援項目成效及情緒健康先鋒發布會的致辭全文： 高醫生（全國政協常務委員高永文醫生）、蕭澤頤先生（前警務處處長蕭澤頤）、林美玲醫生（香港情緒健康學會創辦人及會長林美玲醫生）、潘副處長（中央人民政府駐香港特",
+   "category": "news"
+  },
+  {
+   "id": "335e0e1f6968",
+   "title": "立法會一題：建造業的致命工業意外",
+   "url": "https://www.info.gov.hk/gia/general/202611/18/P2026111800285.htm",
+   "source_id": "gia",
+   "source_label": "香港政府新聞公報(含勞工處)",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-11-18 15:00",
+   "fetched": "2026-11-19 12:19",
+   "summary": "以下是今日（十一月十八日）在立法會會議上林振昇議員的提問和勞工及福利局局長孫玉菡的答覆： 問題： 據悉，建造業的致命工業意外數量和每千名工人的意外率長期居各行業之首。就此，政府可否告知本會： （一）過去八年至今，每年建造業發生的致命工業意外中，有多少宗個案涉及工期少於六星期或受僱工人人數不超過十名的建築工程； （二）過",
+   "category": "accident"
+  },
+  {
+   "id": "1e1568c47442",
+   "title": "立法會十六題：綜合廢物管理設施第一期火警",
+   "url": "https://www.info.gov.hk/gia/general/202611/18/P2026111800244.htm",
+   "source_id": "gia",
+   "source_label": "香港政府新聞公報(含勞工處)",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-11-18 13:10",
+   "fetched": "2026-11-19 12:19",
+   "summary": "以下是今日（十一月十八日）在立法會會議上陳紹雄議員的提問和環境及生態局局長謝展寰的書面答覆︰ 問題： 綜合廢物管理設施第一期（I.PARK1）於二○二六年十月二十六日發生三級火警，原本運往I.PARK1的廢物須運往新界西堆填區擴建部分處置。就此，政府可否告知本會： （一）I.PARK1由二○二五年十二月進入首階段試行運",
+   "category": "accident"
+  },
+  {
+   "id": "c3c6c750a481",
+   "title": "立法會十三題：推廣綠色甲醇的應用",
+   "url": "https://www.info.gov.hk/gia/general/202611/18/P2026111800233.htm",
+   "source_id": "gia",
+   "source_label": "香港政府新聞公報(含勞工處)",
+   "region": "HK",
+   "kind": "news",
+   "date": "2026-11-18 12:54",
+   "fetched": "2026-11-19 12:19",
+   "summary": "以下是今日（十一月十八日）在立法會會議上洪錦鉉議員的提問和環境及生態局局長謝展寰的書面答覆︰ 問題： 有業界人士指出，綠色甲醇（綠醇）在道路運輸、港口設備及建築工地等領域具備龐大的減排潛力，且燃料成本較傳統柴油為低，但礙於現行高額關税及繁複的行政程序，在香港進行相關應用及試驗比較困難。就此，政府可否告知本會： （一）現",
+   "category": "news"
   },
   {
    "id": "0ff755e16444",
@@ -243,125 +399,8 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-11-18 11:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "​一名業主由於不遵從根據《建築物條例》（第123章）發出的清拆令，昨日（十一月十七日）在粉嶺裁判法院被定罪及判罰款合共122,750元，當中57,750元屬就罪行持續的日數所判的罰款。 有關個䅁涉及上水馬會道一幢商住大廈一個面積約78平方米的天台搭建物。該僭建物並無事先獲得屋宇署的批准及同意，屋宇署根據《建築物條例》第",
-   "category": "news"
-  },
-  {
-   "id": "fd6e0d4117bb",
-   "title": "消防凌晨深水埗大廈外牆簷篷 架起雲梯救出被困貓隻",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1878253-20261118.htm",
-   "source_id": "rthk_local",
-   "source_label": "香港電台·本地新聞",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18 10:55",
-   "fetched": "2026-11-18 12:37",
-   "summary": "消防人員凌晨於深水埗福榮街一幢大廈外牆簷篷，架起雲梯救出一隻被困的貓，已聯同愛護動物協會職員將貓隻帶回安全地方。 消防表示，經檢查後貓隻身體無大礙，並提醒公眾如果發現有動物被困危險位置，切勿冒險營救，可以聯絡消防處或相關部門求助。 編輯：黃佩珊",
-   "category": "accident"
-  },
-  {
-   "id": "5ae929b944e4",
-   "title": "宏福苑大火｜殉職消防員何偉豪浩園立碑 親友泣立：英魂不朽 祭品包括《GTA》遊戲",
-   "url": "https://www.stheadline.com/society/3638360/宏福苑大火殉職消防員何偉豪浩園立碑-親友泣立英魂不朽-祭品包括GTA遊戲",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18 09:29",
-   "fetched": "2026-11-18 12:37",
-   "summary": "宏福苑大火發生接近一周年，37歲消防員何偉豪（追頒消防隊目）在大火中殉職，去年12月消防處為他舉行最高榮譽喪禮，安葬浩園，何偉豪的家屬在社交平台透露，昨日(17日)何偉豪正式安墓立碑。 碑銘提到何偉豪於2009年任職警員，其後在2016年加入消防處，「盡厥職，貢獻良多」，而何偉豪平生亦「勤奮好學，謙恭有禮，篤信力行，樂",
-   "category": "news"
-  },
-  {
-   "id": "3d6d20d6ace2",
-   "title": "深水埗貓咪走出簷篷 消防升雲梯救回",
-   "url": "https://www.stheadline.com/breaking-news/3638346/深水埗貓咪走出簷篷-消防升雲梯救回",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18 09:25",
-   "fetched": "2026-11-18 12:37",
-   "summary": "深水埗發生貓隻被困簷篷事件。一隻貓走出大廈外牆簷篷，主人因無法將牠救回，於是報警求助。消防接報後升起雲梯救援，約15分鐘後成功救回貓咪，過程吸引不少途人圍觀及拍攝。 消防處表示，今日（18日）凌晨，深水埗福榮街一幢大廈有貓貓被困高處外牆的簷篷頂，進退兩難，非常徬徨。消防處接報後趕到現場展開救援，經過一番努力，終於聯同愛",
-   "category": "accident"
-  },
-  {
-   "id": "a86bfcb1c6b3",
-   "title": "連翔道英華小學校巴遭貨車撞尾 司機及1學童輕傷送院",
-   "url": "https://www.stheadline.com/breaking-news/3638356/連翔道英華小學校巴遭貨車撞尾-司機及1學童輕傷送院",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18 09:06",
-   "fetched": "2026-11-18 12:37",
-   "summary": "今日（18日）早上7時45分，一部載有英華小學學童的校巴與一部運菜貨車沿連翔道行駛，駛至南昌站對開，疑因應路面情況，校巴收慢，惟尾隨貨車司機報稱地面有餿水，收掣不及，撞向校巴車尾，校巴司機及車上一名男學童輕傷，貨車司機無恙，在場協查，警方正調查意外原因。",
-   "category": "accident"
-  },
-  {
-   "id": "edb6ec3ada86",
-   "title": "俄烏戰爭│烏軍襲克里米亞大橋 拱門倒塌墜海交通中斷",
-   "url": "https://www.stheadline.com/realtime-world/3638350/俄烏戰爭烏軍襲克里米亞大橋-拱門倒塌墜海交通中斷",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18 08:31",
-   "fetched": "2026-11-18 12:37",
-   "summary": "俄烏近期再次向對方發動大規模空襲。烏克蘭連續第2晚以導彈和無人機，攻擊連接俄國與克里米亞的大橋，該橋樑有一部分在攻擊後坍塌。 連續2晚導彈和無人機襲擊 烏克蘭總統澤連斯基昨日（17日）上午在社交媒體發文證實，烏國家安全局和軍方使用多款無人機和「海王星」導彈，對克里米亞大橋的公路和鐵路設施實施了打擊，以回應俄方襲擊烏方基",
-   "category": "accident"
-  },
-  {
-   "id": "ff08627a99e2",
-   "title": "美軍證實打擊伊朗格什姆島導彈發射場 稱回應革命衛隊侵略行為",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1878213-20261118.htm",
-   "source_id": "rthk_intl",
-   "source_label": "香港電台·國際新聞",
-   "region": "INTL",
-   "kind": "news",
-   "date": "2026-11-18 06:36",
-   "fetched": "2026-11-18 12:37",
-   "summary": "美國軍方星期二證實，對伊朗南部格什姆島一處導彈發射場，實施精準打擊，回應伊朗革命衛隊針對美國人員和資產的侵略行為。 伊朗傳媒較早時報道，格什姆島傳出爆炸聲並冒出濃煙。霍爾木茲甘省副省長其後證實，美軍襲擊格什姆島部分地點，當地情況受控，居民區、商業和基礎設施沒有受損。 據報在格什姆島襲擊發生前幾小時，伊朗對美軍位於巴林的",
-   "category": "news"
-  },
-  {
-   "id": "1817a51e6d10",
-   "title": "歐國聯｜新7號科布斯奠勝 十人葡萄牙3：2挫威爾斯",
-   "url": "https://www.stheadline.com/football-news/3638339/歐國聯新7號科布斯奠勝-十人葡萄牙32挫威爾斯",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18 06:24",
-   "fetched": "2026-11-18 12:37",
-   "summary": "葡萄牙今晨在歐國聯最後一輪分組賽，作客以3：2擊敗威爾斯。攻入奠勝球的，是新7號主人卡路士科布斯（Carlos Forbs）。 一度落後1：2 葡萄牙在上一輪正式進入後C朗時代，意外地主場以1：4不敵丹麥。今晨他們作客威爾斯踢歐國聯最後一場小組賽，先憑隊長般奴費南迪斯（Bruno Fernandes）在11分鐘打開紀錄",
-   "category": "accident"
-  },
-  {
-   "id": "463b2c3a2665",
-   "title": "伊朗局勢｜美軍空襲格什姆島導彈陣地 報復革命衞隊無人機襲擊巴林美軍雷達",
-   "url": "https://www.stheadline.com/realtime-world/3638337/伊朗局勢美軍空襲格什姆島導彈陣地-報復革命衞隊無人機襲擊巴林美軍雷達",
-   "source_id": "stheadline",
-   "source_label": "星島頭條",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18 06:04",
-   "fetched": "2026-11-18 12:37",
-   "summary": "中東局勢再度急劇升溫。法新社引述伊朗當地官員消息指，美軍於周二（17日）晚間對位於霍爾木茲海峽（Strait of Hormuz）的伊朗南部格什姆島（Qeshm Island）發動多次襲擊，島上傳出5至6聲爆炸巨響，目標為島上的導彈發射陣地。而在當天早些時候，伊朗伊斯蘭革命衛隊（IRGC）剛宣布出動無人機，精確打擊巴林",
-   "category": "accident"
-  },
-  {
-   "id": "5f44d465eae6",
-   "title": "伊朗指美軍襲擊格什姆島部分地點 美軍未有回應",
-   "url": "https://news.rthk.hk/rthk/ch/component/k2/1878204-20261118.htm",
-   "source_id": "rthk_intl",
-   "source_label": "香港電台·國際新聞",
-   "region": "INTL",
-   "kind": "news",
-   "date": "2026-11-18 03:11",
-   "fetched": "2026-11-18 12:37",
-   "summary": "伊朗傳媒星期二報道，南部格什姆島傳出爆炸聲並冒出濃煙。 霍爾木茲甘省副省長其後證實，美軍襲擊格什姆島部分地點，但當地情況受控，居民區、商業和基礎設施沒有受損，救援、服務和行政部門處於全面戒備狀態；美軍暫時未有回應。 編輯：盧曉珊",
    "category": "news"
   },
   {
@@ -373,7 +412,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-18 01:46",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "A culture of preparedness “needs to consider every kind of emergency your people could face,” Maria Belen Cordova said.",
    "category": "news"
   },
@@ -386,48 +425,22 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-18 01:39",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Exercise videos are being tested by workers and supervisors from 16 nursery and landscaping companies.",
    "category": "news"
   },
   {
-   "id": "94a7a2142770",
-   "title": "拒拆上水一幢商住大廈天台僭建物 業主被定罪判罰款逾12萬元",
-   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261118/bkn-20261118111522522-1118_00822_001.html",
-   "source_id": "oncc",
-   "source_label": "東方日報·東網on.cc",
+   "id": "5b6dc94650d9",
+   "title": "香港與智利訂工作假期計劃",
+   "url": "https://www.news.gov.hk/chi/2026/11/20261118/20261118_182002_711.html",
+   "source_id": "news_top",
+   "source_label": "香港政府新聞網·頭條",
    "region": "HK",
    "kind": "news",
-   "date": "2026-11-18",
-   "fetched": "2026-11-18 12:37",
-   "summary": "",
+   "date": "2026-11-18 00:00",
+   "fetched": "2026-11-19 12:19",
+   "summary": "香港與智利今日簽署協議，設立雙邊工作假期計劃，雙方每年各有100個名額。參加者可申請簽證，在智利或香港逗留最多12個月，其間可從事短期工作以賺取旅費，或修讀短期課程。 有關協議在行政長官李家超與智利總統卡斯特共同見證下，由勞工及福利局局長孫玉菡與智利外交部部長弗朗西斯科·佩雷斯·麥肯納在深圳舉行的亞太區經濟合作組織第3",
    "category": "news"
-  },
-  {
-   "id": "8393eea071cd",
-   "title": "長沙灣連翔道校巴捱貨車撞　司機及1學童受傷送院",
-   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261118/bkn-20261118081234683-1118_00822_001.html",
-   "source_id": "oncc",
-   "source_label": "東方日報·東網on.cc",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18",
-   "fetched": "2026-11-18 12:37",
-   "summary": "",
-   "category": "accident"
-  },
-  {
-   "id": "10ad8628c536",
-   "title": "深水埗貓隻被困大廈外牆　人員架起雲梯成功救回",
-   "url": "https://hk.on.cc/hk/bkn/cnt/news/20261118/bkn-20261118065848919-1118_00822_001.html",
-   "source_id": "oncc",
-   "source_label": "東方日報·東網on.cc",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-18",
-   "fetched": "2026-11-18 12:37",
-   "summary": "",
-   "category": "accident"
   },
   {
    "id": "6f71c66f360d",
@@ -438,34 +451,8 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-11-17 18:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "就傳媒查詢有關十月二十六日石鼓洲旁人工島綜合廢物管理設施第一期（I.PARK1）發生的火警的調查報告，環境保護署（環保署）今日（十一月十七日）回應如下： 環保署已收到消防處提供的調查報告，並留意到報告指出火警成因可能與燒焊工程或吸煙有關。因應消防處就火警成因調查的發現，環保署已責成I.PARK1承建商即時檢視及加強其消",
-   "category": "accident"
-  },
-  {
-   "id": "4793cdd2468c",
-   "title": "消防處回應傳媒查詢",
-   "url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700378.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-17 14:45",
-   "fetched": "2026-11-18 12:37",
-   "summary": "​就傳媒查詢有關十月二十六日石鼓洲旁人工島綜合廢物管理設施第一期（I.PARK1）發生的火警的調查進展，消防處今日（十一月十七日）回應如下： 消防處已完成調查，包括現場進行搜證工作及向相關人士錄取口供。 調查顯示，起火地點位於I.PARK1焚化爐大樓第三焚化模組的高層位置。調查結果已排除火警與電力故障、蓄意縱火及化學物",
-   "category": "accident"
-  },
-  {
-   "id": "2e2c0c9e9f2e",
-   "title": "還押在囚人士昏迷送院後不治",
-   "url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700232.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-17 10:50",
-   "fetched": "2026-11-18 12:37",
-   "summary": "​荔枝角收押所一名六十六歲男性還押在囚人士今日（十一月十七日）在院所內昏迷，被送往公立醫院後證實不治。 該名還押在囚人士患有高血壓，一直需要接受院所醫院及公立醫院治療及跟進。今日上午七時十五分，懲教人員發現該名還押在囚人士於囚室內昏迷不醒，立刻召喚支援人員到場為他進行急救，並召喚救護車將他送往公立醫院作進一步救治。該名",
    "category": "accident"
   },
   {
@@ -477,7 +464,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-17 06:23",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Results of a recent study show that 1 out of 5 workers have witnessed gender-based violence at work.",
    "category": "news"
   },
@@ -490,7 +477,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-11-17 00:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "政府統計處公布，8月至10月經季節性調整的失業率為3.8%，較7月至9月稍微回落0.1個百分點；就業不足率維持2%。 期內總就業人數3,653,800人，較7月至9月減少約1,200人；總勞動人口為3,804,200人，減少約5,800人。 展望未來，勞工及福利局局長孫玉菡表示，本地經濟持續擴張、消費氣氛穩健，加上訪港",
    "category": "news"
   },
@@ -503,7 +490,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-11-17 00:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "消防處完成調查石鼓洲旁人工島綜合廢物處理設施第一期（I.PARK1）上月26日發生的火警，指火警原因或與燒焊工程或吸煙有關。環境保護署表示，已責成I.PARK1承建商即時檢視和加強其消除火警風險的措施，並特別針對處理包括燒焊在內的熱工序和進一步收緊地盤全面禁煙的範疇。 ​消防處表示，調查包括現場搜證和向相關人士錄取口供",
    "category": "accident"
   },
@@ -516,7 +503,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-16 22:28",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "“When an employer refuses to follow the law, we will take action,” the state’s attorney general said.",
    "category": "news"
   },
@@ -529,7 +516,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-16 22:26",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Agency administrator Wayne Palmer said the news “signals continued progress toward protecting miners.”",
    "category": "news"
   },
@@ -542,59 +529,20 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-16 20:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "November 16, 2026",
-   "category": "news"
-  },
-  {
-   "id": "47c3f29e3781",
-   "title": "督導委員會舉行首次會議 全力推展樓宇維修制度改革（附圖）",
-   "url": "https://www.info.gov.hk/gia/general/202611/16/P2026111600483.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-16 18:05",
-   "fetched": "2026-11-18 12:37",
-   "summary": "政府在十月二十九日公開就大埔宏福苑火災成立的獨立委員會報告。行政長官宣布在報告建議的基礎上推行全面系統改革，並成立由政務司司長領導的督導委員會，檢視獨立委員會的建議，推展和監督落實工作。督導委員會今日（十一月十六日）召開首次會議，全力推展樓宇維修制度改革的統籌協調工作。 政務司司長陳國基在會上要求各政策局及部門迅速並精",
-   "category": "accident"
-  },
-  {
-   "id": "145fdba31a0e",
-   "title": "公務員事務局局長在立法會公務員及資助機構員工事務委員會會議就為政府僱員提供家庭友善僱傭措施最新情況的開場發言（只有中文）",
-   "url": "https://www.info.gov.hk/gia/general/202611/16/P2026111600410.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-16 15:03",
-   "fetched": "2026-11-18 12:37",
-   "summary": "以下是公務員事務局局長楊何蓓茵今日（十一月十六日）在立法會公務員及資助機構員工事務委員會會議，就為政府僱員提供家庭友善僱傭措施最新情況的開場發言： 主席： 《香港第一個五年規劃》及二○二六年《施政報告》提到，未來五年是香港實現更高質量發展的關鍵時期，必定要一支專業高效的公務員團隊在過程中發揮重要的作用。為此，我們必須做",
-   "category": "news"
-  },
-  {
-   "id": "6df65cd0a104",
-   "title": "康文署「香港藝術家」系列十二月推介兩位新進編舞作壓軸演出（附圖）",
-   "url": "https://www.info.gov.hk/gia/general/202611/16/P2026111300401.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-16 11:00",
-   "fetched": "2026-11-18 12:37",
-   "summary": "康樂及文化事務署（康文署）十二月推出「新進編舞雙舞作」，帶來兩個全新當代舞作品《如何建造______》和《致：》，分別由本地新進編舞朱仟青和吳希維編舞及演出，以舞蹈探索日常生活與人際關係中的留白，展現新生代編舞的創作視野，為今年「香港藝術家」系列的壓軸演出。 朱仟青的《如何建造______》以五金工場為靈感，將線鋸、夾",
    "category": "news"
   },
   {
    "id": "5c5af656ee2f",
    "title": "全力推展樓宇維修制度改革",
    "url": "https://www.news.gov.hk/chi/2026/11/20261116/20261116_181359_966.html",
-   "source_id": "news_top",
-   "source_label": "香港政府新聞網·頭條",
+   "source_id": "news_admin",
+   "source_label": "香港政府新聞網·政府施政",
    "region": "HK",
    "kind": "news",
    "date": "2026-11-16 00:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "政府上月底公開就大埔宏福苑火災成立的獨立委員會報告後，行政長官李家超宣布成立由政務司司長領導的督導委員會，檢視獨立委員會的建議，推展和監督落實工作。督導委員會今日召開首次會議，全力推展樓宇維修制度改革的統籌協調工作。 政務司司長陳國基在會上要求各政策局和部門迅速並精準地落實各項建議，全面推進改革，做到制度完善、流程優化",
    "category": "accident"
   },
@@ -607,112 +555,8 @@
    "region": "HK",
    "kind": "weather",
    "date": "2026-11-15 19:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "現時並無警告生效。",
-   "category": "news"
-  },
-  {
-   "id": "a5354142386e",
-   "title": "黃色火災危險警告",
-   "url": "https://www.info.gov.hk/gia/general/202611/15/P2026111500156.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-15 06:02",
-   "fetched": "2026-11-18 12:37",
-   "summary": "電台、電視台當值宣布員注意： 為大眾安全起見，請播放下列警告： 火災危險警告 天文台今日（十一月十五日）已發出黃色火災危險警告，表示火警容易發生，市民應小心防火，郊遊人士亦應小心防止山火。",
-   "category": "accident"
-  },
-  {
-   "id": "a7aad6ecba45",
-   "title": "Coalition unveils recommendations on traumatic brain injuries in first responders",
-   "url": "https://www.safetyandhealthmagazine.com/coalition-unveils-recommendations-on-traumatic-brain-injuries-in-first-responders/",
-   "source_id": "shmag",
-   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
-   "region": "INTL",
-   "kind": "news",
-   "date": "2026-11-14 04:29",
-   "fetched": "2026-11-18 12:37",
-   "summary": "“There is a lot we can learn from sports and the military, but those approaches have to be adapted,” one expert said.",
-   "category": "news"
-  },
-  {
-   "id": "bbc076027fd6",
-   "title": "僱主／承建商及僱員須注意在暴雨下工作時的電力安全",
-   "url": "https://www.info.gov.hk/gia/general/202611/14/P2026111400136.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-14 03:56",
-   "fetched": "2026-11-18 12:37",
-   "summary": "鑑於天文台已發出暴雨警告，勞工處提醒僱主及承建商，當僱員在進行電力工作或處理電力作業裝置時，須採取所需的工作安排及適當安全措施，以保障僱員的工作安全。 勞工處發言人今日（十一月十四日）表示，僱主及承建商須盡量避免委派僱員在受暴雨天氣影響的地方進行電力工作（如電弧焊接工作）或處理電力作業裝置，及應參考勞工處出版的《惡劣天",
-   "category": "news"
-  },
-  {
-   "id": "e66875554a0f",
-   "title": "粉嶺火警特別通知",
-   "url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300773.htm",
-   "source_id": "gia",
-   "source_label": "香港政府新聞公報(含勞工處)",
-   "region": "HK",
-   "kind": "news",
-   "date": "2026-11-13 22:44",
-   "fetched": "2026-11-18 12:37",
-   "summary": "電台及電視台當值宣布員注意，請盡快播出以下信息，並適時重播： 消防處今日（十一月十三日）晚上八時十八分接獲報告，指粉嶺坪輋路一個貨倉發生火警。火警於晚上九時五十八分大致被救熄，消防人員正進行降溫及散煙行動。 如市民受到隨風飄散的煙霧和異味影響，請關閉門窗及保持鎮定。",
-   "category": "accident"
-  },
-  {
-   "id": "cd9633b64d68",
-   "title": "OSHA letter of interpretation covers selection and use of Type II safety helmets",
-   "url": "https://www.safetyandhealthmagazine.com/osha-letter-of-interpretation-covers-selection-and-use-of-type-ii-safety-helmets/",
-   "source_id": "shmag",
-   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
-   "region": "INTL",
-   "kind": "news",
-   "date": "2026-11-13 03:27",
-   "fetched": "2026-11-18 12:37",
-   "summary": "The acting director of OSHA’s Directorate of Enforcement Programs answered six questions.",
-   "category": "news"
-  },
-  {
-   "id": "58cb2a5fe47c",
-   "title": "Curbing on-the-job electrical injuries requires better training, researchers say",
-   "url": "https://www.safetyandhealthmagazine.com/curbing-on-the-job-electrical-injuries-requires-better-training-researchers-say/",
-   "source_id": "shmag",
-   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
-   "region": "INTL",
-   "kind": "news",
-   "date": "2026-11-13 03:19",
-   "fetched": "2026-11-18 12:37",
-   "summary": "A team at a university in Australia looked at national injury data and workers’ comp claims.",
-   "category": "news"
-  },
-  {
-   "id": "a0e4317a5638",
-   "title": "‘Strengthening Rail Safety’: NTSB refuels push with new campaign",
-   "url": "https://www.safetyandhealthmagazine.com/strengthening-rail-safety-ntsb-refuels-push-with-new-campaign/",
-   "source_id": "shmag",
-   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
-   "region": "INTL",
-   "kind": "news",
-   "date": "2026-11-12 23:43",
-   "fetched": "2026-11-18 12:37",
-   "summary": "“Railroaders do difficult work in complex environments,” the National Transportation Safety Board chair and CEO said.",
-   "category": "news"
-  },
-  {
-   "id": "dd5f5694c34e",
-   "title": "Need a quick mental health boost? Try a nature walk",
-   "url": "https://www.safetyandhealthmagazine.com/need-a-quick-mental-health-boost-try-a-nature-walk/",
-   "source_id": "shmag",
-   "source_label": "Safety+Health 雜誌(美國國家安全委員會)",
-   "region": "INTL",
-   "kind": "news",
-   "date": "2026-11-12 06:17",
-   "fetched": "2026-11-18 12:37",
-   "summary": "If you’re in an urban area, seeking out green spaces may help.",
    "category": "news"
   },
   {
@@ -724,7 +568,7 @@
    "region": "HK",
    "kind": "news",
    "date": "2026-11-12 00:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "司法機構今日發出兩份即時生效的《特別實務指引》，列明因大埔宏福苑火災而引起的民事申索處理方式，以期在無損訴訟各方向法院提起訴訟和獲得公平審訊權利的前提下，確保公平和相稱地分配司法資源。 鑑於宏福苑火災造成大量人命傷亡和嚴重損毀，司法機構預計不久後或有大量涉及複雜問題和巨額賠償的申索向法院提出。考慮到訴訟所涉及的時間、費",
    "category": "accident"
   },
@@ -737,7 +581,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-06 18:43",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Trainee scaffolder died after falling five metres from a partially erected scaffold while working on a housing development in North Yorkshire. HSE found the com",
    "category": "news"
   },
@@ -750,7 +594,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-05 21:59",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Worker’s right hand trapped between the print rollers of machinery The woman had worked as a machinery operator for 11 years HSE investigation found that the co",
    "category": "news"
   },
@@ -763,7 +607,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-05 17:40",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "• AJ Riley Landscapes and Building Limited were fined £20,000 • The worker suffered fractures to his ribs, vertebrae and pelvis after falling approximately 10 m",
    "category": "news"
   },
@@ -776,7 +620,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-04 19:53",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Niall Fawcett died when he was struck by a truck while he was working beneath it on the M56 slip road in Cheshire. HSE found the company failed to properly asse",
    "category": "news"
   },
@@ -789,7 +633,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-03 22:38",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Private Jethro Watson-Pickering was killed during an exercise on Salisbury Plain 23-year-old died from head injuries after gun barrel of his armoured vehicle st",
    "category": "news"
   },
@@ -802,7 +646,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-03 18:55",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "An independent government oversight review has found that the UK’s stewardship regime for professional rodenticide use has delivered important safeguards for hu",
    "category": "news"
   },
@@ -815,7 +659,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-03 16:04",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "The Health and Safety Executive (HSE) has today published its response to a consultation on proposals to strengthen the regulatory framework for managing asbest",
    "category": "news"
   },
@@ -828,7 +672,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-11-03 02:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "ENERGIZED FOR SAFETY PREVENTING TRENCHING HAZARDS DATES TO REMEMBER LISTEN UP! PARTNERSHIPS THAT PROTECT SAFETY AT EVERY LEVEL YOUR RIGHT TO REPORT OSHA CLASSRO",
    "category": "news"
   },
@@ -841,7 +685,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-11",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -854,7 +698,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-11",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -867,7 +711,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-11",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -880,7 +724,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-31 08:01",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Work-related stress remains one of the leading causes of work-related ill health in Great Britain HSE is encouraging employers and managers to take practical ac",
    "category": "news"
   },
@@ -893,7 +737,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-30 23:40",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Photos taken after fire on roof of apartment block show damage Four workers forced to flee blaze with just one ladder as their escape route No fire extinguisher",
    "category": "news"
   },
@@ -906,7 +750,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-30 00:29",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "Simon Pedder was crushed under a reversing recovery truck and now needs crutches, a frame and a wheelchair. More than 10 months on, he has been unable to return",
    "category": "news"
   },
@@ -919,7 +763,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-21 20:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "October 21, 2026",
    "category": "news"
   },
@@ -932,7 +776,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-15 02:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "NEW ALLIANCE AIMS TO PREVENT SERIOUS INJURIES AND FATALITIES PREPAREDNESS SAVE LIVES TRAINING GRANTS AWARDED DATES TO REMEMBER A CAREER PROTECTING WORKERS SIX K",
    "category": "news"
   },
@@ -945,7 +789,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-13 20:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "October 13, 2026US Labor Department finds 6 New York, New Jersey construction employers exposed workers to safety hazards, assesses combined $648K in penalties",
    "category": "news"
   },
@@ -958,7 +802,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-07 20:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "October 7, 2026",
    "category": "news"
   },
@@ -971,7 +815,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-10-01 20:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "October 1, 2026",
    "category": "news"
   },
@@ -984,7 +828,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -997,7 +841,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1010,7 +854,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1023,7 +867,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1036,7 +880,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1049,7 +893,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1062,7 +906,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1075,7 +919,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1088,7 +932,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1101,7 +945,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1114,7 +958,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-10",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1127,7 +971,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-24 02:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "SHARING OSHA�S VISION SAFE TRACTORS SAVE LIVES DATES TO REMEMBER START THE CONVERSATION SAFETY AT EVERY LEVEL YOUR RIGHT TO REPORT YOU ASK�WE ANSWER WHAT�S TREN",
    "category": "news"
   },
@@ -1140,7 +984,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-09-09 02:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "STRIVING TOWARD SAFETY EXCELLENCE SAFETY AT EVERY LEVEL GET YOUR PASSPORT TO SAFETY DATES TO REMEMBER BE A LIFELINE BETTER TOGETHER SPEAKING OUT FOR SAFETY YOU ",
    "category": "news"
   },
@@ -1153,7 +997,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1166,7 +1010,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1179,7 +1023,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1192,7 +1036,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1205,7 +1049,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1218,7 +1062,7 @@
    "region": "CN",
    "kind": "news",
    "date": "2026-09",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1231,7 +1075,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-08-07 02:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "PROTECTING WAREHOUSE WORKERS PARTNERSHIP IN ACTION BEFORE YOU DIG DATES TO REMEMBER STAY SAFE AND CARRY ON CONNECT WITH US PREVENTING TRENCH CAVE-INS BUILDING S",
    "category": "news"
   },
@@ -1244,7 +1088,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-06-25 02:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "BETTER TOGETHER SAFETY AT EVERY LEVEL 30 YEARS OF SAFETY EXCELLENCE DATES TO REMEMBER CONNECT WITH US SHORE UP WORKER SAFETY COLLABORATION BUILDS SUCCESS PROTEC",
    "category": "news"
   },
@@ -1257,7 +1101,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-06-23 02:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "JOINING FORCES FOR MARITIME SAFETY SPEAKING UP MATTERS DATES TO REMEMBER CLEARING THE AIR SAFETY AT EVERY LEVEL BETTER TOGETHER MOVING SAFETY FORWARD OSHA CARES",
    "category": "news"
   },
@@ -1270,7 +1114,7 @@
    "region": "INTL",
    "kind": "news",
    "date": "2026-06-10 02:00",
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "HOLDING VIOLATORS ACCOUNTABLE KEEPING CONNECTED TRAINING GRANTS AVAILABLE INSIDE OSHA'S VISION DATES TO REMEMBER SAFETY IN MOTION KEEP YOUR COOL SAFETY AT EVERY",
    "category": "news"
   },
@@ -1283,7 +1127,7 @@
    "region": "HK",
    "kind": "video",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1296,7 +1140,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1309,7 +1153,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1322,7 +1166,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1335,7 +1179,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1348,7 +1192,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1361,7 +1205,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1374,7 +1218,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1387,7 +1231,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1400,7 +1244,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   },
@@ -1413,7 +1257,7 @@
    "region": "INTL",
    "kind": "news",
    "date": null,
-   "fetched": "2026-11-18 12:37",
+   "fetched": "2026-11-19 12:19",
    "summary": "",
    "category": "news"
   }
